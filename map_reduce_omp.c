@@ -62,7 +62,7 @@ char* getWork (struct Q* W) {
 int putWork (struct Q* W, char* buf) {
     if (W->pos < W->size-1) {
         W->pos++;
-        printf("Inside putwork, workpos is %d\n",W->pos);
+        //printf("Inside putwork, workpos is %d\n",W->pos);
         memcpy(W->QHead[W->pos],buf,(strlen(buf)+1)*sizeof(char));
         return 1;
     } else {
@@ -79,7 +79,7 @@ void reader(struct Q* W) {
     char* buf = (char*) malloc(LINE_LENGTH*sizeof(char));
     while (fgets(buf,LINE_LENGTH,file) && returnVal) {
         if (buf[0]!='\n') {
-        printf("Putting %s into the Work queue\n",buf);
+        //printf("Putting %s into the Work queue\n",buf);
         returnVal=putWork(W,buf);
         }
     }
@@ -91,12 +91,9 @@ int hashFunc(char* a) {
     int i,hash;
     hash=0;
     int tmp=0;
-    for (i=0;i<strlen(a);i++) {
-        if ((a[i]>=65 && a[i]<=90) || (a[i]>=97 && a[i]<=122)) {
-            hash=hash^a[i];
-            tmp=hash;
-            hash=hash<<4 | tmp>>4;
-        }
+    int n = strlen(a);
+    for (i=0;i<n;i++) {
+        hash=(hash<<4 ^ hash) ^ a[i];
     }
     return hash&255;
 }
@@ -115,40 +112,6 @@ int getWord(char** l, char* buf) {
     return flag;
 }
 
-// int push2table(void** i,char* w) {
-//     int flag=0;
-//     LLitem* p;
-//     if ((*i)==NULL) {
-//         LLitem* ll_element = (LLitem*) malloc(sizeof(LLitem));
-//         (*i)=ll_element;
-//         ll_element->word = (char*) malloc(WORD_LENGTH*sizeof(char));
-//         ll_element->nextptr=NULL;
-//         ll_element->cnt=1;
-//         memcpy(ll_element->word,w,(strlen(w)+1)*sizeof(char));
-//         return 1;
-//     } else {
-//         p = (LLitem*) *i;
-//         while(p->nextptr!=NULL) {
-//             if (strcmp(p->word,w)==0) {
-//                 p->cnt++;
-//                 flag=1;
-//                 break;
-//             }
-//             p = p->nextptr;
-//         }
-//         if (!flag) {
-//             LLitem* ll_element = (LLitem*) malloc(sizeof(LLitem));
-//             ll_element->nextptr=(LLitem*) *i;
-//             *i=ll_element;
-//             ll_element->cnt=1;
-//             ll_element->word = (char*) malloc(WORD_LENGTH*sizeof(char));
-//             memcpy(ll_element->word,w,(strlen(w)+1)*sizeof(char));
-//             return 1;
-//         } else {return 1;}
-//         return 0;
-//     }
-// }
-
 void normalizeWord(char* w) {
     int n = strlen(w);
     int flag[n];
@@ -161,12 +124,24 @@ void normalizeWord(char* w) {
             j++;
         }
     }
-    int cnt=0;
-    for (i=0;i<n-j;i++) {
-        w[i-cnt]=w[i];
-        if (flag[i]) {cnt++;}
+    if (j!=n) {
+        if (!((w[0]>=65 && w[0]<=90) || (w[0]>=97 && w[0]<=122))) {
+            for (i=0;i<n;i++) {
+                w[i] = w[i+1];
+            }
+            n=n-1;
+        }
+        if (!((w[n-1]>=65 && w[n-1]<=90) || (w[n-1]>=97 && w[n-1]<=122))) {
+            w[n-1]=0;
+            n=n-1;
+        }
     }
-    w[i]=0;
+    // int cnt=0;
+    // for (i=0;i<n-j;i++) {
+    //     w[i-cnt]=w[i];
+    //     if (flag[i]) {cnt++;}
+    // }
+    // w[i]=0;
 }
 
 void printTable(struct LLitem** h, int n) {
@@ -195,7 +170,7 @@ void insert (struct LLitem** h, char* w) {
         elem->cnt=1;
         elem->word=(char*) malloc(WORD_LENGTH*sizeof(char));
         memcpy(elem->word,w,sizeof(char)*(strlen(w)+1));
-        printf("Writing word %s to %p\n",elem->word,&(elem->word));
+        //printf("Writing word %s to %p\n",elem->word,&(elem->word));
         elem->nextptr=NULL;
         return;
     }
@@ -217,7 +192,7 @@ void insert (struct LLitem** h, char* w) {
         elem->cnt=1;
         elem->word=(char*) malloc(WORD_LENGTH*sizeof(char));
         memcpy(elem->word,w,sizeof(char)*(strlen(w)+1));
-        printf("Writing word %s to %p\n",elem->word,&(elem->word));
+        //printf("Writing word %s to %p\n",elem->word,&(elem->word));
         elem->nextptr=p;
         return;
     }
@@ -236,27 +211,27 @@ void mapper(struct Q* W) {
     while(1) {
         buf=getWork(W);
         if (buf!=NULL) {
-            printf("Pulled string %s from the buffer\n",buf);
+            //printf("Pulled string %s from the buffer\n",buf);
             do {
                 returnVal=getWord(&buf,word);
                 normalizeWord(word);
                 if (!strlen(word)) {continue;}
-                printf("%s\n",word);
+                //printf("%s\n",word);
                 hIndex=hashFunc(word)%NUM_REDUCERS;
-                printf("Pushing %s into table (Hash value %d)\n",word, hIndex);
+                //printf("Pushing %s into table (Hash value %d)\n",word, hIndex);
                 insert(&hTable[hIndex],word);
             } while(returnVal);
         } else {break;}
     } 
-    printf("Out of the loop\n");
+    //printf("Out of the loop\n");
     printTable(hTable,NUM_REDUCERS);
     return;
 }
 
 int main() {
-    struct Q* WorkQ = InitQ(10);
+    struct Q* WorkQ = InitQ(50);
     reader(WorkQ);
-    printf("Out of the reader\n");
+    //printf("Out of the reader\n");
 
     //Testing Hash table insertion mechanism
     // char* l = "The Project Gutenberg EBook of Master and Man, by the man leo, Leo The Tolstoy ***";
