@@ -301,11 +301,11 @@ int main (int argc, char *argv[]) {
         //MPI Process tag for getting and asking for work - 0
         MPI_Request node_init_done[numP];
         for (i=0;i<min(numP,NUM_FILE_CHUNKS);i++) {
-            MPI_ISend(&reader_file_ptr,1,MPI_INT,i,0,MPI_COMM_WORLD,MPI_Reduce_scatter);
+            MPI_Isend(&reader_file_ptr,1,MPI_INT,i,0,MPI_COMM_WORLD,MPI_Reduce_scatter);
             reader_file_ptr++;
         }
         while (reader_file_ptr<NUM_FILE_CHUNKS) {
-            MPI_Irecv(&reader_msg,2,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,reader_req_for_work);
+            MPI_Irecv(&reader_msg,2,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&reader_req_for_work);
             MPI_Wait(&reader_req_for_work,&reader_req_status);
             if (reader_msg[1] == 0) {
                 MPI_Send(&reader_file_ptr,1,MPI_INT,reader_msg[0],0,MPI_COMM_WORLD);
@@ -313,7 +313,7 @@ int main (int argc, char *argv[]) {
             }
         }
         while (!readingDone(flag,num_readers)) {
-            MPI_Irecv(&reader_msg,2,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,reader_req_for_work);
+            MPI_Irecv(&reader_msg,2,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&reader_req_for_work);
             MPI_Wait(&reader_req_for_work,&reader_req_status);
             if (reader_msg[1]==0) {
                 MPI_Send(&read_done,1,MPI_INT,reader_msg[0],0,MPI_COMM_WORLD);
@@ -322,7 +322,7 @@ int main (int argc, char *argv[]) {
             }
         }
     } else {
-        struct WorkQ* reader_Q = InitQ(READER_Q_SIZE);
+        struct Q* reader_Q = InitQ(READER_Q_SIZE);
         int file_to_read;
         char* filename;
         int done=0;
