@@ -1,11 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <mpi.h>
 #include <omp.h>
 #include <string.h>
+
 
 #define LINE_LENGTH 256
 #define WORD_LENGTH 20
 #define NUM_REDUCERS 8
+#define NUM_FILE_CHUNKS 20
+#define READER_Q_SIZE 600
 
 typedef struct Q {
     int size;
@@ -44,16 +47,6 @@ struct reducerQ* InitReducerQ (int size) {
     return r;
 }
 
-// void** InitTable(int n) {
-//     void* h;
-//     int i;
-//     printf("Inside InitTable1\n");
-//     for (i=0;i<n;i++) {
-//         //h[i] = (LLitem*) malloc(sizeof(LLitem));
-//         h[i] = NULL;
-//     }
-//     return h;
-// }
 
 struct Q* InitQ (int n) {
     struct Q* newQ = (struct Q*) malloc (sizeof(Q));
@@ -91,15 +84,15 @@ int putWorkWQ (struct Q* W, char* buf) {
     }
 }
 
-void reader(struct Q* W) {
+void reader(struct Q* W, char* fileName) {
     printf("In reader\n");
-    char* fileName="2.txt";
+    //char* fileName="2.txt";
     int returnVal=1;
     FILE* file = fopen(fileName,"r");
     char* buf = (char*) malloc(LINE_LENGTH*sizeof(char));
     while (fgets(buf,LINE_LENGTH,file) && returnVal) {
         if (buf[0]!='\n') {
-        //printf("Putting %s into the Work queue\n",buf);
+        printf("Putting %s into the Work queue\n",buf);
         returnVal=putWorkWQ(W,buf);
         }
     }
@@ -260,77 +253,93 @@ struct keyData* pullFromHashTable(struct LLitem** h) {
     } else return NULL;
 }
 
-int putWorkRQ (struct reducerQ* r, struct keyData* k) {
-    if (r->pos < r->size) {
-        r->pos++;
-        (*(r->k + r->pos))->cnt = k->cnt;
-        memcpy((*(r->k + r->pos))->word,k->word,(strlen(k->word)+1)*sizeof(char));
-        return 1;
-    } else {
-        printf("Trying to push into full ReducerQ\n");
-        return 0;
+int readingDone(int* flag, int num_readers) {
+    int i=0;
+    int f=1;
+    while(i<num_readers) {
+        if (!(*(flag+i))) {
+            f=0;
+            break;
+        }
     }
+    return f;
 }
 
-struct keyData* getWorkRQ (struct reducerQ* r) {
-    struct keyData* k = (struct keyData*) malloc(sizeof(struct keyData));
-    if (r->pos > -1) {
-        k->cnt = (*(r->k + r->pos))->cnt;
-        memcpy(k->word,(*(r->k + r->pos))->word,(strlen((*(r->k + r->pos))->word)+1)*sizeof(char));
-        return k;
-    } else {
-        printf("Trying to pull from empty reducerQ\n");
-        return NULL;
-    }
+char* getReaderFileName(int n) {
+    char* buf = (char*) malloc(10);
+    sprintf(buf,"%d",n);
+    strcat(buf,".txt");
+    return buf;
 }
 
-void insertToReducerQ (struct LLitem** h, int index, struct Q** reducerQ) {
-    struct keyData* k;
-    while (k = pullFromHashTable(h)) {
-        int returnVal = putWorkWQ(reducerQ+index,k->word);
-    }
-    return;
+int min(int a, int b) {
+    return a ? a<b : b;
 }
 
-void reducer (struct Q** reducerQ, int index) {
-    return;
-}
-
-int main() {
-    struct Q* WorkQ = InitQ(50);
-    struct Q* ReducerQ[NUM_REDUCERS];
+int main (int argc, char *argv[]) {
+    const int read_done = 1234;
+    int pid;
+    int numP;
+    MPI_Init(&argc,&argv);
+    MPI_Comm_size(MPI_COMM_WORLD,&numP);
+    int num_readers = numP*1;
+    MPI_Comm_rank(MPI_COMM_WORLD,&pid);
     int i;
-    for (i=0;i<NUM_REDUCERS;i++) {
-        ReducerQ[i] = InitQ(100);
-    }
-    reader(WorkQ);
-    //printf("Out of the reader\n");
 
-    //Testing Hash table insertion mechanism
-    // char* l = "The Project Gutenberg EBook of Master and Man, by the man leo, Leo The Tolstoy ***";
-    // char* w = (char*) malloc(sizeof(char)*WORD_LENGTH);
-    // printf("DEBUG1\n");
-    // struct LLitem* hTable[NUM_REDUCERS];
-    // for (int i=0;i<NUM_REDUCERS;i++) {
-    //     hTable[i]=NULL;
-    // }
-    // printTable(hTable,NUM_REDUCERS);
-    // printf("DEBUG2\n");
-    // int returnVal;
-    // int hIndex;
-    // do {
-    //     returnVal=getWord(&l,w);
-    //     normalizeWord(w);
-    //     if (!strlen(w)) {continue;}
-    //     printf("%s\n",w);
-    //     hIndex=hashFunc(w)%NUM_REDUCERS;
-    //     printf("Pushing %s into table (Hash value %d)\n",w, hIndex);
-    //     // push2table(&hTable[hIndex],w);
-    //     insert(&hTable[hIndex],w);
-    //     //printTable(hTable,NUM_REDUCERS);
-    // } while(returnVal);
-    // printTable(hTable,NUM_REDUCERS);
-    //End of Hash table testing
-    mapper(WorkQ);
-    return 0;
+    if (!pid) {
+        int reader_file_ptr = 0;
+        int reader_msg[2] = {0,0};
+        int reader_pid;
+        MPI_Request reader_req_for_work;
+        MPI_Status reader_req_status;
+        int flag[num_readers];
+        for (i=0;i<num_readers;i++) {
+            flag[i] = 0;
+        }
+        //MPI Master process messaging bit : 0 - reader asking for work, 1 -reducer asking for file
+        //MPI Master messaging ettiquette - send 2 integers - 1st is your pid and the second is messaging bit - 0/1/2
+        //MPI Process tag for getting and asking for work - 0
+        MPI_Request node_init_done[numP];
+        for (i=0;i<min(numP,NUM_FILE_CHUNKS);i++) {
+            MPI_ISend(&reader_file_ptr,1,MPI_INT,i,0,MPI_COMM_WORLD,MPI_Reduce_scatter);
+            reader_file_ptr++;
+        }
+        while (reader_file_ptr<NUM_FILE_CHUNKS) {
+            MPI_Irecv(&reader_msg,2,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,reader_req_for_work);
+            MPI_Wait(&reader_req_for_work,&reader_req_status);
+            if (reader_msg[1] == 0) {
+                MPI_Send(&reader_file_ptr,1,MPI_INT,reader_msg[0],0,MPI_COMM_WORLD);
+                reader_file_ptr++;
+            }
+        }
+        while (!readingDone(flag,num_readers)) {
+            MPI_Irecv(&reader_msg,2,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,reader_req_for_work);
+            MPI_Wait(&reader_req_for_work,&reader_req_status);
+            if (reader_msg[1]==0) {
+                MPI_Send(&read_done,1,MPI_INT,reader_msg[0],0,MPI_COMM_WORLD);
+            } else if (reader_msg[1]==1) {
+
+            }
+        }
+    } else {
+        struct WorkQ* reader_Q = InitQ(READER_Q_SIZE);
+        int file_to_read;
+        char* filename;
+        int done=0;
+        int send_msg[2] = {pid,0};
+        MPI_Recv(&file_to_read,1,MPI_INT,0,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
+        filename=getReaderFileName(file_to_read);
+        do {
+            reader(reader_Q,filename);
+            MPI_Send(&send_msg,2,MPI_INT,0,0,MPI_COMM_WORLD);
+            MPI_Recv(&file_to_read,1,MPI_INT,0,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
+            if (file_to_read==read_done) {
+                done=1;
+            } else {
+                filename = getReaderFileName(file_to_read);
+                if (pid == 1) {printf("Got file %s to read from Master process\n",filename);}
+            }
+        } while (!done);
+        mapper(reader_Q);
+    }
 }
