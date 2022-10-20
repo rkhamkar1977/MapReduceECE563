@@ -2,7 +2,7 @@
 #include <mpi.h>
 #include <omp.h>
 #include <string.h>
-
+#include <unistd.h>
 
 #define LINE_LENGTH 256
 #define WORD_LENGTH 20
@@ -84,15 +84,15 @@ int putWorkWQ (struct Q* W, char* buf) {
     }
 }
 
-void reader(struct Q* W, char* fileName) {
-    printf("In reader\n");
+void reader(struct Q* W, char* fileName, int pid) {
+    if (pid == 1) {printf("In reader, File %s\n",fileName);}
     //char* fileName="2.txt";
     int returnVal=1;
     FILE* file = fopen(fileName,"r");
     char* buf = (char*) malloc(LINE_LENGTH*sizeof(char));
     while (fgets(buf,LINE_LENGTH,file) && returnVal) {
         if (buf[0]!='\n') {
-        printf("Putting %s into the Work queue\n",buf);
+        if (pid==1) {printf("Putting %s into the Work queue\n",buf);}
         returnVal=putWorkWQ(W,buf);
         }
     }
@@ -237,7 +237,7 @@ void mapper(struct Q* W) {
         } else {break;}
     } 
     //printf("Out of the loop\n");
-    printTable(hTable,NUM_REDUCERS);
+    //printTable(hTable,NUM_REDUCERS);
     return;
 }
 
@@ -261,6 +261,7 @@ int readingDone(int* flag, int num_readers) {
             f=0;
             break;
         }
+        i++;
     }
     return f;
 }
@@ -276,13 +277,22 @@ int min(int a, int b) {
     return a ? a<b : b;
 }
 
+void printFlag(int* flag, int n) {
+    int i =0;
+    printf("FLAG: ");
+    for (i=0;i<n;i++) {
+        printf("%d ",*(flag+i));
+    }
+    printf("\n");
+}
+
 int main (int argc, char *argv[]) {
     const int read_done = 1234;
     int pid;
     int numP;
     MPI_Init(&argc,&argv);
     MPI_Comm_size(MPI_COMM_WORLD,&numP);
-    int num_readers = numP*1;
+    int num_readers = numP-1;
     MPI_Comm_rank(MPI_COMM_WORLD,&pid);
     int i;
 
@@ -299,12 +309,13 @@ int main (int argc, char *argv[]) {
         //MPI Master process messaging bit : 0 - reader asking for work, 1 -reducer asking for file
         //MPI Master messaging ettiquette - send 2 integers - 1st is your pid and the second is messaging bit - 0/1/2
         //MPI Process tag for getting and asking for work - 0
-        MPI_Request node_init_done[numP];
-        for (i=0;i<min(numP,NUM_FILE_CHUNKS);i++) {
-            MPI_Isend(&reader_file_ptr,1,MPI_INT,i,0,MPI_COMM_WORLD,&node_init_done[i]);
+        MPI_Request node_init_done[numP-1];
+        //Assuming numP is < num file chunks
+        for (i=1;i<numP;i++) {
+            MPI_Isend(&reader_file_ptr,1,MPI_INT,i,0,MPI_COMM_WORLD,&node_init_done[i-1]);
             reader_file_ptr++;
         }
-        MPI_Waitall(numP,node_init_done,MPI_STATUSES_IGNORE);
+        //MPI_Waitall(numP-1,node_init_done,MPI_STATUSES_IGNORE); Don't need a waitall - what if one node finishes the file given to it initially> shouldnt have to wait
         while (reader_file_ptr<NUM_FILE_CHUNKS) {
             MPI_Irecv(&reader_msg,2,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&reader_req_for_work);
             MPI_Wait(&reader_req_for_work,&reader_req_status);
@@ -318,10 +329,14 @@ int main (int argc, char *argv[]) {
             MPI_Wait(&reader_req_for_work,&reader_req_status);
             if (reader_msg[1]==0) {
                 MPI_Send(&read_done,1,MPI_INT,reader_msg[0],0,MPI_COMM_WORLD);
-            } else if (reader_msg[1]==1) {
-
+                flag[reader_msg[0]-1] = 1;
+                //printFlag(flag,num_readers);
+            //} else if (reader_msg[1]==1) {
+                //Reading not done for all tasks but some tasks have already started reducer work - need to add here
             }
         }
+        printf("Master process: All tasks have finished reading\n");
+        //All tasks have finished reading and now all are running reducer work - need to add here
     } else {
         struct Q* reader_Q = InitQ(READER_Q_SIZE);
         int file_to_read;
@@ -330,15 +345,18 @@ int main (int argc, char *argv[]) {
         int send_msg[2] = {pid,0};
         MPI_Recv(&file_to_read,1,MPI_INT,0,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
         filename=getReaderFileName(file_to_read);
+        printf("PID: %d, Got file %s to read from Master process\n",pid,filename);
         do {
-            reader(reader_Q,filename);
+            //reader(reader_Q,filename,pid);
+            sleep(2);
             MPI_Send(&send_msg,2,MPI_INT,0,0,MPI_COMM_WORLD);
             MPI_Recv(&file_to_read,1,MPI_INT,0,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
             if (file_to_read==read_done) {
                 done=1;
+                printf("PID: %d, Done reading\n",pid);                
             } else {
                 filename = getReaderFileName(file_to_read);
-                if (pid == 1) {printf("Got file %s to read from Master process\n",filename);}
+                printf("PID: %d, Got file %s to read from Master process\n",pid,filename);
             }
         } while (!done);
         mapper(reader_Q);
