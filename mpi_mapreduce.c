@@ -301,7 +301,7 @@ int main (int argc, char *argv[]) {
         //MPI Process tag for getting and asking for work - 0
         MPI_Request node_init_done[numP];
         for (i=0;i<min(numP,NUM_FILE_CHUNKS);i++) {
-            MPI_Isend(&reader_file_ptr,1,MPI_INT,i,0,MPI_COMM_WORLD,MPI_Reduce_scatter);
+            MPI_Isend(&reader_file_ptr,1,MPI_INT,i,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
             reader_file_ptr++;
         }
         while (reader_file_ptr<NUM_FILE_CHUNKS) {
