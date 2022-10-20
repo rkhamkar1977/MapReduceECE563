@@ -301,9 +301,10 @@ int main (int argc, char *argv[]) {
         //MPI Process tag for getting and asking for work - 0
         MPI_Request node_init_done[numP];
         for (i=0;i<min(numP,NUM_FILE_CHUNKS);i++) {
-            MPI_Isend(&reader_file_ptr,1,MPI_INT,i,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
+            MPI_Isend(&reader_file_ptr,1,MPI_INT,i,0,MPI_COMM_WORLD,&node_init_done[i]);
             reader_file_ptr++;
         }
+        MPI_Waitall(numP,node_init_done,MPI_STATUSES_IGNORE);
         while (reader_file_ptr<NUM_FILE_CHUNKS) {
             MPI_Irecv(&reader_msg,2,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&reader_req_for_work);
             MPI_Wait(&reader_req_for_work,&reader_req_status);
