@@ -5,10 +5,11 @@
 #include <unistd.h>
 
 #define LINE_LENGTH 256
-#define WORD_LENGTH 20
+#define WORD_LENGTH 33 //Making it 32 because some word strings are > 20
 #define NUM_REDUCERS 8
 #define NUM_FILE_CHUNKS 20
-#define READER_Q_SIZE 600
+#define READER_Q_SIZE 2000
+#define KEYS_PER_REDUCER 150
 
 typedef struct Q {
     int size;
@@ -84,7 +85,7 @@ int putWorkWQ (struct Q* W, char* buf) {
     }
 }
 
-void reader(struct Q* W, char* fileName, int pid) {
+void reader(struct Q* W, char* fileName, int pid, omp_lock_t* lck) {
     if (pid == 1) {printf("In reader, File %s\n",fileName);}
     //char* fileName="2.txt";
     int returnVal=1;
@@ -92,10 +93,14 @@ void reader(struct Q* W, char* fileName, int pid) {
     char* buf = (char*) malloc(LINE_LENGTH*sizeof(char));
     while (fgets(buf,LINE_LENGTH,file) && returnVal) {
         if (buf[0]!='\n') {
-        if (pid==1) {printf("Putting %s into the Work queue\n",buf);}
+        //if (pid==1) {printf("Putting %s into the Work queue\n",buf);}
+        omp_set_lock(lck);
         returnVal=putWorkWQ(W,buf);
+        omp_unset_lock(lck);
+        //if (pid==1) {printf("Put %s into the Work queue\n",buf);}
         }
     }
+    printf("PID %d, Processed file %s, Work Q pos %d of %d full\n",pid,fileName,W->pos,W->size);
     fclose(file);
     return;
 }
@@ -177,6 +182,7 @@ void printTable(struct LLitem** h, int n) {
 } 
 
 void insert (struct LLitem** h, char* w) {
+    if (strlen(w)>WORD_LENGTH) {printf("Word %s is bigger than word length",w);}
     if (*h==NULL) {
         struct LLitem* elem = (struct LLitem*) malloc(sizeof(struct LLitem));
         *h = elem;
@@ -212,9 +218,54 @@ void insert (struct LLitem** h, char* w) {
     return;
 }
 
-void mapper(struct Q* W) {
+int readingDone(int* flag, int num_readers) {
+    int i=0;
+    int f=1;
+    while(i<num_readers) {
+        if (!(*(flag+i))) {
+            f=0;
+            break;
+        }
+        i++;
+    }
+    return f;
+}
+
+int writer(struct LLitem** h, int index, int pid) {
+    struct LLitem* p;
+    int file_count = 0;
+    char filename[30];
+    while (*h!=NULL) {
+        sprintf(filename,"%d_reducerFile_%d_%d",pid,index,file_count);
+        FILE* f = fopen(filename,"w");
+        int count = 0;
+        while ((*h!=NULL) && (count<KEYS_PER_REDUCER)) {
+            p = *h;
+            fprintf(f,"%s,%d\n",p->word,p->cnt);
+            *h = p->nextptr;
+            count++;
+        }
+        fclose(f);
+        file_count++;
+    }
+    //printf("PID %d Index %d word count %d\n",pid,index,file_count);
+    return file_count;
+}
+
+void printFlag(int* flag, int n, char* name) {
+    int i =0;
+    printf("%s: ",name);
+    for (i=0;i<n;i++) {
+        printf("%d ",*(flag+i));
+    }
+    printf("\n");
+}
+
+void mapper(struct Q* W, int* done, int num_read_threads, int pid, int* num_scratch_files, omp_lock_t* lck) {
+    printf("PID %d in Mapper\n",pid);
     struct LLitem* hTable[NUM_REDUCERS];
-    for (int i=0;i<NUM_REDUCERS;i++) {
+    int i;
+    for (i=0;i<NUM_REDUCERS;i++) {
         hTable[i]=NULL;
     }
     int hIndex;
@@ -222,9 +273,11 @@ void mapper(struct Q* W) {
     char* buf = (char*) malloc(LINE_LENGTH*sizeof(char));
     char* word = (char*) malloc(WORD_LENGTH*sizeof(char));
     while(1) {
+        omp_set_lock(lck);
         buf=getWorkWQ(W);
+        omp_unset_lock(lck);
         if (buf!=NULL) {
-            //printf("Pulled string %s from the buffer\n",buf);
+            //printf("PID %d Pulled string %s from the buffer\n",pid,buf);
             do {
                 returnVal=getWord(&buf,word);
                 normalizeWord(word);
@@ -234,10 +287,28 @@ void mapper(struct Q* W) {
                 //printf("Pushing %s into table (Hash value %d)\n",word, hIndex);
                 insert(&hTable[hIndex],word);
             } while(returnVal);
-        } else {break;}
+        } else {
+            if (*done) {
+                break;
+            }
+            else {
+                usleep(100);
+                printf("PID %d Empty Q but reading not done\n",pid);
+                continue;
+            }
+        }
     } 
-    //printf("Out of the loop\n");
-    //printTable(hTable,NUM_REDUCERS);
+    if (pid == 1) {printTable(hTable,NUM_REDUCERS);}
+    //int num_scratch_files[NUM_REDUCERS];
+    for (i=0;i<NUM_REDUCERS;i++) {
+        num_scratch_files[i]=writer(&hTable[i],i,pid);
+    }
+    printf("PID %d Out of the mapper loop\n",pid);
+    if (pid == 1) {
+        printTable(hTable,NUM_REDUCERS);
+        //char name[18]="Num Scratch Files";
+        //printFlag(num_scratch_files,NUM_REDUCERS,name);
+    }
     return;
 }
 
@@ -253,19 +324,6 @@ struct keyData* pullFromHashTable(struct LLitem** h) {
     } else return NULL;
 }
 
-int readingDone(int* flag, int num_readers) {
-    int i=0;
-    int f=1;
-    while(i<num_readers) {
-        if (!(*(flag+i))) {
-            f=0;
-            break;
-        }
-        i++;
-    }
-    return f;
-}
-
 char* getReaderFileName(int n) {
     char* buf = (char*) malloc(10);
     sprintf(buf,"%d",n);
@@ -275,15 +333,6 @@ char* getReaderFileName(int n) {
 
 int min(int a, int b) {
     return a ? a<b : b;
-}
-
-void printFlag(int* flag, int n) {
-    int i =0;
-    printf("FLAG: ");
-    for (i=0;i<n;i++) {
-        printf("%d ",*(flag+i));
-    }
-    printf("\n");
 }
 
 int main (int argc, char *argv[]) {
@@ -339,26 +388,45 @@ int main (int argc, char *argv[]) {
         //All tasks have finished reading and now all are running reducer work - need to add here
     } else {
         struct Q* reader_Q = InitQ(READER_Q_SIZE);
-        int file_to_read;
-        char* filename;
-        int done=0;
-        int send_msg[2] = {pid,0};
-        MPI_Recv(&file_to_read,1,MPI_INT,0,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
-        filename=getReaderFileName(file_to_read);
-        printf("PID: %d, Got file %s to read from Master process\n",pid,filename);
-        do {
-            //reader(reader_Q,filename,pid);
-            sleep(2);
-            MPI_Send(&send_msg,2,MPI_INT,0,0,MPI_COMM_WORLD);
-            MPI_Recv(&file_to_read,1,MPI_INT,0,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
-            if (file_to_read==read_done) {
-                done=1;
-                printf("PID: %d, Done reading\n",pid);                
-            } else {
-                filename = getReaderFileName(file_to_read);
-                printf("PID: %d, Got file %s to read from Master process\n",pid,filename);
+        int num_scratch[NUM_REDUCERS];
+        int num_read_threads = 1;
+        omp_lock_t lck; //For mapper and readers to synchronize the work q
+        omp_init_lock(&lck);
+        int done=0; //When making multi-threaded reader need to make this an array
+        #pragma omp parallel shared(done)
+        {
+            #pragma omp single 
+            {
+                #pragma omp task 
+                {
+                    int file_to_read;
+                    char* filename;
+                    int send_msg[2] = {pid,0};
+                    MPI_Recv(&file_to_read,1,MPI_INT,0,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
+                    filename=getReaderFileName(file_to_read);
+                    printf("PID: %d, Got file %s to read from Master process\n",pid,filename);
+                    do {
+                        reader(reader_Q,filename,pid,&lck);
+                        //sleep(2);
+                        MPI_Send(&send_msg,2,MPI_INT,0,0,MPI_COMM_WORLD);
+                        MPI_Recv(&file_to_read,1,MPI_INT,0,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
+                        if (file_to_read==read_done) {
+                            done=1;
+                            printf("PID: %d, Done reading\n",pid);                
+                        } else {
+                            filename = getReaderFileName(file_to_read);
+                            printf("PID: %d, Got file %s to read from Master process\n",pid,filename);
+                        }
+                    } while (!done);
+                }
+                #pragma omp task
+                    mapper(reader_Q,&done,num_read_threads,pid,&num_scratch[0],&lck);
             }
-        } while (!done);
-        mapper(reader_Q);
+        }
+        omp_destroy_lock(&lck);
+        //char name[18] = "Num Scratch";
+        //printFlag(num_scratch,NUM_REDUCERS,name);
+    
     }
+    MPI_Finalize();
 }
