@@ -324,6 +324,23 @@ struct keyData* pullFromHashTable(struct LLitem** h) {
     } else return NULL;
 }
 
+void printScratchInfo (int n, int* p) {
+    int i,j;
+    printf("   ");
+    for (i=0;i<n;i++) {
+        printf("M%d ",i);
+    }
+    printf("\n");
+    for (i=0;i<NUM_REDUCERS;i++) {
+        printf("R%d ",i);
+        for (j=0;j<n;j++) {
+            printf(" %d ",*p);
+            p = p+1;
+        }
+        printf("\n");
+    }
+}
+
 char* getReaderFileName(int n) {
     char* buf = (char*) malloc(10);
     sprintf(buf,"%d",n);
@@ -360,7 +377,7 @@ int main (int argc, char *argv[]) {
         int flag[num_readers];
         int got_scratch_info[num_readers];
         int scratch_buf[NUM_REDUCERS+1];
-        int scratch_ptr[NUM_REDUCERS];
+        int scratch_ptr[NUM_REDUCERS][num_readers];
         for (i=0;i<num_readers;i++) {
             flag[i] = 0;
         }
@@ -371,6 +388,7 @@ int main (int argc, char *argv[]) {
         //MPI Master messaging ettiquette - send 2 integers - 1st is your pid and the second is messaging bit - 0/1/2
         //MPI Process tag for getting and asking for work - 0
         MPI_Request node_init_done;
+        MPI_Request scratch_msg_done;
         //Assuming numP is < num file chunks
         for (i=1;i<numP;i++) {
             for (j=0;j<num_read_threads;j++) {
@@ -403,9 +421,18 @@ int main (int argc, char *argv[]) {
                 //Reading not done for all tasks but some tasks have already started reducer work - need to add here
             }
         }
-        // while (!readingDone(got_scratch_info,num_readers,1)) {
-        //     MPI_Irecv();
-        // }
+        while (!readingDone(got_scratch_info,num_readers,1)) {
+            MPI_Irecv(&scratch_buf,NUM_REDUCERS+1,MPI_INT,MPI_ANY_SOURCE,1,MPI_COMM_WORLD,&scratch_msg_done);
+            MPI_Wait(&scratch_msg_done,MPI_STATUS_IGNORE);
+            //printf("Got scratch info from pid %d\n",scratch_buf[NUM_REDUCERS]);
+            //char name[20]="Got_scratch: ";
+            //printFlag(got_scratch_info,num_readers,name);
+            for (i=0;i<NUM_REDUCERS;i++) {
+                scratch_ptr[i][scratch_buf[NUM_REDUCERS]-1]=scratch_buf[i];
+            }
+            got_scratch_info[scratch_buf[NUM_REDUCERS]-1]=1;
+        }
+        printScratchInfo(num_readers,&scratch_ptr[0][0]);
         printf("Master process: All tasks have finished reading\n");
         //All tasks have finished reading and now all are running reducer work - need to add here
     } else {
@@ -452,7 +479,8 @@ int main (int argc, char *argv[]) {
             }
         }
         num_scratch[NUM_REDUCERS]=pid;
-        // MPI_Isend(&num_scratch[0],NUM_REDUCERS+1,MPI_INT,0,1,MPI_COMM_WORLD,&scratch_info);
+        printf("PID %d All tasks finished, sending scratch info\n",pid);
+        MPI_Isend(&num_scratch[0],NUM_REDUCERS+1,MPI_INT,0,1,MPI_COMM_WORLD,&scratch_info);
         omp_destroy_lock(&lck);
         //char name[18] = "Num Scratch";
         //printFlag(num_scratch,NUM_REDUCERS,name);
