@@ -170,6 +170,7 @@ void printTable(struct LLitem** h, int n) {
         if ( *(h+i) != NULL) {
             p = *(h+i);
             //printf("Printing word at %p\n",&((*(h+i))->word));
+            // adding comment to test commit
             do {
                 printf(" {%s,%d} ",p->word,p->cnt);
                 p = p->nextptr;
