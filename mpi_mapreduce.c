@@ -6,7 +6,7 @@
 
 #define LINE_LENGTH 256
 #define WORD_LENGTH 33 //Making it 32 because some word strings are > 20
-#define NUM_REDUCERS 8
+#define NUM_REDUCERS 3
 #define NUM_FILE_CHUNKS 20
 #define READER_Q_SIZE 5000
 #define KEYS_PER_REDUCER 150
@@ -181,12 +181,12 @@ void printTable(struct LLitem** h, int n) {
     }
 } 
 
-void insert (struct LLitem** h, char* w) {
-    if (strlen(w)>WORD_LENGTH) {printf("Word %s is bigger than word length",w);}
+void insert (struct LLitem** h, char* w, int c) {
+    if (strlen(w)>WORD_LENGTH) {printf("Word %s is bigger than word length, might lead to Malloc",w);}
     if (*h==NULL) {
         struct LLitem* elem = (struct LLitem*) malloc(sizeof(struct LLitem));
         *h = elem;
-        elem->cnt=1;
+        elem->cnt=c;
         elem->word=(char*) malloc(WORD_LENGTH*sizeof(char));
         memcpy(elem->word,w,sizeof(char)*(strlen(w)+1));
         //printf("Writing word %s to %p\n",elem->word,&(elem->word));
@@ -198,7 +198,7 @@ void insert (struct LLitem** h, char* w) {
     int flag=0;
     do {
         if(strcmp(p->word,w)==0) {
-            p->cnt++;
+            p->cnt+=c;
             flag=1;
             break;
         }
@@ -208,7 +208,7 @@ void insert (struct LLitem** h, char* w) {
         struct LLitem* elem = (struct LLitem*) malloc(sizeof(struct LLitem));
         p=*h;
         *h = elem;
-        elem->cnt=1;
+        elem->cnt=c;
         elem->word=(char*) malloc(WORD_LENGTH*sizeof(char));
         memcpy(elem->word,w,sizeof(char)*(strlen(w)+1));
         //printf("Writing word %s to %p\n",elem->word,&(elem->word));
@@ -285,7 +285,7 @@ void mapper(struct Q* W, int* done, int num_read_threads, int pid, int* num_scra
                 //printf("%s\n",word);
                 hIndex=hashFunc(word)%NUM_REDUCERS;
                 //printf("Pushing %s into table (Hash value %d)\n",word, hIndex);
-                insert(&hTable[hIndex],word);
+                insert(&hTable[hIndex],word,1);
             } while(returnVal);
         } else {
             if (*done==num_read_threads) {
@@ -340,6 +340,7 @@ void printScratchInfo (int n, int* p) {
         printf("\n");
     }
 }
+
 
 char* getReaderFileName(int n) {
     char* buf = (char*) malloc(10);
@@ -484,6 +485,11 @@ int main (int argc, char *argv[]) {
         omp_destroy_lock(&lck);
         //char name[18] = "Num Scratch";
         //printFlag(num_scratch,NUM_REDUCERS,name);
+        //Reducer code
+        // struct LLitem* rQ=NULL;
+        // send_msg[2] = {pid,1};
+        // MPI_Request reducer_work_req;
+        // MPI_Send(&send_msg,2,MPI_INT,0,2,MPI_COMM_WORLD,)
     }
     MPI_Finalize();
 }
