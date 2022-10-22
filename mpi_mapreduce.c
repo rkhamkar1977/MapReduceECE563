@@ -18,10 +18,11 @@ typedef struct Q {
 } Q;
 
 
-typedef struct keyData {
-    int cnt;
-    char* word;
-} keyData;
+typedef struct scratchlist {
+    int file;
+    int map;
+    struct scratchlist* nextptr;
+} scratchlist;
 
 typedef struct reducerQ {
     int size;
@@ -181,6 +182,17 @@ void printTable(struct LLitem** h, int n) {
     }
 } 
 
+void insertScratchFile (struct scratchlist** h, int file, int map) {
+    struct scratchlist* p = *h;
+    struct scratchlist* elem = (struct scratchlist*) malloc(sizeof(struct scratchlist));
+    *h = elem;
+    elem->file=file;
+    elem->map=map;
+    //printf("Writing word %s to %p\n",elem->word,&(elem->word));
+    elem->nextptr=p;
+    return;
+}
+
 void insert (struct LLitem** h, char* w, int c) {
     if (strlen(w)>WORD_LENGTH) {printf("Word %s is bigger than word length, might lead to Malloc",w);}
     if (*h==NULL) {
@@ -235,21 +247,32 @@ int writer(struct LLitem** h, int index, int pid) {
     struct LLitem* p;
     int file_count = 0;
     char filename[30];
-    while (*h!=NULL) {
-        sprintf(filename,"%d_reducerFile_%d_%d",pid,index,file_count);
+    if (index != 1010) {
+        while (*h!=NULL) {
+            sprintf(filename,"%d_reducerFile_%d_%d",pid,index,file_count);
+            FILE* f = fopen(filename,"w");
+            int count = 0;
+            while ((*h!=NULL) && (count<KEYS_PER_REDUCER)) {
+                p = *h;
+                fprintf(f,"%s %d\n",p->word,p->cnt);
+                *h = p->nextptr;
+                count++;
+            }
+            fclose(f);
+            file_count++;
+        }
+        //printf("PID %d Index %d word count %d\n",pid,index,file_count);
+        return file_count;
+    } else {
+        sprintf(filename,"output_%d",pid);
         FILE* f = fopen(filename,"w");
-        int count = 0;
-        while ((*h!=NULL) && (count<KEYS_PER_REDUCER)) {
+        while (*h!=NULL) {
             p = *h;
-            fprintf(f,"%s,%d\n",p->word,p->cnt);
+            fprintf(f,"%s %d\n",p->word,p->cnt);
             *h = p->nextptr;
-            count++;
         }
         fclose(f);
-        file_count++;
     }
-    //printf("PID %d Index %d word count %d\n",pid,index,file_count);
-    return file_count;
 }
 
 void printFlag(int* flag, int n, char* name) {
@@ -355,6 +378,7 @@ int min(int a, int b) {
 
 int main (int argc, char *argv[]) {
     const int read_done = 1234;
+    const int map_done = 5678;
     int num_read_threads = 3;
     int pid;
     int numP,provided;
@@ -370,6 +394,10 @@ int main (int argc, char *argv[]) {
     int i,j;
 
     if (!pid) {
+        struct LLitem* scratch_table[NUM_REDUCERS];
+        for (i=0;i<NUM_REDUCERS;i++) {
+            scratch_table[i] = NULL;
+        }
         int reader_file_ptr = 0;
         int reader_msg[2] = {0,0};
         int reader_pid;
@@ -379,6 +407,7 @@ int main (int argc, char *argv[]) {
         int got_scratch_info[num_readers];
         int scratch_buf[NUM_REDUCERS+1];
         int scratch_ptr[NUM_REDUCERS][num_readers];
+        int current_sc_file[NUM_REDUCERS];
         for (i=0;i<num_readers;i++) {
             flag[i] = 0;
         }
@@ -430,10 +459,12 @@ int main (int argc, char *argv[]) {
             //printFlag(got_scratch_info,num_readers,name);
             for (i=0;i<NUM_REDUCERS;i++) {
                 scratch_ptr[i][scratch_buf[NUM_REDUCERS]-1]=scratch_buf[i];
+                //if(scratch_buf[i]>0) {insertScratchFile(&scratch_table[i],scratch_buf[i],scratch_buf[NUM_REDUCERS]);}
             }
             got_scratch_info[scratch_buf[NUM_REDUCERS]-1]=1;
         }
         printScratchInfo(num_readers,&scratch_ptr[0][0]);
+
         printf("Master process: All tasks have finished reading\n");
         //All tasks have finished reading and now all are running reducer work - need to add here
     } else {
@@ -486,10 +517,24 @@ int main (int argc, char *argv[]) {
         //char name[18] = "Num Scratch";
         //printFlag(num_scratch,NUM_REDUCERS,name);
         //Reducer code
-        // struct LLitem* rQ=NULL;
-        // send_msg[2] = {pid,1};
-        // MPI_Request reducer_work_req;
-        // MPI_Send(&send_msg,2,MPI_INT,0,2,MPI_COMM_WORLD,)
+        struct LLitem* rQ=NULL;
+        send_msg[2] = {pid,1};
+        int recv_msg[2] = {0,0};
+        MPI_Request reducer_work_req;
+        while(1) {
+            MPI_Send(&send_msg,2,MPI_INT,0,2,MPI_COMM_WORLD); // Explore using diff comm for mapper and reducer
+            MPI_Recv(&recv_msg,2,MPI_INT,0,2,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
+            if (recv_msg[0] == map_done) {break;}
+            char reducerFileName[25];
+            sprintf(reducerFileName,"%d_reducerFile_%d_%d",recv_msg[0],pid-1,recv_msg[1]);
+            File *reducerFile = fopen(reducerFileName,"r");
+            char buf[WORD_LENGTH];
+            int count;
+            while (fscanf(reducerFile,"%s%d",buf,&count)!=EOF) {
+                insert(&rQ,buf,count);
+            }
+        }
+        //writer(&rQ,1010,pid);
     }
     MPI_Finalize();
 }
