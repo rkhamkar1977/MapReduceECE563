@@ -343,6 +343,7 @@ int main() {
         rQ[i]=NULL;
     }
     printf("Doing Mapreduce in openmp using %d readers, %d mappers and %d reducers\n",READ_THREADS,MAP_THREADS,NUM_REDUCERS);
+    double elapsed_time = -omp_get_wtime();
     #pragma omp parallel
     {
         #pragma omp single
@@ -387,5 +388,6 @@ int main() {
             }
         }
     }
-
+    elapsed_time+=omp_get_wtime();
+    printf("Finished Mapreduce in %.2lf seconds\n",elapsed_time);
 }
