@@ -1,0 +1,1353 @@
+collection.  Despite these efforts, Project Gutenberg-tm electronic
+works, and the medium on which they may be stored, may contain
+"Defects," such as, but not limited to, incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other intellectual
+property infringement, a defective or damaged disk or other medium, a
+computer virus, or computer codes that damage or cannot be read by
+your equipment.
+
+1.F.2.  LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the "Right
+of Replacement or Refund" described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg-tm trademark, and any other party distributing a Project
+Gutenberg-tm electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees.  YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3.  YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+1.F.3.  LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from.  If you
+received the work on a physical medium, you must return the medium with
+your written explanation.  The person or entity that provided you with
+the defective work may elect to provide a replacement copy in lieu of a
+refund.  If you received the work electronically, the person or entity
+providing it to you may choose to give you a second opportunity to
+receive the work electronically in lieu of a refund.  If the second copy
+is also defective, you may demand a refund in writing without further
+opportunities to fix the problem.
+
+1.F.4.  Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you 'AS-IS' WITH NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+WARRANTIES OF MERCHANTIBILITY OR FITNESS FOR ANY PURPOSE.
+
+1.F.5.  Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of damages.
+If any disclaimer or limitation set forth in this agreement violates the
+law of the state applicable to this agreement, the agreement shall be
+interpreted to make the maximum disclaimer or limitation permitted by
+the applicable state law.  The invalidity or unenforceability of any
+provision of this agreement shall not void the remaining provisions.
+
+1.F.6.  INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg-tm electronic works in accordance
+with this agreement, and any volunteers associated with the production,
+promotion and distribution of Project Gutenberg-tm electronic works,
+harmless from all liability, costs and expenses, including legal fees,
+that arise directly or indirectly from any of the following which you do
+or cause to occur: (a) distribution of this or any Project Gutenberg-tm
+work, (b) alteration, modification, or additions or deletions to any
+Project Gutenberg-tm work, and (c) any Defect you cause.
+
+
+Section  2.  Information about the Mission of Project Gutenberg-tm
+
+Project Gutenberg-tm is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of computers
+including obsolete, old, middle-aged and new computers.  It exists
+because of the efforts of hundreds of volunteers and donations from
+people in all walks of life.
+
+Volunteers and financial support to provide volunteers with the
+assistance they need, are critical to reaching Project Gutenberg-tm's
+goals and ensuring that the Project Gutenberg-tm collection will
+remain freely available for generations to come.  In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg-tm and future generations.
+To learn more about the Project Gutenberg Literary Archive Foundation
+and how your efforts and donations can help, see Sections 3 and 4
+and the Foundation web page at http://www.pglaf.org.
+
+
+Section 3.  Information about the Project Gutenberg Literary Archive
+Foundation
+
+The Project Gutenberg Literary Archive Foundation is a non profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service.  The Foundation's EIN or federal tax identification
+number is 64-6221541.  Its 501(c)(3) letter is posted at
+http://pglaf.org/fundraising.  Contributions to the Project Gutenberg
+Literary Archive Foundation are tax deductible to the full extent
+permitted by U.S. federal laws and your state's laws.
+
+The Foundation's principal office is located at 4557 Melan Dr. S.
+Fairbanks, AK, 99712., but its volunteers and employees are scattered
+throughout numerous locations.  Its business office is located at
+809 North 1500 West, Salt Lake City, UT 84116, (801) 596-1887, email
+business@pglaf.org.  Email contact links and up to date contact
+information can be found at the Foundation's web site and official
+page at http://pglaf.org
+
+For additional contact information:
+     Dr. Gregory B. Newby
+     Chief Executive and Director
+     gbnewby@pglaf.org
+
+
+Section 4.  Information about Donations to the Project Gutenberg
+Literary Archive Foundation
+
+Project Gutenberg-tm depends upon and cannot survive without wide
+spread public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine readable form accessible by the widest
+array of equipment including outdated equipment.  Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States.  Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements.  We do not solicit donations in locations
+where we have not received written confirmation of compliance.  To
+SEND DONATIONS or determine the status of compliance for any
+particular state visit http://pglaf.org
+
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States.  U.S. laws alone swamp our small staff.
+
+Please check the Project Gutenberg Web pages for current donation
+methods and addresses.  Donations are accepted in a number of other
+ways including checks, online payments and credit card donations.
+To donate, please visit: http://pglaf.org/donate
+
+
+Section 5.  General Information About Project Gutenberg-tm electronic
+works.
+
+Professor Michael S. Hart is the originator of the Project Gutenberg-tm
+concept of a library of electronic works that could be freely shared
+with anyone.  For thirty years, he produced and distributed Project
+Gutenberg-tm eBooks with only a loose network of volunteer support.
+
+
+Project Gutenberg-tm eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the U.S.
+unless a copyright notice is included.  Thus, we do not necessarily
+keep eBooks in compliance with any particular paper edition.
+
+
+Most people start at our Web site which has the main PG search facility:
+
+     http://www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+﻿Project Gutenberg's The Making of the New Testament, by Benjamin W. Bacon
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org/license
+
+
+Title: The Making of the New Testament
+
+Author: Benjamin W. Bacon
+
+Release Date: March 28, 2012 [EBook #39288]
+
+Language: English
+
+
+*** START OF THIS PROJECT GUTENBERG EBOOK THE MAKING OF THE NEW TESTAMENT ***
+
+
+
+
+Produced by David Edwards, Hazel Batey and the Online
+Distributed Proofreading Team at http://www.pgdp.net (This
+file was produced from images generously made available
+by The Internet Archive)
+
+
+
+
+
+
+
+
+
+  THE MAKING OF THE NEW TESTAMENT
+
+
+  THE HOME UNIVERSITY LIBRARY OF MODERN KNOWLEDGE
+
+  Editors of THE HOME UNIVERSITY LIBRARY OF MODERN KNOWLEDGE
+
+  Rt. Hon. H. A. L. Fisher, M.A., F.B.A.
+  Prof. Gilbert Murray, Litt.D., LL.D., F.B.A.
+  Prof. J. Arthur Thomson, M.A., LL.D.
+
+
+  _For list of volumes in the Library see end of book._
+
+  THE MAKING OF THE NEW TESTAMENT
+
+  _By_ BENJAMIN W. BACON D.D.
+
+  PROFESSOR OF NEW CRITICISM AND EXEGESIS IN YALE UNIVERSITY
+
+  [Illustration]
+
+  THORNTON BUTTERWORTH LIMITED 15 BEDFORD STREET, LONDON, W.C.2
+
+_First Impression September 1912 - All Rights Reserved_
+
+MADE AND PRINTED IN GREAT BRITAIN
+
+
+
+
+CONTENTS
+
+
+  PART I
+
+  CANONIZATION AND CRITICISM
+
+   CHAP.                                                       PAGE
+
+      I INSPIRATION AND CANONIZATION                              7
+
+     II THE REACTION TO CRITICISM                                33
+
+
+    PART II
+
+    THE LITERATURE OF THE APOSTLE
+
+    III PAUL AS MISSIONARY AND DEFENDER OF THE GOSPEL OF GRACE   56
+
+     IV PAUL AS PRISONER AND CHURCH FATHER                       83
+
+      V PSEUDO-APOSTOLIC EPISTLES                               104
+
+
+    PART III
+
+    THE LITERATURE OF CATECHIST AND PROPHET
+
+     VI THE MATTHÆAN TRADITION OF THE PRECEPTS OF JESUS         128
+
+    VII THE PETRINE TRADITION. EVANGELIC STORY                  154
+
+   VIII THE JOHANNINE TRADITION. PROPHECY                       185
+
+
+   PART IV
+
+   THE LITERATURE OF THE THEOLOGIAN
+
+     IX THE SPIRITUAL GOSPEL AND EPISTLES                       206
+
+      X EPILOGUES AND CONCLUSIONS                               233
+
+        BIBLIOGRAPHY                                            251
+
+        INDEX                                                   255
+
+
+
+
+THE MAKING OF THE NEW TESTAMENT
+
+PART I
+
+
+CANONIZATION AND CRITICISM
+
+CHAPTER I
+
+INSPIRATION AND CANONIZATION
+
+
+The New Testament presents the paradox of a literature born of protest
+against the tyranny of a canon, yet ultimately canonized itself through
+an increasing demand for external authority. This paradox is full of
+significance. We must examine it more closely.
+
+The work of Jesus was a consistent effort to set religion free from the
+deadening system of the scribes. He was conscious of a direct, divine
+authority. The broken lights of former inspiration are lost in the full
+dawn of God's presence to His soul.
+
+So with Paul. The key to Paul's thought is his revolt against legalism.
+It had been part of his servitude to persecute the sect which claimed to
+know another Way besides the "way"[1] of the scribes. These Christians
+signalized their faith by the rite of baptism, and gloried in the sense
+of endowment with "the Spirit." Saul was profoundly conscious of the
+yoke; only he had not drammed that his own deliverance could come from
+such a quarter. But contact with victims of the type of Stephen, men
+"filled with the Spirit," conscious of the very "power from God" for
+lack of which his soul was fainting, could not but have some effect. It
+came suddenly, overwhelmingly. The real issue, as Saul saw it, both
+before and after his conversion, was Law _versus_ Grace. In seeking
+"justification" by favour of Jesus these Christians were opening a new
+and living way to acceptance with God. Traitorous and apostate as the
+attempt must seem while the way of the Law still gave promise of
+success, to souls sinking like Saul's deeper and deeper into the
+despairing consciousness of "the weakness of the flesh" forgiveness in
+the name of Jesus might prove to be light and life from God. The
+despised sect of 'sinners' whom he had been persecuting expressed the
+essence of their faith in the doctrine that the gift of the Spirit of
+Jesus had made them sons and heirs of God. If the converted Paul in turn
+is uplifted--"energized," as he terms it--even beyond his
+fellow-Christians, by the sense of present inspiration, it is no more
+than we should expect.
+
+    Footnote 1: _Tarik_, i. e. "way," is still the Arabic term for a
+    sect, and the Rabbinic term for legal requirement is _halacha_, i.
+    e. "walk."
+
+Paul's conversion to the new faith--or at least his persistent
+satisfaction in it--will be inexplicable unless we appreciate the logic
+of his recognition in it of an inherent opposition to the growing
+demands of legalism. Jesus had, in truth, led a revolt against mere
+book-religion. His chief opponents were the scribes, the devotees and
+exponents of a sacred scripture, the Law. "Law" and "Prophets," the one
+prescribing the conditions of the expected transcendental Kingdom, the
+other illustrating their application and guaranteeing their promise,
+constituted the canon of the synagogue. Judaism had become a religion of
+written authority. Jesus set over against this a direct relation to the
+living Father in heaven, ever presently revealed to the filial spirit.
+The Sermon on the Mount makes the doing of this Father's will something
+quite other than servitude to written precepts interpreted by official
+authority and imposed under penalty. It is to be self-discipline in the
+Father's spirit of disinterested goodness, as revealed in everyday
+experience.
+
+Even the reward of this self-discipline, the Kingdom, Jesus did not
+conceive quite as the scribes. To them obedience in this world procured
+a "share in the world to come." To Him the reward was more a matter of
+being than of getting. The Kingdom was an heir-apparency; and,
+therefore, present as well as future. It was "within" and "among" men as
+well as before them. They should seek to "be sons and daughters of the
+Highest," taking for granted that all other good things would be
+"added." So Jesus made religion live again. It became spiritual, inward,
+personal, actual.
+
+After John the Baptist's ministry to what we should call the
+'unchurched' masses, Jesus took up their cause. He became the "friend"
+and champion of the "little ones," the "publicans and sinners," the
+mixed 'people of the land' in populous, half-heathen, Galilee. The
+burdens imposed by the scribes in the name of 'Scripture' were accepted
+with alacrity by the typical Pharisee unaffected by Pauline misgivings
+of 'moral inability.' To "fulfil all righteousness" was to the Pharisee
+untainted by Hellenism a pride and delight. To the "lost sheep of
+Israel" whom Jesus addressed, remote from temple and synagogue, this
+"righteousness" had proved (equally as to Paul, though on very different
+grounds) "a yoke which neither we nor our fathers were able to bear."
+Jesus "had compassion on the multitude." To them he "spoke with
+authority"; and yet "not as the scribes" but as "a prophet." When
+challenged by the scribes for his authority he referred to "the baptism
+of John," and asked whether John's commission was "from heaven, or of
+men." They admitted that John was "a prophet." Those who give utterance
+after this manner to the simple, sincere conviction of the soul, voicing
+its instinctive aspiration toward "the things that be of God," are
+conscious that they speak not of themselves.
+
+Jesus, it is true, was no iconoclast. He took pains to make clear that
+if he superseded what they of old time had taught as righteousness, it
+was in the interest of a higher, a "righteousness of God." If he
+disregarded fasts and sabbaths, it was to put substance for form, end
+for means. "Judgment, mercy, and good faith" should count more than
+tithes from "mint and anise and cummin." He echoed what John the Baptist
+had taught of repentance and forgiveness. Hope should no longer be based
+on birth, or prerogative, or ritual form, but on the mercy of a God who
+demands that we forgive if we would be forgiven. Such had been, however,
+the message not of John only, but of all the prophets before him: "I
+will have mercy, and not sacrifice." Jesus taught this higher, inward,
+righteousness; but not merely as John had done. John had said: Repent,
+for the wrath of God is at hand. Jesus said: Repent, for the forgiveness
+of God is open. The Father's heart yearns over the wayward sons. Jesus
+preached the nearness of the Kingdom as "glad tidings to the poor"; and
+among these "poor" were included even aliens who put "faith" in the God
+of Abraham.
+
+The new Way started from the same Scripture as that of the scribes, but
+it tended in an opposite direction. Theirs had been gradually developing
+in definiteness and authority since the time of Ezra; yes, since Josiah
+had made formal covenant, after the discovery of "the book of the Law"
+in the temple, pledging himself and his people to obedience. As with
+many ancient peoples, the codification of the ancient law had been
+followed by its canonization, and as the national life had waned the
+religious significance of the Law had increased. It was now declared to
+express the complete will of God, for an ideal people of God, in a
+renovated universe, whose centre was to be a new and glorified
+Jerusalem. The Exile interrupted for a time the process of formal
+development; but in the ecclesiastical reconstruction which followed in
+Ezra's time "the book of the Law" had become all the more supreme; the
+scribe took the place of the civil officer, the synagogue became local
+sanctuary and court-house in one, the nation became a church, Israel
+became 'the people of the book.'
+
+Legal requirement calls for the incentive of reward. We need not wonder,
+then, that the canon of the Law was soon supplemented by that of the
+writings of the Prophets, historical and hortatory. The former were
+considered to interpret the Law by showing its application in practice,
+the latter were valued for their predictive element. Law and Prophets
+were supplemented by Psalms, and elements from the later literature
+having application to the religious system. The most influential were
+the "apocalypses," or "revelations" of the transcendental Kingdom and of
+the conditions and mode of its coming. Scripture had thus become an
+embodiment of Israel's religion. It set forth the national law, civil,
+criminal, or religious; and the national hope, the Kingdom of God. Its
+custodian and interpreter was the 'scribe,' lawyer and cleric in one.
+The scribe held "the key of knowledge"; to him it was given to 'bind and
+loose,' 'open and shut.' Any preacher who presumed to prescribe a
+righteousness apart from 'the yoke of the Law,' or to promise
+forgiveness of sins on other authority, must reckon with the scribes. He
+would be regarded as seeking to 'take the Kingdom by violence.'
+
+Jesus' martyrdom was effected through the priests, the temple
+authorities; but at the instigation of the scribes and Pharisees. His
+adherents were soon after driven out from orthodox Judaism and subjected
+to persecution. This persecution, however, soon found its natural
+leadership, not among the Sadducean temple-priesthood, but among the
+devotees of the Law. It was "in the synagogues." From having been
+quasi-political it became distinctly religious. This persecution by the
+Pharisees is on the whole less surprising than the fact that so many of
+the Jewish believers should have continued to regard themselves as
+consistent Pharisees, and even been so regarded by their fellow-Jews. In
+reality Jewish Christians as a rule could see no incompatibility between
+average synagogue religion and their acceptance of Jesus as the man
+supernaturally attested in the resurrection as destined to return
+bringing the glory of the Kingdom. Jesus' idea of 'righteousness' did
+not seem to them irreconcilable with the legalism of the scribes; still
+less had they felt the subtle difference between his promise "Ye shall
+be sons and daughters of the Highest" and the apocalyptic dreams which
+they shared with their fellow-Jews. Saul the persecutor and Paul the
+apostle were more logical. In Gal. ii. 15-21 we have Paul's own
+statement of the essential issue as it still appeared to his clear mind.
+Average synagogue religion still left room for a more fatherly relation
+of God to the individual, in spite of the gradual encroachment of the
+legalistic system of the scribes. Men not sensitive to inconsistency
+could find room within the synagogue for the 'paternal theism' of Jesus,
+even if this must more and more be placed under the head of
+'uncovenanted mercies.' To Paul, however, the dilemma is absolute. One
+must trust either to "law" or "grace." Partial reliance on the one is to
+just that extent negation of faith in the other. The system of written
+precept permits no exception, tolerates no divided allegiance. If the
+canon of written law be the God-given condition of the messianic
+promise, then no man can aspire to share in the hope of Israel who does
+not submit unreservedly to its yoke. Conversely, faith is not faith if
+one seek to supplement it by the merit of "works of law."
+
+From this point of view the Jew who seeks forgiveness of sins by baptism
+"into the name of Jesus" must be considered an apostate from the Law. He
+acknowledges thereby that he is following another Way, a way of "grace,"
+a short-cut, as it were, to a share in Israel's messianic inheritance by
+the "favour" of a pretended Messiah. The same Paul who after his
+conversion maintains (Gal. ii. 21) that to seek "justification" through
+the Law makes the grace of God of none effect, must conversely have held
+before conversion that to seek it by "grace" of Jesus made the Law of
+none effect. Even at the time of writing the axiom still held: No
+resistance to the yoke of the Law, no persecution (Gal. v. 11).
+
+It is true, then, that the legalistic system of prescription and reward
+had developed--could develop--only at the expense of the less
+mechanical, more fatherly, religion of a Hosea or an Isaiah. Even
+scribes had admitted that the law of love was "much more than all whole
+burnt-offering and sacrifice." And the movement of the Baptist and of
+Jesus had really been of the nature of a reaction toward this older,
+simpler faith. The sudden revolt in Paul's own mind against the scribal
+system might not have occurred in the mind of a Pharisee unfamiliar with
+Greek ideas. But to some extent Paul's experience of the conflict of
+flesh and spirit, a 'moral inability' to meet the Law's demands _was_ a
+typical Christian experience, as Paul felt it to be. To him it became
+the basis of an independent gospel. To him the Cross and the Spirit
+imparted from the risen Messiah were tokens from God that the
+dispensation of Law is ended and a dispensation of Grace and Son ship
+begun. Without this Pauline gospel _about_ Jesus Christianity could
+never have become more than a sect of reformed Judaism.
+
+The teaching and martyrdom of Jesus had thus served to bring out a deep
+and real antithesis. Only, men who had not passed like Paul from the
+extreme of trust in legalism to a corresponding extremity of despair
+might be pardoned for some insensibility to this inconsistency. We can
+appreciate that James and Peter might honestly hold themselves still
+under obligation of the written law, even while we admit Paul's logic
+that any man who had once "sought to be justified in Christ" could not
+turn back in any degree to legal observance without being
+"self-condemned."
+
+Christianity may be said to have attained self-consciousness as a new
+religion in the great argument directed by Paul along the lines of his
+own gospel against Peter and the older apostles. Its victory as a
+universal religion of 'grace' over the limitations of Judaism was due to
+the common doctrine of 'the Spirit.' This was the one point of
+agreement, the one hope of ultimate concord among the contending
+parties. All were agreed that endowment with 'the Spirit' marks the
+Christian. It was in truth the great inheritance from Jesus shared by
+all in common. And Peter and James admitted that to deny that
+uncircumcized Gentiles had received the Spirit was to "contend against
+God."
+
+After Paul's death ecclesiastical development took mostly the road of
+the synagogue. The sense of the presence and authority of 'the Spirit'
+grew weaker, the authority of the letter stronger. From the outset even
+the Pauline churches, in ritual, order, observance, had followed
+instinctively this pattern. All continued, as a matter of course, to use
+the synagogue's sacred writings. Paul himself, spite of his protest
+against "the letter," could make no headway against his opponents, save
+by argument from 'Scripture.' He had found in it anticipations and
+predictions of his own Christian faith; but by an exegesis often only
+little less forced and fantastic than that of the rabbinic schools in
+which he had been trained. This was a necessity of the times. The
+reasoning, fallacious as it seems to-day, had appealed to and
+strengthened Paul's own faith, and was probably effective with others,
+even if the faith really rested on other grounds than the reasoning by
+which it was defended. The results of this biblicism were not all
+salutary. The claims of written authority were loosened rather than
+broken. Paul himself had found room enough within these defences for the
+religion of the Spirit; but a generation was coming with less of the
+sense of present inspiration. Dependence on past authority would be
+increased in this new generation in direct proportion to its sense of
+the superior 'inspiration' of the generation which had gone before. Paul
+is unhampered by even "the scriptures of the prophets" because in his
+view these take all their authority and meaning from "the Lord, the
+Spirit." Hence "where the Spirit of the Lord is, there is liberty." Only
+the remembered "word of the Lord" has authority for Paul beyond his own,
+even when he thinks that he also has the Spirit. With that exception
+past revelation is for Paul subordinate to present. But Paul's immediate
+disciple, the author of Hebrews, is already on a lower plane. This
+writer looks back to a threefold source of authority: God had spoken in
+former ages "by the prophets" and to the present "by a Son," but he
+looks also to an apostolic authority higher than his own: The word "was
+confirmed unto us by them that heard, God also bearing witness with
+them, both by signs and wonders, and by manifold powers, and by gifts
+of the Holy Ghost." Similarly the author of the Pastoral Epistles
+(90-100?) holds the "pattern of sound words" heard from Paul as a
+"sacred deposit," which is "guarded," rather than revealed, "by the Holy
+Spirit." The "sound words" in question are defined to be "the words of
+our Lord Jesus Christ." These, taken together with "the doctrine which
+is according to godliness," fix the standard of orthodoxy. To "Jude"
+(100-110?) the faith is something "once for all delivered to the
+saints." His message is: "Remember, beloved, the words spoken before by
+the apostles of our Lord Jesus Christ." Authority increases, the sense
+of the revealing Spirit decreases.
+
+It is long before the sense of present inspiration, both in word and
+work is lost; still longer before the recorded precepts of Jesus, the
+exhortations and directions of apostles, the visions of "prophets," come
+to take their place alongside the Bible of the synagogue as "writings of
+the new covenant." Melito of Sardis (_c._ 170) is the first to use this
+expression, and even in his case it does not bear the sense of a canon
+with definite limits. Tertullian (200-210) is the first to place a
+definite "New Testament" over against the Old. We must glance at some of
+the intermediate steps to appreciate this gradual process of
+canonization.
+
+At first there is no other 'Scripture' than the synagogue's. Clement of
+Rome (95) still uses only the Law and the Prophets (including certain
+apocrypha now lost) as his Bible. He refers to the precepts of Jesus
+(quoted as in Acts XX. 35 from oral tradition), with the same sense as
+Paul of their paramount authority, and bids the Corinthians whom he
+addresses give heed to what the blessed Apostle Paul had written to them
+"in the beginning of the gospel service," to warn them against
+factiousness. Nor has Clement yet lost the sense of direct inspiration;
+for he attaches to his own epistle, written in behalf of the church at
+Rome, the same superhuman authority claimed in Acts XV. 28 for the
+letter sent by the church at Jerusalem. If the Corinthians disregard the
+"words spoken by God through us" they will "incur no slight
+transgression and danger," for these warnings of a sister church are
+uttered in the name and by inspiration of the Holy Ghost. Still, Clement
+does not dream of comparing his authority, even when he writes as agent
+of the church, with that of "the oracles of the teaching of God," the
+"sacred Scriptures," the "Scriptures which are true, which were given
+through the Holy Ghost, wherein is written nothing unrighteous or
+counterfeit." He does not even rank his own authority with that of "the
+good apostles, Peter and Paul."
+
+Ignatius, bishop of Antioch, transported to Rome for martyrdom in
+110-117, employs a brief stay among the churches of Asia to exhort them
+to resist the encroachments of heresy by consolidation of church
+organization, discipline, strict obedience to the bishop. Ignatius, too,
+still feels the afflatus. His message, he declares with emphasis, was
+revealed to him, together with the occasion for it, directly from
+heaven. It was "the voice of God and not only of a man" when he cried
+out among the Philadelphians: "Give heed to the bishop, and the
+presbytery and deacons." Yet Ignatius cannot enjoin the Romans as Peter
+and Paul did. They were "apostles." He is "a convict." His inspiration,
+however undoubted, is of a lower order.
+
+Hermas, a 'prophet' of the same Roman church as Clement, though a
+generation later, is still so conscious of the superhuman character of
+his "Visions," "Parables," and "Mandates" that he gives them out for
+circulation as inspired messages of the Spirit; and this not for Rome
+alone. Clement, then apparently still living, and "the one to whom this
+duty is committed," is to send them "to foreign cities." In point of
+fact the _Shepherd_ of Hermas long held a place for many churches as
+part of the New Testament canon. Yet less than a generation after
+Hermas, the claim to exercise the gift of prophecy in the church was
+looked upon as dangerous if not heretical.
+
+In the nature of the case it was really impossible that the original
+sense of endowment with "the Spirit" should survive. Not only did the
+rapidly growing reverence for the apostles and the Lord open a chasm
+separating "the word of wisdom and the word of power" given to that age,
+from the slighter contemporary claims of miracle and revelation; the
+very growth and wide dissemination of the gospel message made
+standardization imperative. Before the middle of the second century
+Gnostic schism had swept nearly half the church into the vortex of
+speculative heresy. Marcion at Rome (_c._ 140) carried Pauline
+anti-legalism to the extreme of an entire rejection of the Old
+Testament. Judaism and all its works and ways were to be repudiated. The
+very God of Abraham, Isaac, and Jacob was declared other than, and
+ignorant of, the "heavenly Father" of Jesus. Against such vagaries there
+must be some historic standard. Even Marcion himself looked to the past,
+however recent, as the source of light, and since some written standard
+must be found, it was he, the heretic, who gave to Christianity its
+first canon of Christian writings. The Marcionite churches did away with
+the public reading of the Law and the Prophets, and could only put in
+their place "Gospel" and "Apostle." Not that Epistles, Gospels, and even
+'Revelations' were not also in use among the orthodox; but they are not
+yet referred to as 'Scripture.' Even gospels are treated merely as aids
+to the memory in transmitting the teaching of the Lord. This teaching
+itself is but the authoritative interpretation of Law and Prophets, and
+is in turn interpreted by the writings of the apostles.
+
+Marcion's 'Gospel' consisted of our Luke, expurgated according to his
+own ideas. His 'Apostle' contained the Epistles of Paul minus the
+Pastoral Epistles and a series of passages cancelled out from the rest
+as Jewish interpolations. This was the first Christian Bible distinct
+from 'the Scriptures' of the synagogue.
+
+Indirectly the growth of Gnostic heresy contributed still more to the
+increasing authority of apostolic and quasi-apostolic writings. One of
+its earliest and most obnoxious forms was called 'Doketism,' from its
+exaggeration of Paulinism into a complete repudiation of the historic
+Jesus, whose earthly career was stigmatized as mere 'phantasm'
+(_dokesis_). Doketism is known to us not only through description by
+orthodox opponents, but by a few writings of its own. It is the type of
+heresy antagonized in the Johannine Epistles (_c._ 100) and in those of
+Ignatius (110-117). Now Ignatius, as we have seen, relied mainly on
+church organization and discipline. The Pastoral Epistles (90-100),
+while they emphasize also "the form of healthful words, even the words
+of our Lord Jesus" take, on the whole, a similar direction. But 1st
+John, which relies far less than the Pastoral Epistles or Ignatius on
+mere church organization, is also driven back upon the life and teaching
+of Jesus as the historic standard. It _does_, therefore, make formal
+appeal to the sacred tradition in both its elements, but with a
+difference characteristic of the Pauline spirit. The redeeming life and
+death of Jesus are viewed as a manifestation of "the life, even the
+eternal life (of the Logos) which was with the Father and was manifested
+unto us" (the historic body of believers). Again Jesus' one "new
+commandment," the law of love, is the epitome of all righteousness.
+
+In his doctrine of Scripture as in many other respects the Johannine
+writer shows a breadth and catholicity of mind which almost anticipates
+the development of later ages. His task was in fact the adjustment of
+the developed Pauline gospel to a type of Christianity more nearly akin
+to synagogue tradition. This type had grown up under the name of Peter.
+On the question of the standard of written authority 'John'[2] leaves
+room for the freedom of the Spirit so splendidly set forth in the
+teaching and example of Jesus and Paul, while he resists the erratic
+licence of "those that would lead you astray." The result is a doctrine
+of historic authority in general, and of that of the Scriptures in
+particular, sharply differentiated from the Jewish, and deserving in
+every respect to be treated as the basis of the Christian. In a great
+chapter of his Gospel (John v.), wherein Jesus debates with the scribes
+the question of His own authority, the dialogue closes with a
+denunciation of them because they search the Scriptures with the idea
+that in them they have eternal life, that is, they treat them as a code
+of precepts, obedience to which will be thus rewarded. On the contrary,
+says Jesus, the Scriptures only "bear witness" to the life that is
+present in Himself as the incarnate, eternal, Word; "but ye will not
+come unto me that ye might have life."
+
+    Footnote 2: In using traditional names and titles such as "Luke,"
+    "John," "Matthew," "James," no assumption is made as to
+    authenticity. The designation is employed for convenience
+    irrespective of its critical accuracy or inaccuracy.
+
+In seeking the life behind the literature as the real revelation, the
+Johannine writer makes the essential distinction between Jewish and
+Christian doctrine. He stands between Paul, whose peculiar view was
+based on an exceptional personal experience, and the modern
+investigator, who can but treat all literary monuments and records of
+religious movements objectively, as data for the history and psychology
+of religion. If the student be devoutly minded the Scriptures will be to
+him, too, however conditioned by the idiosyncrasies of temporal
+environment and individual character, manifestations of "the life, even
+the eternal life, which was with the Father and was manifested unto us."
+
+But the Johannine writer was far deeper and more 'spiritual'[3] than the
+trend of his age. Ignatius' friend and contemporary, Polycarp, "the
+father of the Christians" of Asia, in his Epistle to the Philippians
+(110-117) urges avoidance of the false teachers who "pervert the sayings
+of the Lord to their own lusts, denying the (bodily) resurrection and
+judgment." But he has no better remedy than to "turn (probably in a
+somewhat mechanical way) to the tradition handed down from the
+beginning" and to study "the Epistles of Paul." The former process is in
+full application in Polycarp's later colleague, Papias of Hierapolis
+(_c._ 145?), who publishes a little volume entitled _Interpretation of
+the Sayings of the Lord_. It is based on carefully authenticated
+traditions of the 'apostles and elders,' especially a certain
+contemporary "Elder John" who speaks for the Jerusalem succession.
+According to Papias our two Greek Gospels of Matthew and Mark represent
+two apostolic sources, the one an Aramaic compilation of the Precepts of
+Jesus by Matthew, the other anecdotes of his "sayings and doings"
+collated from the preaching of Peter.
+
+    Footnote 3: The Fourth Gospel is thus characterized by Clement of
+    Alexandria, meaning that it had a deep symbolic sense.
+
+Grateful as we must be for Papias' efforts to authenticate evangelic
+tradition, since they are corroborated in their main results by all
+other ancient tradition as well as by critical study of the documents,
+it is noticeable how they stand in line with the tendencies of the age.
+Eusebius (325) characterizes the reign of Trajan (98-117) as a period
+when many undertook to disseminate in writing "the divine Gospels." One
+of our own evangelists, whose work must probably be referred to the
+beginning of this period, but is not mentioned by 'the Elder,' alludes
+to the same phenomenon. The apostles were gone. Hence to Luke[4] the
+question of "order" was a perplexity, as the Elder observes that it had
+already been to Mark. Soon after Luke and Papias comes Basilides with
+his _Exegetics_, probably based on Luke (120?), and Marcion (140), both
+engaged from their own point of view with the current questions of
+Jesus' teaching and ministry.
+
+    Footnote 4: See Footnote 3 above.
+
+Thus, at the beginning of the second century, the elements necessary to
+the formation of a New Testament canon were all at hand. They included
+the tradition of the teaching and work of Jesus, the letters of apostles
+and church leaders revered as given by authority of the Spirit and the
+visions and revelations of 'prophets.' Not only the elements were
+present, the irresistible pressure of the times was certain to force
+them into crystallization. The wonder is not that the canon should have
+been formed, but that it should have been delayed so long.
+
+For there were also resistant factors. Phrygia, the scene of Paul's
+first great missionary conquests, the immemorial home of religious
+enthusiasm, became the seat, about the middle of the second century, of
+a movement of protest against the church policy of consolidation and
+standardization. Montanus arose to maintain the persistence in the
+church of the gift of prophecy, tracing the succession in both the male
+and female line back to Silas the companion of Paul and the prophesying
+daughters of Philip the Evangelist. The 'Phrygians,' as they were
+called, naturally made much of the writings current in Asia Minor,
+especially the book of 'prophecy' attributed to 'John.' Theoretically
+indeed the church was unwilling to acknowledge the disappearance of this
+gift. To Hermas (130-140) and the _Teaching of the Twelve_ (120-130) it
+is still a "sin against the Spirit" to interrupt or oppose a prophet
+during his ecstatic utterance. On the other hand, the _Teaching_
+reiterates the apostolic warnings to "try the spirits," with
+prohibitions of specific excesses of the order. Moreover by the time of
+Montanus and the 'Phrygians' theoretical recognition of revelation
+through the prophets was rapidly giving way before the practical dangers
+inseparable from 'revelations' of this enthusiastic character, of which
+any member of the church, man or woman, ignorant or learned, lay or
+cleric, might be the recipient. The strict regulative control imposed by
+both Paul and John[5] upon this type of spiritual gift (1st Thess. v. 20
+f.; 1st Cor. xii. 3; xv. 29 f. 32; _cf._ 1st John iv. 1) was found
+to be doubly necessary in face of the disintegrating tendencies of the
+post-apostolic age, and after long debate and much protest the movement
+of Montanus was at last decreed heretical at Rome, though Irenæus (186)
+interceded for it, and Tertullian (210) became a convert.
+
+    Footnote 5: See Footnote 3 above.
+
+The history of this movement in the formative period of the New
+Testament canon explains why the "revelations of the prophets" obtained
+but scant recognition as compared with the "word of the Lord" and the
+"commandment of the apostles." Last of the three, in order of rank (1st
+Cor. xii. 28; Eph. iv. 11), last also to be codified in written form, we
+need not be surprised that our present New Testament retains but a
+single one of the once current books of 'prophecy.' For a time the
+_Shepherd_ of Hermas and the _Apocalypse of Peter_ rivalled the claims
+to canonicity of our own Revelation of John, but were soon dropped. Our
+own Apocalypse has suffered more opposition than any other New Testament
+writing, being still excluded from the canon in some branches of the
+church. Its precarious place at the end of the canon which we moderns
+have inherited from Athanasius (_ob._ 373) was due, in fact, far less to
+its author's vigorous assertions of authority as an inspired "prophet"
+(i. 1-3; xxii. 6-9, 18 f.) than to the claims to apostolicity put
+forward in the preface and appendix. For until the third century no one
+drammed of understanding the "John" of Rev. i. 4, 9 and xxii. 8
+otherwise than as the Apostle. Eusebius accordingly (325) is uncertain
+only as to whether the book should be classed in his first group of
+"accepted" writings, along with the Gospels and Pauline Epistles, or in
+the third as "spurious." If written by "some other John than the
+Apostle" he would not even honour it with a place in his second group of
+"disputed" books, along with Hebrews, James, Jude, and 2nd Peter.
+
+Thus at the end of the second century, while there was still much
+dispute (destined indeed to continue for centuries) as to the _limits_
+of the New Testament canon, there had in fact come to be a real
+canonical New Testament set over against the Old, as of equal, or even
+greater authority. The "word of the Lord," the "commandment of the
+apostles," and at last even the "revelations of the prophets," had
+successively ceased as living realities, and become crystallized into
+written form. They had been codified and canonized. The church had
+travelled the beaten track of the synagogue, and all the more rapidly
+from the example set before it. None of the early canons (_i. e._ lists
+of writings permitted to be read in the churches) coincides exactly, it
+is true, with the New Testament current among ourselves. The list of
+Athanasius is the first to give just our books. The Roman list of the
+Muratorian fragment (185-200) omits Hebrews, James and 2nd Peter, and
+gives at least a partial sanction to the _Apocalypse of Peter_. The
+lists of Origen (_ob._ 251) and Eusebius (325) vary as respects both
+inclusion and exclusion. All early authorities express a doubtful
+judgment regarding the outer fringe of minor writings such as James,
+Jude, 2nd Peter, 2nd and 3rd John. Even those of larger content, such as
+Hebrews and Revelation, if their apostolicity was questioned, remained
+subjects of dispute. But already by A.D. 200 the time had long since
+passed when any of the thirteen epistles bearing the name of Paul could
+be deemed open to question. Marcion's exclusion of the three Pastorals
+had been forgotten. Dispute of the four-gospel canon could still be
+tolerated; but not for long. Irenæus (186) has no patience with "those
+wretched men" who cannot see that in the nature of the case there should
+be neither more nor less than this number. But he explicitly refers to
+those who disputed "that aspect of the gospel which is called John's."
+There were, in fact, opponents of Montanism at Rome, who under the lead
+of Gaius had denied the authenticity of all the writings attributed to
+John, including the Gospel itself. But even those of the orthodox who
+were willing enough to reject Revelation, with its now unfashionable
+eschatology, agreed that Gaius' attack upon the fourth Gospel was too
+radical. The small body who continued for a few generations to resist
+the inclusion of any of the Johannine writings in the canon remained
+without influence, and were ultimately forgotten. The 'catholic'[6]
+church had repudiated heresy, standardized the faith, and confined its
+recognized historic expression to a 'canon' of New Testament Scripture.
+
+    Footnote 6: Catholic is here used in its etymological sense of
+    "general" or universal. We shall have occasion to apply the term in
+    a more limited sense hereafter.
+
+
+
+
+CHAPTER II
+
+THE REACTION TO CRITICISM
+
+
+The consolidated 'catholic' church of the third century might seem, so
+far as its doctrine of Scripture was concerned, to have retraced its
+steps to a standpoint corresponding completely to that of the synagogue.
+Only, the paradox still held that the very writings canonized were those
+supremely adapted to evoke a spirit of resistance to the despotism of
+either priest or scribe. The Protestant Reformation was a revolt against
+the former, and it is noticeable how large a part was played by the New
+Testament doctrine of the 'Spirit' in this struggle of spiritual
+democracy against hierocratic tyranny. Paul's Epistle to the Galatians
+became Luther's Palladium.
+
+But the post-Reformation dogmatists took fright at their own freedom.
+The prediction of the Romanists that repudiation of traditional
+authority in its ecclesiastical embodiment would result in internecine
+schism and conflict seemed on the point of being realized. The
+theological system-makers, like their predecessors of the post-apostolic
+age, could see no way out but to throw all their weight on a past
+inspiration assumed to be without error. The canonical books were
+declared to furnish an infallible rule of faith and practice.
+
+It was in the sincere desire to meet the requirements of this theory
+that the science of criticism grew up. In the earlier days it did not
+venture for the most part beyond what is known as 'textual' criticism.
+For a doctrine of inerrancy is manifestly unserviceable until errors of
+transmission have been eliminated. Textual criticism set itself to this
+task, asking the question: As between the various readings found in
+different New Testament manuscripts, which is original? Unfortunately,
+to meet the logical requirement the critic, if not backed like those of
+Rome by a papal guarantee, must himself be infallible. The inevitable
+result of this attempt, begun in the sincerest spirit of apologetics,
+was to prove that an infallible text is hopelessly unattainable. Textual
+criticism is indispensable; but as the servant of apologetics it is
+foredoomed to failure.
+
+The variation of the manuscripts was not the only obstacle to biblical
+infallibility. To say nothing of differences of interpretation there was
+the question of the canon. Either the decision of the 'catholic' church
+must be accepted as infallible, or scholarship must undertake a
+'criticism of the canon' to defend the current list of "inspired" books.
+A 'higher' criticism became necessary if only to vindicate the church's
+choice on historical grounds. Roman Catholics like Simon, whose
+_Critical History_ of the Biblical books appeared in 1689-1695, could
+reopen the question with impunity. Those who based their authority on
+the infallibility of Scripture alone could not meet the challenge
+otherwise than as Michælis did in his _Introduction to the Divine
+Writings of the New Testament_ (1750-1780). Michælis undertook a
+historical inquiry into the circumstances of origin of each of the
+canonical books, with the object of proving each to be in reality what
+tradition declared. The twenty-seven commonly accepted were supposed to
+have been either written by apostles, or at least so super-intended and
+guaranteed by them, as to cover all with the ægis of an infallibility
+not conceded to the post-apostolic age. Scholarship in the harness of
+apologetics again found its task impracticable. Michælis himself
+confessed it "difficult" to prove authenticity in cases like that of the
+Epistle of Jude. Conceive the task as the scientific vindication of a
+verdict rendered centuries before on unknown grounds, but now deprived
+of official authority, and it becomes inevitably hopeless. Can it be
+expected that doctors will not disagree on the authenticity or
+pseudonymity of 2nd Peter, who always have disagreed on this and similar
+questions, and have just admitted failure to agree in the matter of
+text?
+
+For half a century criticism seemed lost in the slough of mere
+controversy over the (assumed) infallible text, and the (assumed)
+infallible canon. Apologists fought merely on the defensive,
+endeavouring to prove that men whose fallibility was admitted had
+nevertheless pronounced an infallible verdict on the most difficult
+subjects of literary and historical inquiry. Critics had an easy task in
+showing that the church's theory of inspiration and canonicity was
+incorrect; but made no progress toward a constructive explanation of the
+religious, or even the historical, significance of the literature. Real
+progress was made only when criticism left off the attempt either to
+establish or disestablish a 'received' text, or an 'authorized' canon,
+and became simply an instrument in the hand of the historian, as he
+seeks to trace to their origins the ideas the church enshrined in her
+literature because she found them effective in her growth.
+
+For the great awakening in which New Testament criticism 'found itself'
+as a genuine and indispensable branch of the history of religion, we are
+largely indebted to the eminent church historian, Ferdinand Christian
+Baur (_ob._ 1860). Baur gathered up the fragmentary results of a
+generation of mere negation, a war of independence against the tyranny
+of dogmatic tradition, and sought to place the New Testament writings in
+their true setting of primitive church history. His particular views
+have been superseded. Subsequent study has disproved many of his
+inferences, and brought from friend and foe far-reaching modifications
+to his general theory. But, consciously or not, Baur, in making
+criticism the hand-maid of history, was working in the interest of that
+constructive, Christian, doctrine of inspired Scripture which an ancient
+and nameless teacher of the church had described as "witness" to the
+Life, "even the eternal life, which was with the Father," and is in man,
+and has been manifested in the origin and historical development of our
+religion.
+
+The Reformation had been a revolt against the despotism of the priest;
+this was a revolt against the despotism of the scribe.
+
+Baur gave scant--too scant--consideration to early tradition, making his
+results unduly negative. None of the New Testament books are dated; few
+besides the Pauline Epistles embody even an author's name; and these
+few, 1st and 2nd Peter, James, Jude and Revelation, were (1st Peter
+alone excepted) just those which even the canon-makers had classified as
+doubtful, or spurious. Not even a Calvin would support the authenticity
+of 2nd Peter, a Luther had denied the value of James and Revelation. It
+had been an easy task for 'criticism of the canon' to show that those
+who determined its content had not been actuated by considerations of
+pure science. Those books secured admission which were most widely
+current as ancient and trustworthy, and whose orthodoxy met the
+standards of the time. Those were disputed, or rejected, which were less
+widely current, or unorthodox, or could establish no direct relation to
+an apostle. It was proper for the critic, once his aim had become not
+apologetic but historical, to drop once for all the question whether the
+canon-makers' selection--made not for scientific, but for religious
+purposes--is good, bad or indifferent. The time had come for him to
+apply the available evidence to his own scientific question: What
+relation do these several writings bear to the development of
+Christianity? It remained to be seen whether he could offer constructive
+evidence more convincing than tradition.
+
+The latest date to which an undated, or disputed, writing can be
+assigned is that when the marks of its employment by others, or
+influence upon them, become undeniable. This is termed the 'external'
+evidence. The earliest date, conversely, is that to which we are brought
+down by references in the book itself to antecedent and current events,
+and writings, or by undeniable marks of their influence. This is termed
+the 'internal' evidence. Counting tradition as part of the external
+evidence, modern scientific criticism is able to fix within a few
+decades the origin of all the New Testament writings, without incurring
+opposition even from the apologist. No scholar now dreams of adopting
+any other method of proof, whatever his doctrinal proclivities. The
+overwhelming majority are agreed that the period covered, from the
+earliest Pauline Epistles to the latest brief fulminations against
+Gnostic Doketism and denial of 'resurrection and judgment,' is included
+in the century from A.D. 50 to 150.
+
+Baur's conception of the course of events in this momentous century has
+been described as a theory of historical progress by fusion of opposites
+in a higher unity. The Hegelian scheme of thesis, antithesis and
+synthesis had in fact some justification in the recognized phenomena of
+the development of Christianity. It had sprung from Judaism, overcoming
+the particularism of that still nationalistic faith by the sense of its
+mission to the world at large. The conflict acknowledged in all the
+sources and most vividly reflected in the great Epistles of Paul to the
+Galatians, Corinthians and Romans, a conflict between those who
+conceived Christianity as a universal religion, and those who looked
+upon it as only a reformed, spiritualized and perfected Judaism, was the
+characteristic phenomenon of the first or apostolic age. It was the
+struggle of the infant faith against its swaddling bands. The critical
+historian is compelled to estimate all later, anonymous, accounts of
+this development in the light of the confessedly earlier, and
+indubitably authentic records, the four great Epistles of Paul; for
+these simply reflect the actual conditions, and are not affected by the
+later disposition to idealize the story. Thesis and antithesis were
+therefore really in evidence at the beginnings.
+
+Equal unanimity prevailed as to the close of the period in question. In
+A.D. 150 to 200, Christianity was solidifying into the 'catholic'
+church, rejecting extremes of doctrine on both sides, formulating its
+'rule of faith,' determining its canon, centralizing administrative
+control. It had thrown off as heretical upon the extreme left Marcion
+and the Gnostics, who either repudiated the Jewish scriptures
+altogether, or interpreted them with more than Pauline freedom. On the
+extreme right it had renounced the unprogressive Ebionites of Palestine,
+still unreconciled to Paul, and insistent on submission to the Law for
+Jew and Gentile, as the condition of a 'share in the world to come.'
+What could be imagined as to the course of events in the intervening
+century of obscurity? Must it not have witnessed a progressive
+divergence of the extremes of Paulinists and Judaizers, coincidently
+with a rapprochement of the moderates from the side of Peter and that of
+Paul respectively? Baur's outline seemed thus to describe adequately the
+main course of events. He relied upon internal evidence to determine the
+dates of the disputed writings and their relation to it. But 'criticism
+of the canon' in Baur's own, and in the preceding generation, had come
+to include among the writings of doubtful date and authenticity not only
+those disputed in antiquity, and the anonymous narrative books, but also
+1st Peter and the minor Epistles of Paul. Nothing strictly apostolic was
+left save the four great Epistles of Paul.
+
+The theory of Baur and the Tübingen school (for so his followers came to
+be designated) was broadly conceived and ably advocated. In two vital
+respects it has had permanent influence. (1) Criticism, as already
+noted, has ceased to be mere debate about text and canon, and concerns
+itself to-day primarily with the history of Christian ideas as embodied
+in its primitive literature. Its problem is to relate the New Testament
+writings, together with all other cognate material, to the history of
+the developing religion from its earliest traceable form in the greater
+Pauline Epistles to where it emerges into the full light of day toward
+the close of the second century. (2) Again, Baur's outline of the
+process through which the nascent faith attained to full
+self-consciousness as a world-religion required correction rather than
+disproof. It was a grievous mistake to identify Peter, James, and John
+with those whom Paul bitterly denounces as Judaizing "false brethren,"
+"super extra apostles," "ministers of Satan." It was a perversion of
+internal evidence to reject as post-Pauline the Epistles of the later
+period such as Philippians and Colossians, on the ground that Paul
+himself did not live to participate in the second crisis, the defence of
+his doctrine against perversion on the side of mystical, Hellenistic
+theosophy. The great Epistles written under the name of Paul from the
+period of his captivity are innocent of reference to the developed
+Gnostic systems of the second century. They antagonize only an incipient
+tendency in this direction.
+
+But while the transition of A.D. 50-150 was both deeper and more complex
+than Baur conceived, the transfer of the gospel during that century from
+Jewish to Gentile soil is really the great outstanding fact, against
+which as a background the literature must be read; and the initial stage
+of the process is marked by the controversy of Paul with the Galilean
+apostles. What we must call, in distinction from Paulinism, 'apostolic'
+Christianity is well represented in the Book of Acts. Paul's writings
+show that he felt himself and his churches to represent an independent
+type of Christianity in all respects equal to the 'apostolic,' the
+problem being unification of the two. Now it is axiomatic that the
+investigator must proceed from the relatively known and determinable to
+the unknown and disputable. Accordingly it is in reality from the
+Epistolary literature of the church, in particular the greater Pauline
+Epistles, that he must take his start. As a source for our understanding
+of the development of the life of the church the Literature of the
+Apostle, directly participant in the conflicts and issues of the times,
+even if in its later elements of doubtful or pseudonymous authorship,
+takes precedence as a whole over the Literature of the Catechist, with
+its later and more or less idealized narration, exemplified in the Book
+of Acts.
+
+Modern criticism acknowledges, then, its indebtedness to the Tübingen
+school for a clearer definition of both its task and method, by
+concentrating attention upon the contrast between the Petrine and the
+Pauline conception of 'the gospel.' Still it must be admitted that most
+of the inferences first drawn have since been overthrown. In their
+chronological scheme of the New Testament writings the Tübingen critics
+under-estimated the force of the external evidences (including early
+tradition) and misinterpreted the internal. New discovery and more
+careful study of literary relations have inverted Baur's views as to
+dates of the Johannine writings. Four of these (the Gospel and three
+Epistles) are anonymous. Baur's date for these has been forced back by
+no less than half a century. The fifth (Revelation) bears the name of
+John, but was hotly disputed as pseudonymous in the second century, and
+even by its supporters was dated so late as "the end of the reign of
+Domitian" (95). The Tübingen school placed Revelation thirty years
+earlier, and attributed it to the Apostle. Modern criticism emphatically
+reverts to the ancient date, and regards the book as pseudonymous, or as
+written by "some other John."
+
+Again the relative dates of the Synoptic writings (Matthew, Mark,
+Luke-Acts) were inverted by the Tübingen critics, primarily through
+wrong application of their theory of doctrinal development; secondarily,
+and as a consequence, through misinterpretation of the intricate
+literary relationships. Present-day criticism considers it established
+that Mark is the oldest of the three, taken up by each of the other two.
+There is almost equal unanimity in regarding the discourse material
+common to Matthew and Luke and variously combined by each with Mark, as
+independently drawn by them from the book of the "Precepts of the Lord,"
+reported by Papias to have been compiled by Matthew "in the Hebrew (_i.
+e._ Aramaic) tongue." Tübingen gospel criticism is thus almost entirely
+set aside, in favour of the so-called 'Two-document' theory.
+
+So with the Pauline Epistles of the second period. Doubt still clings to
+Ephesians. It had been treated by some as pseudo-Pauline even before the
+time of Baur; but Baur's own followers soon receded from his extreme
+application of his theory to the internal evidence of Philippians,
+Colossians and Philemon. It became evident that Paul's "gospel"
+included something more than the mere antithesis of Law and Grace. He
+had other opponents than the Judaizers, and had to defend his doctrine
+against perversion by Grecizing mystics as well as against opposition by
+Pharisaic legalists.
+
+Two generations of research and controversy have greatly advanced the
+cause of constructive criticism. Hand in hand with a more accurate
+dating of the literature, secured through more impartial judgment of
+both the external and internal evidence, there has gone a reconstruction
+of our conception of the course of events. The tendencies in the early
+church were not two only, but four; corresponding, perhaps, to those
+rebuked by Paul at Corinth, which called themselves by the names
+respectively of Peter, of Paul, of Apollos and of Christ. It seems
+probable from the bitterness with which in 2nd Cor. x. 7 Paul denounces
+the man who says, "I am of Christ," that this party-cry was employed in
+the sense of following the example of Jesus as respects obedience to the
+Law (for even Paul acknowledged that Christ had been "made a minister of
+the circumcision for the truth of God"). If so, the Corinthian
+"Christ-party" may be identified with those "ministers of the
+circumcision" who denied both the apostleship and the gospel of Paul. At
+all events those "of Cephas" were relatively harmless. They may be
+identified with the so-called 'weak' of Romans, for whose scruples on
+the score of 'pollutions of idols' Paul demands such consideration both
+at Corinth and at Rome. His own adherents both at Corinth (those 'of
+Paul') and at Rome (the 'strong') are to follow his example not merely
+in recognizing that: "No idol is anything in the world," that "there is
+nothing unclean of itself," and that "all things are lawful." It is to
+be followed also in recognizing the limitations of this liberty. Limits
+are imposed among other things by the scruples of others, so that Paul
+himself becomes "as under the Law" when among Jews, though "as without
+the Law" among the Gentiles. The "weak" are to be resisted only when the
+admission of themselves or their claims would lead to "doubtful
+disputations," or to a rebuilding of walls of separation that had been
+torn down through faith in Christ. Galatians sounds the battle-cry of
+endangered liberty. Corinthians (and Romans in still higher degree)
+shows the magnanimity of the victor.
+
+Whether it be possible to identify those "of Apollos" at Corinth with
+the beginnings of that Hellenistic perversion of the Pauline gospel into
+a mystical theosophy which afterwards passed into Gnosticism may be left
+an open question. At least we have come to see that the conditions of
+the church's growth were far more complex than Baur imagined. In
+particular it is necessary to distinguish four different attitudes on
+the single question of the obligation of the Law. There were (1)
+Judaizers who insisted on complete submission to the Law as the
+condition of salvation, for both Jews and Gentiles; (2) imitators of
+Cephas, who considered believers of Jewish birth to be "under the Law,"
+but asked of Gentiles only such consideration for it as the special
+conditions seemed to require; (3) Paulinists, who held that neither Jews
+nor Gentiles are under the law, yet felt that consideration should be
+shown for the scrupulous when asked not as of right, but as of charity;
+(4) radicals, who recognized no limits to their freedom save the one new
+commandment.
+
+But while conflict first broke out over the mere concrete question of
+Gentile liberty, the real distinction of Paul's gospel from that of the
+older apostles was far deeper. The question as Tübingen critics
+conceived it concerned primarily the _extent_ of the gospel message,--to
+how large a circle was it offered? Modern criticism has come to see that
+the difference was in higher degree a difference of _quality_. Paul's
+whole message of redemption through the cross and resurrection started
+from other premises than those of the Galilean apostles, and was
+conceived in other terms. For this reason it leads over to a new
+Christology. In short, the transition of Christianity from its Jewish to
+its Gentile form is not a mere enlargement of its field by the abolition
+of particularistic barriers. The background we must study for the
+understanding of it is not so much mere contemporary history as the
+contemporary history _of religion_. The development from the Petrine
+gospel broadly characteristic of the Synoptic writings, through the
+Pauline Epistles to that of the Johannine writings, is a transition from
+Hebrew to Hellenistic conceptions of what redemption is, and how it is
+effected. Modern criticism expresses the contrast in its distinction of
+the gospel _of_ Jesus from the gospel _about_ Jesus.
+
+In the case of both Paul and his predecessors in the faith there is a
+common starting-point. It was the doctrine that God had raised Jesus
+from the dead and exalted Him as Christ and Lord to the throne of glory.
+Its proofs were the ecstatic phenomena of the Spirit, those strange
+manifestations of 'prophecy,' 'tongues,' and the like in the Christian
+assembly. The inference from this resurrection faith for an apostle of
+the Galilean group was that he must "teach all men everywhere to observe
+all things whatsoever Jesus had commanded." Jesus had been raised up in
+Israel as the Prophet like unto Moses; His apostle must repeat the
+remembered word of commandment and the word of promise. He will have an
+authority derived from the manifestations of signs and wonders. These
+had accompanied Jesus' own career, and now, by grace of His endowment of
+His disciples with the Spirit, they will be repeated by their hands.
+The 'apostolic' gospel is thus primarily historical. The Pauline gospel
+centres at the other pole of religious conviction. It is primarily
+psychological. For Paul the immediate effect of the revelation of God's
+Son "in" him is an irresistible impulse to relate his own soul's
+experience. The gospel he preaches is not so much what Jesus did or said
+while on earth, as what God has done, and is still doing, through the
+"life-giving Spirit" which emanates from the risen Lord. Signs and
+wonders are tokens of the Spirit, but are of less value, and must vanish
+before the "abiding" ethical gifts. Both the Pauline and the Petrine
+gospel start from the common confession of "Jesus as Lord"; but the
+Christology of the Synoptic literature is an Apotheosis doctrine,
+falling back on the historical Jesus. That of the Epistles is a doctrine
+of Incarnation, appealing to the eternal manifestation of God in man.
+For the former, Jesus was "a prophet mighty in deed and word," raised up
+by God in accordance with the promise of Deut. xviii. 18, to turn Israel
+to repentance. Having fulfilled this mission in rejection and martyrdom
+Jesus had been exalted to God's "right hand" and "made both Lord and
+Christ." He there awaits the subjection of all His enemies. In the
+Pauline gospel the story of Jesus is a drama of the supernal regions,
+wherein His earthly career as prophet, leader, teacher, sinks to the
+level of the merest episode. As pre-existent spirit, Jesus had been
+from the beginning of the creation "in the form of God." As the period
+of its consummation drew near He took upon Him human form, descended
+through suffering and death to the lowest depths of the underworld, and
+by divine power had reascended above all the heavens with their ranks of
+angelic hierarchies. Whether Paul himself so conceived it or not, the
+Gentile world had no other moulds of thought wherein to formulate such a
+Christology than the current myths of Redeemer-gods. The value of the
+individual _soul_ had at last been discovered, and men resorted to the
+ancient personifications of the forces of nature as deliverers of this
+new-found _soul_ from its weakness and mortality. The influential
+religions of the time were those of personal redemption by mystic union
+with a dying and resurrected "Saviour-god," an Osiris, an Adonis, an
+Attis, a Mithra. Religions of this type were everywhere displacing the
+old national faiths. The Gentile could not think of "the Christ"
+primarily as a Son of David who restores the kingdom to Israel, shatters
+the Gentiles like a potter's vessel and rules them with a rod of iron.
+If he employed this Old Testament language at all, it had for him a
+purely symbolical sense. The whole conception was spiritualized. The
+"enemies" overcome were the spiritual foes of humanity, sin and death;
+"redemption" was not the deliverance of Israel out of the hand of all
+their enemies, that (together with all afar off that call upon the name
+of this merciful God) they may "serve Him in holiness and righteousness
+all their days." It was the rescue of the sons of Adam out of the
+bondage to evil Powers incurred through inheritance of Adam's sinful
+flesh. This had been the tendency already of Jewish apocalypse. The
+starting-point of Paul's own conceptions was not Israel's bondage in
+Egypt, but a conception already tinged, like the late book of Jewish
+philosophy called the Wisdom of Solomon, with the Stoic conception of
+'flesh' as prison-house of 'spirit,' already inflamed, like the
+contemporary Jewish apocalypses of Esdras and Baruch, with lurid visions
+of a universe rescued by superhuman power from a thraldom of demonic
+rule. Paul's preaching was made real by his own experience. For if ever
+there was an evangelist whose message was his own experience, Paul was
+such. And Paul's experience was not so much that of a Palestinian Jew,
+as that of a Hellenist, one whose whole idea of 'redemption' has been
+unconsciously universalized, individualized, and spiritualized, by
+contact with Greek and Hellenistic thought. Paul and the Galilean
+apostles were not far apart in their expectations of the future. Both
+stood gazing up into heaven. But for his authority Paul inevitably
+looked inwards, the Galilean apostles looked backwards.
+
+It is hopeless at the present stage of acquaintance with the history of
+religion, particularly the spread of the various 'mysteries' and
+religions of personal redemption in the early empire, to deny this
+contrast between the gospel of Paul and the gospel of "the apostles and
+elders at Jerusalem." It is shortsighted to overlook its significance in
+the transition of the faith. Whereas the Jewish-Christian had as its
+principal background the national history, more or less
+transcendentalized in the forms of apocalypse, Paul's had as its
+principal background the speculative mythology of the Hellenistic world,
+more or less adapted to the forms of Judaism. Only ignorance of the
+function of mythology, especially as then employed to express the
+aspiration of the soul for purity, life and fellowship with God, can
+make these mythologically framed religious ideas seem an inappropriate
+vehicle to convey Paul's sense of the significance of Jesus' message and
+life of "Son ship." They were at least the best expression those times
+and that environment could afford of the greater Kingdom God had
+proclaimed in the resurrection of the Christ, and was bringing to pass
+through the outpouring of His Spirit.
+
+Modern criticism must therefore recognize that the beginnings of our
+religion were not a mere enlargement of Judaism by abolition of the
+barriers of the Law, but a fusion of the two great streams of religious
+thought distinctive of the Jewish and the Hellenistic world in a higher
+unity. Alexander's hoped-for "marriage of Europe and Asia" was
+consummated at last in the field of religion itself. Denationalized
+Judaism contributed the social ideal: the messianic hope of a world-wide
+Kingdom of God. It is the worthy contribution of a highly ethical
+national religion. Hellenism contributed the individual ideal: personal
+redemption in mystic union with the life of God. It is a concept derived
+from the Greek's newly-awakened consciousness of a personality agonizing
+for deliverance out of the bondage of the material and transitory, alien
+and degrading to its proper life. The critic who has become a historian
+of ideas will find his study of the literature of the apostolic and
+post-apostolic age here widening out into a prospect of unsuspected
+largeness and significance. He will see as the two great divisions of
+his subject, (1) the gospel _of_ Jesus, represented, as we are told, in
+the first beginnings of literary development by an Aramaic compilation
+of the Precepts of the Lord by the Apostle Matthew, circulating possibly
+even before the great Pauline Epistles among the Palestinian churches;
+(2) the gospel _about_ Jesus, represented in the Pauline Epistles, and
+these based on their author's personal experience. It is a gospel of
+God's action "in Christ, reconciling the world." It interprets the
+personality of Jesus and his experience of the cross and resurrection
+as manifestations of the divine idea. The interpretation employs
+Hellenistically coloured forms of thought, and is forced to vindicate
+itself first against subjection to legalism, afterwards against
+perversion into an unethical, superstitious theosophy. But surely the
+doctrine _about_ Jesus, interpreting the significance of His person and
+work as the culmination of redemption through the indwelling of God in
+men and among men belongs as much to the essence of Christianity as the
+gospel of love and faith proclaimed _by_ Jesus.
+
+Besides these two principal types of gospel and their subordinate
+combinations the critical historian may see ultimately emerging a type
+of 'spiritual' gospel, growing upon Gentile soil, in fact, receiving its
+first literary expression in the early years of the second century at
+the very headquarters of the Pauline mission-field. This third type aims
+to be comprehensive of the other two. It is essentially a gospel about
+Jesus, though it takes the form for its main literary expression of a
+gospel preached by Jesus. The fourth evangelist is the true successor of
+Paul, though the conditions of the age compel him to go beyond the
+literary form of the Epistle and to construct a Gospel wherein both
+factors of the sacred tradition shall appear, the words and works, the
+Precepts and the Saving Ministry of Jesus. But it is in no mechanical or
+slavish sense that the fourth evangelist appeals to this supreme
+authority. He lifts the whole message above the level of mere baptized
+legalism, even while he guards it against the unbridled licence of
+Gnostic theosophy, applying to this purpose his doctrine of the
+Incarnate Logos. His basis is psychology as well as history. It is the
+Life which is the light of men, that life whose source is God, and which
+permeates and redeems His creation; even "the eternal Life which was
+with the Father and was manifested to us."
+
+In the critical grouping of our New Testament writings the Gospel and
+Epistles of John can occupy, then, no lesser place than that of the
+keystone of the arch.
+
+To sum up: the Literature of the Apostle owed its early development and
+long continuance among the Pauline churches of Asia Minor and Greece, to
+the impetus and example of Paul's apostolic authority. The Literature of
+the Teacher and Prophet, growing up around Jerusalem and its daughter
+churches at Antioch and Rome, came slowly to surpass in influence the
+"commandment of the apostles," as the church became more and more
+exclusively dependent upon it for the "teaching of the Lord." It was the
+function of the great "theologian" of Ephesus (as he came early to be
+called), linking the authority of both, to furnish the fundamental basis
+for the catholic faith.
+
+

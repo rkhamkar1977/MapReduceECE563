@@ -1,0 +1,1353 @@
+     the Project Gutenberg Literary Archive Foundation."
+
+- You provide a full refund of any money paid by a user who notifies
+     you in writing (or by e-mail) within 30 days of receipt that s/he
+     does not agree to the terms of the full Project Gutenberg-tm
+     License.  You must require such a user to return or
+     destroy all copies of the works possessed in a physical medium
+     and discontinue all use of and all access to other copies of
+     Project Gutenberg-tm works.
+
+- You provide, in accordance with paragraph 1.F.3, a full refund of any
+     money paid for a work or a replacement copy, if a defect in the
+     electronic work is discovered and reported to you within 90 days
+     of receipt of the work.
+
+- You comply with all other terms of this agreement for free
+     distribution of Project Gutenberg-tm works.
+
+1.E.9.  If you wish to charge a fee or distribute a Project Gutenberg-tm
+electronic work or group of works on different terms than are set
+forth in this agreement, you must obtain permission in writing from
+both the Project Gutenberg Literary Archive Foundation and Michael
+Hart, the owner of the Project Gutenberg-tm trademark.  Contact the
+Foundation as set forth in Section 3 below.
+
+1.F.
+
+1.F.1.  Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+public domain works in creating the Project Gutenberg-tm
+collection.  Despite these efforts, Project Gutenberg-tm electronic
+works, and the medium on which they may be stored, may contain
+"Defects," such as, but not limited to, incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other intellectual
+property infringement, a defective or damaged disk or other medium, a
+computer virus, or computer codes that damage or cannot be read by
+your equipment.
+
+1.F.2.  LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the "Right
+of Replacement or Refund" described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg-tm trademark, and any other party distributing a Project
+Gutenberg-tm electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees.  YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3.  YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+1.F.3.  LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from.  If you
+received the work on a physical medium, you must return the medium with
+your written explanation.  The person or entity that provided you with
+the defective work may elect to provide a replacement copy in lieu of a
+refund.  If you received the work electronically, the person or entity
+providing it to you may choose to give you a second opportunity to
+receive the work electronically in lieu of a refund.  If the second copy
+is also defective, you may demand a refund in writing without further
+opportunities to fix the problem.
+
+1.F.4.  Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you 'AS-IS' WITH NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+WARRANTIES OF MERCHANTIBILITY OR FITNESS FOR ANY PURPOSE.
+
+1.F.5.  Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of damages.
+If any disclaimer or limitation set forth in this agreement violates the
+law of the state applicable to this agreement, the agreement shall be
+interpreted to make the maximum disclaimer or limitation permitted by
+the applicable state law.  The invalidity or unenforceability of any
+provision of this agreement shall not void the remaining provisions.
+
+1.F.6.  INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg-tm electronic works in accordance
+with this agreement, and any volunteers associated with the production,
+promotion and distribution of Project Gutenberg-tm electronic works,
+harmless from all liability, costs and expenses, including legal fees,
+that arise directly or indirectly from any of the following which you do
+or cause to occur: (a) distribution of this or any Project Gutenberg-tm
+work, (b) alteration, modification, or additions or deletions to any
+Project Gutenberg-tm work, and (c) any Defect you cause.
+
+
+Section  2.  Information about the Mission of Project Gutenberg-tm
+
+Project Gutenberg-tm is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of computers
+including obsolete, old, middle-aged and new computers.  It exists
+because of the efforts of hundreds of volunteers and donations from
+people in all walks of life.
+
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg-tm's
+goals and ensuring that the Project Gutenberg-tm collection will
+remain freely available for generations to come.  In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg-tm and future generations.
+To learn more about the Project Gutenberg Literary Archive Foundation
+and how your efforts and donations can help, see Sections 3 and 4
+and the Foundation web page at http://www.pglaf.org.
+
+
+Section 3.  Information about the Project Gutenberg Literary Archive
+Foundation
+
+The Project Gutenberg Literary Archive Foundation is a non profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service.  The Foundation's EIN or federal tax identification
+number is 64-6221541.  Its 501(c)(3) letter is posted at
+http://pglaf.org/fundraising.  Contributions to the Project Gutenberg
+Literary Archive Foundation are tax deductible to the full extent
+permitted by U.S. federal laws and your state's laws.
+
+The Foundation's principal office is located at 4557 Melan Dr. S.
+Fairbanks, AK, 99712., but its volunteers and employees are scattered
+throughout numerous locations.  Its business office is located at
+809 North 1500 West, Salt Lake City, UT 84116, (801) 596-1887, email
+business@pglaf.org.  Email contact links and up to date contact
+information can be found at the Foundation's web site and official
+page at http://pglaf.org
+
+For additional contact information:
+     Dr. Gregory B. Newby
+     Chief Executive and Director
+     gbnewby@pglaf.org
+
+
+Section 4.  Information about Donations to the Project Gutenberg
+Literary Archive Foundation
+
+Project Gutenberg-tm depends upon and cannot survive without wide
+spread public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine readable form accessible by the widest
+array of equipment including outdated equipment.  Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States.  Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements.  We do not solicit donations in locations
+where we have not received written confirmation of compliance.  To
+SEND DONATIONS or determine the status of compliance for any
+particular state visit http://pglaf.org
+
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States.  U.S. laws alone swamp our small staff.
+
+Please check the Project Gutenberg Web pages for current donation
+methods and addresses.  Donations are accepted in a number of other
+ways including checks, online payments and credit card donations.
+To donate, please visit: http://pglaf.org/donate
+
+
+Section 5.  General Information About Project Gutenberg-tm electronic
+works.
+
+Professor Michael S. Hart is the originator of the Project Gutenberg-tm
+concept of a library of electronic works that could be freely shared
+with anyone.  For thirty years, he produced and distributed Project
+Gutenberg-tm eBooks with only a loose network of volunteer support.
+
+
+Project Gutenberg-tm eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the U.S.
+unless a copyright notice is included.  Thus, we do not necessarily
+keep eBooks in compliance with any particular paper edition.
+
+
+Most people start at our Web site which has the main PG search facility:
+
+     http://www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+﻿The Project Gutenberg EBook of The Man in Black, by Stanley J. Weyman
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+
+Title: The Man in Black
+
+Author: Stanley J. Weyman
+
+Illustrator: Wal Paget
+
+Release Date: March 28, 2012 [EBook #39295]
+
+Language: English
+
+
+*** START OF THIS PROJECT GUTENBERG EBOOK THE MAN IN BLACK ***
+
+
+
+
+Produced by Charles Bowen, from page scans provided by the
+Web Archive (University of Toronto)
+
+
+
+
+
+
+
+
+
+
+
+Transcriber's Notes:
+
+   1. Page scan source:
+      http://www.archive.org/details/maninblackillust00weymuoft
+      (University of Toronto)
+
+
+
+
+
+
+                           THE MAN IN BLACK
+
+
+
+
+
+
+[Illustration: "'IF YOU WANT ME TO--DRAW HER HOROSCOPE,' THE
+ASTROLOGER REPLIED" (_p_. 89).]
+
+
+
+
+
+
+                                 The
+                             Man in Black
+
+
+
+
+                                  BY
+                          STANLEY J. WEYMAN
+
+            _Author of "A Gentleman of France" "The Story
+                       of Francis Cludde" etc_.
+
+
+
+
+                            Illustrated by
+                      WAL PAGET AND H. M. PAGET
+
+
+
+
+                            SIXTH THOUSAND
+
+
+
+
+                     CASSELL AND COMPANY Limited
+                      _London Paris & Melbourne_
+                                 1894
+                         ALL RIGHTS RESERVED
+
+
+
+
+
+
+                              CONTENTS.
+
+
+   CHAPTER
+
+         I. The Fair at Fécamp.
+
+        II. Solomon Nôtredame.
+
+       III. Man and Wife.
+
+        IV. The House with Two Doors.
+
+         V. The Upper Portal.
+
+        VI. The Powder of Attraction.
+
+       VII. Clytæmnestra.
+
+      VIII. The Mark of Cain.
+
+        IX. Before the Court.
+
+         X. Two Witnesses.
+
+
+
+
+                        LIST OF ILLUSTRATIONS.
+
+
+   "'If you want me to draw her horoscope,' the astrologer replied."
+       Frontispiece
+
+   "The showman was counting his gains into his pouch."
+
+   "Jehan went trembling and found the hole."
+
+   "The astrologer rose slowly from his seat."
+
+   "Jehan leapt back with a shriek of pain."
+
+   "For a second the man in black stood breathless."
+
+   "'Madame! Madame de Vidoche, if you please!'"
+
+   "He watched her every motion."
+
+   "In a moment he was down, writhing on the floor."
+
+   "'Who stole him? Where has he been?'"
+
+   "They were carrying him."
+
+   "A man, half-naked, ... crawled on to the highroad."
+
+
+
+
+
+                          THE MAN IN BLACK.
+
+
+
+
+                              CHAPTER I.
+
+                         The Fair At Fécamp.
+
+
+"_I am Jehan de Bault, Seigneur of--I know not where, and Lord of
+seventeen lordships in the County of---I forget the name, of a most
+noble and puissant family, possessing the High Justice, the Middle,
+and the Low. In my veins runs the blood of Roland, and of my
+forefathers were three marshals of France. I stand here, the_----"
+
+It was the eve of All Saints, and the famous autumn horse-fair was in
+progress at Fécamp--Fécamp on the Normandy coast, the town between the
+cliffs, which Boisrosé, in the year '93, snatched for the Great King
+by a feat of audacity unparalleled in war. This only by the way,
+however; and that a worthy deed may not die. For at the date of this
+fair of which we write, the last day of October, 1637, stout Captain
+Boisrosé, whom Sully made for his daring Lieutenant-General of the
+Ordnance, had long ceased to ruffle it; the Great King had lain in his
+grave a score of years or more; and though Sully, duke and peer and
+marshal, still lived, an aged, formal man, in his château of Villebon
+by Chartres, all France, crouching under the iron hand of the
+Cardinal, looked other ways.
+
+The great snarled, biting at the hem of the red soutane. But that the
+mean and Jacques Bonhomme, the merchant and the trader, flourished
+under his rule, Fécamp was as good evidence this day as man could
+desire. Even old burghers who remembered Charles the Ninth, and the
+first glass windows ever seen in Fécamp outside the Abbey, could not
+say when the price of horses had been higher or the town more full.
+All day, and almost all night, the clatter of hoofs and babble of
+bargains filled the narrow streets; while hucksters' cries and
+drunkards' oaths, with all raucous sounds, went up to heaven like the
+smoke from a furnace. The _Chariot d'Or_ and the _Holy Fig_, haunts of
+those who came to buy, fairly hummed with guests, with nobles of the
+province and gay sparks from Rouen, army contractors from the Rhine,
+and dealers from the south. As for the _Dame Belle_ and the _Green
+Man_, houses that lower down the street had food and forage for those
+who came to sell, they strewed their yards a foot deep with straw, and
+saying to all alike, "Voilà, monsieur!" charged the full price of a
+bed.
+
+Beyond the streets it was the same. Strings of horses and ponies, with
+an army of grooms and chaunters, touts and cutpurses, camped on every
+piece of level ground, while the steeper slopes and hill-sides swarmed
+with troupes more picturesque, if less useful. For these were the
+pitches of the stilt-walkers and funambulists, the morris dancers and
+hobby-horses: in a word, of an innumerable company of quacks,
+jugglers, poor students, and pasteboard giants, come together for the
+delectation of the gaping Normans, and all under the sway and
+authority of the Chevalier du Guet, in whose honour two gibbets, each
+bearing a creaking corpse, rose on convenient situations overlooking
+the fair. For brawlers and minor sinners a pillory and a whipping-post
+stood handy by the landward gate, and from time to time, when a lusty
+vagrant or a handsome wench was dragged up for punishment, outvied in
+attraction all the professional shows.
+
+Of these, one that seemed as successful as any in catching and
+chaining the fancy of the shifting crowd consisted of three persons--a
+man, a boy, and an ape--who had chosen for their pitch a portion of
+the steep hill-side overhanging the road. High up in this they had
+driven home an iron peg, and stretching a cord from this to the top of
+a tree which stood on the farther edge of the highway, had improvised
+a tight-rope at once simple and effective. All day, as the changing
+throng passed to and fro below, the monkey and the boy might be seen
+twisting and turning and posturing on this giddy eminence, while the
+man, fantastically dressed in an iron cap a world too big for him, and
+a back- and breast-piece which ill-matched his stained crimson jacket
+and taffety breeches, stood beating a drum at the foot of the tree, or
+now and again stepped forward to receive in a ladle the sous and eggs
+and comfits that rewarded the show.
+
+He was a lean, middle-sized man, with squinting eyes and a crafty
+mouth. Unaided he might have made his living by cutting purses. But he
+had the wit to do by others what he could not do himself, and the luck
+to have that in his company which pleased all comers; for while the
+clowns gazed saucer-eyed at the uncouth form and hideous grimaces of
+the ape, the thin cheeks and panting lips of the boy touched the
+hearts of their mistresses, and drew from them many a cake and
+fairing. Still, with a crowd change is everything; and in the contest
+of attractions, where there was here a flying dragon and there a
+dancing bear, and in a place apart the mystery of Joseph of Arimathæa
+and the Sacred Fig-tree was being performed by a company that had
+played before the King in Paris--and when, besides all these raree
+shows, a score of quacks and wizards and collar-grinners with lungs of
+brass, were advertising themselves amid indescribable clanging of
+drums and squeaking of trumpets, it was not to be expected that a boy
+and a monkey could always hold the first place. An hour before sunset
+the ladle began to come home empty. The crowd grew thin. Gargantuan
+roars of laughter from the players' booth drew off some who lingered.
+It seemed as if the trio's run of success was at an end; and that, for
+all the profit they were still likely to make, they might pack up and
+be off to bed.
+
+But Master Crafty Eyes knew better. Before his popularity quite
+flickered out he produced a folding stool. Setting it at the foot of
+the tree with a grand air, which of itself was enough to arrest the
+waverers, he solemnly covered it with a red cloth. This done, he
+folded his arms, looked very sternly two ways at once, and raising his
+hand without glancing upwards, cried, "Tenez! His Excellency the
+Seigneur de Bault will have the kindness to descend."
+
+The little handful of gapers laughed, and the laugh added to their
+number. But the boy, to whom the words were addressed, did not move.
+He sat idly on the rope, swaying to and fro, and looked out straight
+before him, with a set face, and a mutinous glare in his eyes. He
+appeared to be about twelve years old. He was lithe-limbed, and burned
+brown by the sun, with a mass of black hair and, strange to say, blue
+eyes. The ape sat cheek by jowl with him; and even at the sound of the
+master's voice turned to him humanly, as if to say, "You had better
+go."
+
+Still he did not move. "Tenez!" Master Crafty Eyes cried again, and
+more sharply. "His Excellency the Seigneur de Bault will have the
+kindness to descend, and narrate his history. _Écoutez! Écoutez!
+mesdames et messieurs!_ It will repay you."
+
+This time the boy, frowning and stubborn, looked down from his perch.
+He seemed to be measuring the distance, and calculating whether his
+height from the ground would save him from the whip. Apparently he
+came to the conclusion it would not, for on the man crying "_Vitement!
+Vitement!_" and flinging a grim look upwards, he began to descend
+slowly, a sullen reluctance manifest in all his movements.
+
+On reaching the ground, he made his way through the audience--which
+had increased to above a score--and climbed heavily on the stool,
+where he stood looking round him with a dark shamefacedness,
+surprising in one who was part of a show, and had been posturing all
+day long for the public amusement. The women, quick to espy the
+hollows in his cheeks, and the great wheal that seamed his neck, and
+quick also to admire the straightness of his limbs and the light pose
+of his head, regarded him pitifully. The men only stared; smoking had
+not yet come in at Fécamp, so they munched cakes and gazed by turns.
+
+"Oyez! Oyez! Oyez!" cried the man with the drum. "Listen to the
+remarkable, lamentable, and veritable history of the Seigneur de
+Bault, now before you! Oyez!"
+
+The boy cast a look round, but there was no escape. So, sullenly, and
+in a sing-song tone--through which, nevertheless, some note of
+dignity, some strange echo of power and authority, that gave the
+recital its bizarre charm and made it what it was, would continually
+force itself--he began with the words at the head of this chapter:--
+
+"I am Jehan de Bault, Seigneur of--I know not where, and Lord of
+seventeen lordships in the County of--I forget the name, of a most
+noble and puissant family, possessing the High Justice, the Middle,
+and the Low. In my veins runs the blood of Roland, and of my
+forefathers were three marshals of France. I stand here, the last of
+my race; in token whereof may God preserve my mother, the King,
+France, and this Province! I was stolen by gypsies at the age of five,
+and carried off and sold by my father's steward, as Joseph was by his
+brethren, and I appeal to--I appeal to--all good subjects of France
+to--help me to----"
+
+"My rights!" interjected Crafty Eyes, with a savage glance.
+
+"My rights," the boy whispered, lowering his head.
+
+The drum-man came forward briskly. "Just so, ladies and gentlemen," he
+cried with wonderful glibness. "And seldom as it is that you have
+before you the representative of one of our most noble and ancient
+families a-begging your help, seldom as that remarkable, lamentable,
+and veritable sight is to be seen in Fécamp, sure I am that you will
+respond willingly, generously, and to the point, my lord, ladies and
+gentlemen!" And with this, and a far grander air than when it had been
+merely an affair of a boy and an ape, the knave carried round his
+ladle, doffing his cap to each who contributed, and saying politely,
+"The Sieur de Bault thanks you, sir. The Sieur de Bault is your
+servant, madam."
+
+There was something so novel in the whole business, something so odd
+and inexplicably touching in the boy's words and manner, that with all
+the appearance of a barefaced trick, appealing only to the most
+ignorant, the thing wrought on the crowd: as doubtless it had wrought
+on a hundred crowds before. The first man to whom the ladle came
+grinned sheepishly and gave against his will; and his fellows
+throughout maintained a position of reserve, shrugging their shoulders
+and looking wisdom. But a dozen women became believers at once, and
+despite the blare and flare of rival dragons and Moriscoes and the
+surrounding din and hubbub, the ladle came back full of deniers and
+sous.
+
+The showman was counting his gains into his pouch, when a silver franc
+spun through the air and fell at his feet, and at the same time a
+harsh voice cried, "Here, you, sirrah! A word with you."
+
+Master Crafty Eyes looked up, and doffing his cap humbly--for the
+voice was a voice of authority--went cringing to the speaker. This was
+an elderly man, well mounted, who had reined up his horse on the
+skirts of the crowd as the boy began his harangue. He had a plain
+soldier's face, with grey moustachios and a small, pointed grey beard,
+and he seemed to be a person of rank on his way out of the town; for
+he had two or three armed servants behind him, of whom one carried a
+valise on his crupper.
+
+"What is your will, noble sir?" the showman whined, standing
+bare-headed at his stirrup and looking up at him.
+
+"Who taught the lad that rubbish?" the horseman asked sternly.
+
+"No one, my lord. It is the truth."
+
+"Then bring him here, liar!" was the answer.
+
+The showman obeyed, not very willingly, dragging the boy off the
+stool, and jerking him through the crowd. The stranger looked down at
+the child for a moment in silence. Then he said sharply, "Hark ye,
+tell me the truth, boy. What is your name?"
+
+The lad stood straight up, and answered without hesitation, "Jehan de
+Bault."
+
+"Of nowhere in the County of No Name," the stranger gibed gravely. "Of
+a noble and puissant family--and the rest. All that is true, I
+suppose?"
+
+A flicker as of hope gleamed in the boy's eyes. His cheek reddened. He
+raised his hand to the horse's shoulder, and answered in a voice which
+trembled a little, "It is true."
+
+
+[Illustration: "THE SHOWMAN WAS COUNTING HIS GAINS INTO HIS POUCH"
+(_p_. 11).]
+
+
+"Where is Bault?" the stranger asked grimly.
+
+The lad looked puzzled and disappointed. His lip trembled, his colour
+lied again. He glanced here and there, and finally shook his head. "I
+do not know," he said faintly.
+
+"Nor do I," the horseman replied, striking his long brown boot with
+his riding-switch to give emphasis to the words, and looking sternly
+round. "Nor do I. And what is more, you may take it from me that there
+is no family of that name in France! And once more you may take this
+from me too. I am the Vicomte de Bresly, and I have a government in
+Guienne. Play this game in my county, and I will have you both whipped
+for common cheats, and you, Master Drummer, branded as well! Bear it
+in mind, sirrah; and when you perform, give Perigord a wide berth.
+That is all."
+
+He struck his horse at the last word, and rode off; sitting, like an
+old soldier, so straight in his saddle that he did not see what
+happened behind him, or that the boy sprang forward with a hasty cry,
+and would, but for the showman's grasp, have followed him. He rode
+away, unheeding and without looking back; and the boy, after a brief
+passionate struggle with his master, collapsed.
+
+"You limb!" the man with the drum cried, as he shook him. "What bee
+has stung you? You won't be quiet, eh? Then take that! and that!" and
+he struck the child brutally in the face--twice.
+
+Some cried shame and some laughed. But it was nobody's business, and
+there were a hundred delights within sight. What was one little boy,
+or a blow more or less, amid the whirl and tumult of the fair? A score
+of yards away a dancing girl, a very Peri--or so she seemed by the
+light of four tallow candles--was pirouetting on a rickety platform.
+Almost rubbing elbows with her was a philosopher, who had conquered
+all the secrets of Nature except cleanliness, and was prepared to sell
+infallible love-philtres and the potion of perpetual youth--for four
+farthings! And beyond these stretched a vista of wonders and
+prodigies, all vocal, not to say deafening. So one by one, with a
+shrug or a sneer, the onlookers melted away, until only our trio
+remained: Master Crafty Eyes counting his gains, the boy sobbing
+against the bank on which he had thrown himself, and the monkey
+gibbering and chattering overhead--a dark shapeless object on an
+invisible rope. For night was falling: where the fun of the fair was
+not were gloom and a rising wind, lurking cutpurses, and waste land.
+
+The showman seemed to feel this, for having counted his takings, he
+kicked up the boy and began to pack up. He had nearly finished, and
+was stooping over the coil of rope, securing the end, when a touch on
+his shoulder caused him to jump a yard. A tall man wrapped in a cloak,
+who had come up unseen, stood at his elbow.
+
+"Well!" the showman cried, striving to hide his alarm under an
+appearance of bluster. "And what may you want?"
+
+"A word with you," the unknown answered.
+
+The voice was so cold and passionless it gave Crafty Eyes a turn.
+"Diable!" he muttered, striving to pierce the darkness and see what
+the other was like. But he could not; so as to shake off the
+impression, he asked, with a sneer, "You are not a vicomte, are you?"
+
+"No," the stranger replied gravely, "I am not."
+
+"Nor the governor of a county?"
+
+"No."
+
+"Then you may speak!" rejoined the showman grandly.
+
+"Not here," the cloaked man answered. "I must see you alone."
+
+"Then you will have to come home with me, and wait until I have put up
+the boy," the other said. "I am not going to lose him for you or
+anyone. And for a penny he'd be off! Does it suit you? You may take it
+or leave it."
+
+The unknown, whose features were completely masked by the dusk, nodded
+assent, and without more ado the four turned their faces towards the
+streets; the boy carrying the monkey, and the two men following close
+on his heels. Whenever they passed before a lighted booth the showman
+strove to learn something of his companion's appearance but the latter
+wore his cloak so high about his face, and was so well served by a
+wide-flapped hat which almost met it, that curiosity was completely
+baffled; and they reached the low inn where the showman rented a
+corner of the stable without that cunning gentleman being a jot the
+wiser for his pains.
+
+It was a vile, evil-smelling place they entered, divided into six or
+eight stalls by wooden partitions reaching half-way to the tiles. A
+horn lantern hung at each end filled it with yellow lights and deep
+shadows. A pony raised its head and whinnied as the men entered, but
+most of the stalls were empty, or tenanted only by drunken clowns
+sleeping in the straw.
+
+"You cannot lock him in here," said the stranger, looking round him.
+
+The showman grunted. "Cannot I?" he said. "There are tricks in all
+trades, master. I reckon I can--with this!" And producing from
+somewhere about him a thin steel chain, he held it before the other's
+face. "That is my lock and door," he said triumphantly.
+
+"It won't hold him long," the other answered impassively. "The fifth
+link from the end is worn through now."
+
+"You have sharp eyes!" the showman exclaimed, with reluctant
+admiration. "But it will hold a bit yet. I fasten him in yonder
+corner. Do you wait here, and I will come back to you."
+
+He was not long about it. When he returned he led the stranger into
+the farthest of the stalls, which, as well as that next to it, was
+empty. "We can talk here," he said bluntly. "At any rate, I have no
+better place. The house is full. Now, what is it?"
+
+"I want that boy," the tall man answered. The showman laughed--stopped
+laughing--laughed again. "I dare say you do," he said derisively.
+"There is not a better or a pluckier boy on the rope out of Paris. And
+for patter? There is nothing on the road like the bit he did this
+afternoon, nor a bit that pays as well."
+
+"Who taught it him?" the stranger asked.
+
+"I did."
+
+"That is a lie," the other answered in a perfectly unmoved tone. "If
+you like I will tell you what you did. You taught him the latter half
+of the story. The other he knew before: down to the word 'province.'"
+
+The showman gasped. "Diable!" he muttered. "Who told you?"
+
+"Never mind. You bought the boy. From whom?"
+
+"From some gypsies at the great fair of Beaucaire," the showman
+answered sullenly.
+
+"Who is he?"
+
+Crafty Eyes laughed dryly. "If I knew I should not be padding the
+hoof," he said. "Or, again, he may be nobody, and the tale patter. You
+have heard as much as I have. What do you think?"
+
+"I think I shall find out when I have bought the boy," the stranger
+answered coolly. "What will you take for him?"
+
+The showman gasped again. "You come to the point," he said.
+
+"It is my custom. What is his price?"
+
+The showman's imagination had never soared beyond nor his ears ever
+heard of a larger sum than a thousand crowns. He mentioned it
+trembling. There might be such a sum in the world.
+
+"A thousand livres, if you like. Not a sou more," was the answer.
+
+The nearer lantern threw a strong light on Crafty Eyes' face; but that
+was mere shadow beside the light of cupidity which sparkled in his
+eyes. He could get another boy; scores of boys. But a thousand livres!
+A thousand livres! "Tournois!" he said faintly. "Livres Tournois!" In
+his wildest moments of avarice he had never dreamed of possessing such
+a sum.
+
+"No, Paris livres," the stranger answered coldly. "Paid to-morrow at
+the _Golden Chariot_. If you agree, you will deliver the boy to me
+there at noon, and receive the money."
+
+The showman nodded, vanquished by the mere sound of the sum. Paris
+livres let it be. Danae did not more quickly succumb to the golden
+shower.
+
+
+
+
+                             CHAPTER II.
+
+                          SOLOMON NÔTREDAME.
+
+
+A little later that night, at the hour which saw the showman pay his
+second visit to the street before the _Chariot d'Or_, there to stand
+gaping at the lighted windows, and peering into the courtyard in a
+kind of fascination--or perhaps to assure himself that the house would
+not fly away, and his golden hopes with it--the twelve-year-old boy,
+the basis of those hopes, awoke and stirred restlessly in the straw.
+He was cold, and the chain galled him. His face ached where the man
+had struck him. In the next stall two drunken men were fighting, and
+the place reeked with oaths and foulness. But none of these things
+were so novel as to keep the boy awake; and sighing and drawing the
+monkey nearer to him, he would in a moment have been asleep again if
+the moon, shining with great brightness through the little square
+aperture above him, had not thrown its light directly on his head, and
+roused him more completely.
+
+He sat up and gazed at it, and God knows what softening thoughts and
+pitiful recollections the beauty of the night brought into his mind;
+but presently he began to weep--not as a child cries, with noise and
+wailing, but in silence, as a man weeps. The monkey awoke and crept
+into his breast, but he hardly regarded it. The misery, the
+hopelessness, the slavery of his life, ignored from hour to hour, or
+borne at other times with a boy's nonchalance, filled his heart to
+bursting now. Crouching in his lair in the straw, he shook with agony.
+The tears welled up, and would not be restrained, until they hid the
+face of the sky and darkened even the moon's pure light.
+
+Or was it his tears? He dashed them away and looked, and rose slowly
+to his feet; while the ape, clinging to his breast, began to mow and
+gibber. A black mass, which gradually resolved itself, as the boy's
+eyes cleared, into a man's hat and head, filled the aperture.
+
+"Hush!" came from the head in a cautious whisper. "Come nearer. I will
+not hurt you. Do you wish to escape, lad?"
+
+The boy clasped his hands in an ecstasy. "Yes, oh yes!" he murmured.
+The question chimed in so naturally with his thoughts, it scarcely
+surprised him.
+
+"If you were loose, could you get through this window?" the man asked.
+He spoke cautiously, under his breath; but the noise in the next
+stall, to say nothing of a vile drinking song which was being chanted
+forth at the farther end of the stable, was such he might safely have
+shouted. "Yes? Then take this file. Rub at the fifth link from the
+end: the one that is nearly through. Do you understand, boy?"
+
+"Yes, yes," Jehan cried again, groping in the straw for the tool,
+which had fallen at his feet. "I know."
+
+"When you are loose, cover up the chain," continued the other in a
+slow biting tone. "Or lie on that part of it, and wait until morning.
+As soon as you see the first gleam of light, climb out through the
+window. You will find me outside."
+
+The boy would have uttered his trembling thanks. But lo! in a moment
+the aperture was clear again; the moon sailed unchanged through an
+unchanged sky; and all was as before. Save for the presence of the
+little bit of rough steel in his hand, he might have thought it a
+dream. But the file was there; it was there, and with a choking sob of
+hope and fear and excitement, he fell to work on the chain.
+
+It was clumsy work he made of it in the dark. But the link was so much
+worn, a man might have wrenched it open, and the boy did not spare his
+fingers. The dispute next door covered the song of the file; and the
+smoky horn lantern which alone lighted that end of the stable had no
+effect in the dark corner where he lay. True, he had to work by feel,
+looking out all the while for his tyrant's coming; but the tool was
+good, and the fingers, hardened by many an hour of work on the rope,
+were strong and lithe. When the showman at last stumbled to his place
+in the straw, the boy lay free--free and trembling.
+
+All was not done, however. It seemed an hour before the man settled
+himself--an hour of agony and suspense to Jehan, feigning sleep; since
+at any moment his master might take it into his head to look into
+things. But Crafty Eyes had no suspicion. Having kicked the boy and
+heard the chain rattle, and so assured himself that he was there--so
+much caution he exercised every night, drunk or sober--he was
+satisfied; and by-and-by, when his imagination, heated by thoughts of
+wealth, permitted it, he fell asleep, and dreamed that he had married
+the Cardinal's cook-maid and ate collops on Sundays.
+
+Even so, the night seemed endless to the boy, lying wakeful, with his
+eyes on the sky. Now he was hot, now cold. One moment the thought that
+the window might prove too strait for him threw him into a bath of
+perspiration; the next he shuddered at the possibility of re-capture,
+and saw himself dragged back and flayed by his brutal owner. But a
+watched pot _does_ boil, though slowly. The first streak of dawn came
+at last--as it does when the sky is darkest; and with it, even as the
+boy rose warily to his feet, the sound of a faint whistle outside the
+window.
+
+A common mortal could no more have passed through that window without
+noise than an old man can make himself young again. But the boy did
+it. As he dropped to the ground outside he heard the whistle again.
+The air was still dark; but a score of paces away, beyond a low wall,
+he made out the form of a horseman, and went towards it.
+
+It was the man in the cloak, who stooped and held out his hand. "Jump
+up behind me," he muttered.
+
+The boy went to obey, but as he clasped the outstretched hand, it was
+suddenly withdrawn. "What is that? What have you got there?" the rider
+exclaimed, peering down at him.
+
+"It is only Taras, the monkey," Jehan said timidly.
+
+"Throw it away," the stranger answered. "Do you hear me?" he continued
+in a stern, composed tone. "Throw it away, I say."
+
+The boy stood hesitating a moment; then, without a word, he turned and
+fled into the darkness the way he had come. The man on the horse swore
+under his breath, but he had no remedy; and before he could tell what
+to expect, the boy was at his side again. "I've put it through the
+window," Jehan explained breathlessly. "If I had left it here, the
+dogs and the boys would have killed it."
+
+The man made no comment aloud, but jerked him roughly to the crupper;
+and bidding him hold fast, started the horse, which, setting off at an
+easy amble, quickly bore them out of Fécamp. As they passed through
+the fair-ground of yesterday--a shadowy, ghastly waste at this hour,
+peopled by wandering asses, and packhorses, and a few lurking figures
+that leapt up out of the darkness, and ran after them whining for
+alms--the boy shivered and clung close to his protector. But he had no
+more than recognised the scene before they were out of sight of it,
+and riding through the open fields. The grey dawn was spreading, the
+cocks at distant farms were crowing. The dim, misty countryside, the
+looming trees, the raw air, the chill that crept into his ill-covered
+bones--all these, which might have seemed to others wretched
+conditions enough, filled the boy with hope and gladness. For they
+meant freedom.
+
+But presently, as they rode on, his thoughts took a fresh turn. They
+began to busy themselves, and fearfully, with the man before him,
+whose continued silence and cold reserve set a hundred wild ideas
+humming in his brain. What manner of man was he? Who was he? Why had
+he helped him? Jehan had heard of ogres and giants that decoyed
+children into forests and devoured them. He had listened to ballads of
+such adventures, sung at fairs and in the streets, a hundred times;
+now they came so strongly into his mind, and so grew upon him in this
+grim companionship, that by-and-by, seeing a wood before them through
+which the road ran, he shook with terror and gave himself up for lost.
+Sure enough, when they came to the wood, and had ridden a little way
+into it, the man, whose face he had never seen, stopped. "Get down,"
+he said sternly.
+
+
+[Illustration: "JEHAN WENT TREMBLING AND FOUND THE HOLE" (_p_. 33).]
+
+
+Jehan obeyed, his teeth chattering, his legs quaking under him. He
+expected the man to produce a large carving-knife, or call some of his
+fellows out of the forest to share his repast. Instead, the stranger
+made a queer pass with his hands over his horse's neck, and bade the
+boy go to an old stump which stood by the way. "There is a hole in the
+farther side of it," he said. "Look in the hole."
+
+Jehan went trembling and found the hole, and looked. "What do you
+see?" the rider asked.
+
+"A piece of money," said Jehan.
+
+"Bring it to me," the stranger answered gravely.
+
+The boy took it--it was only a copper sou--and did as he was bidden.
+"Get up!" said the horseman curtly. Jehan obeyed, and they went on as
+before.
+
+When they had ridden half-way through the forest, however, the
+stranger stopped again. "Get down," he said.
+
+The boy obeyed, and was directed as on the former occasion--but not
+until the horseman had made the same strange gesture with his
+hands--to go to an old stump. This time he found a silver livre. He
+gave it to his master, and climbed again to his place, marvelling
+much.
+
+A third time they stopped, on the farther verge of the forest. The
+same words passed, but this time the boy found a gold crown in the
+hole.
+
+After that his mind no longer ran upon ogres and giants. Instead,
+another fancy almost as dreadful took possession of him. He remarked
+that everything the stranger wore was black: his cloak, his hat, his
+gauntlets. Even his long boots, which in those days were commonly made
+of untanned leather, were black. So was the furniture of the horse.
+Jehan noticed this as he mounted the third time; and connecting it
+with the marvellous springing up of money where the man willed, began
+to be seized with panic, never doubting but that he had fallen into
+the hands of the devil. Likely enough, he would have dropped off at
+the first opportunity that offered, and fled for his life--or his
+soul, but he did not know much of that--if the stranger had not in the
+nick of time drawn a parcel of food from his saddle-bag. He gave some
+to Jehan. Even so, the boy, hungry as he was, did not dare to touch it
+until he was assured that his companion was really eating--eating, and
+not pretending. Then, with a great sigh of relief, he began to eat
+too. For he knew that the devil never ate!
+
+After this they rode on in silence, until, about an hour before noon,
+they came to a small farm-steading standing by the road, half a league
+short of the sleepy old town of Yvetot, which Beranger was one day to
+celebrate. Here the magician--for such Jehan now took his companion to
+be--stopped. "Get down," he said.
+
+The boy obeyed, and instinctively looked for a stump. But there was no
+stump, and this time his master, after scanning his ragged garments as
+if to assure himself of his appearance, had a different order to give.
+"Go to that farm," he said. "Knock at the door, and say that Solomon
+Nôtredame de Paris requires two fowls. They will give them to you.
+Bring them to me."
+
+The boy went wide-eyed, knocked, and gave his message. A woman, who
+opened the door, stretched out her hand, took up a couple of fowls
+that lay tied together on the hearth, and gave them to him without a
+word. He took them--he no longer wondered at anything--and carried
+them back to his master in the road.
+
+"Now listen to me," said the latter, in his slow, cold tone. "Go into
+the town you see before you, and in the market-place you will find an
+inn with the sign of the _Three Pigeons_. Enter the yard and offer
+these fowls for sale, but ask a livre apiece for them, that they may
+not be bought. While offering them, make an excuse to go into the
+stable, where you will see a grey horse. Drop this white lump into the
+horse's manger when no one is looking, and afterwards remain at the
+door of the yard. If you see me, do not speak to me. Do you
+understand?"
+
+Jehan said he did; but his new master made him repeat his orders from
+beginning to end before he let him go with the fowls and the white
+lump, which was about the size of a walnut, and looked like rock-salt.
+
+About an hour later the landlord of the _Three Pigeons_ at Yvetot
+heard a horseman stop at his door. He went out to meet him. Now,
+Yvetot is on the road to Havre and Harfleur; and though the former of
+these places was then in the making and the latter was dying fast, the
+landlord had had experience of many guests. But so strange a guest as
+the one he found awaiting him he thought he had never seen. In the
+first place, the gentleman was clad from top to toe in black; and
+though he had no servants behind him, he wore an air of as grave
+consequence as though he boasted six. In the next place, his face was
+so long, thin, and cadaverous that, but for a great black line of
+eyebrows that cut it in two and gave it a very curious and sinister
+expression, people meeting him for the first time might have been
+tempted to laugh. Altogether, the landlord could not make him out; but
+he thought it safer to go out and hold his stirrup, and ask his
+pleasure.
+
+"I shall dine here," the stranger answered gravely. As he dismounted
+his cloak fell open. The landlord observed with growing wonder that
+its black lining was sprinkled with cabalistic figures embroidered in
+white.
+
+Introduced to the public room, which was over the great stone porch
+and happened to be empty, the traveller lost none of his singularity.
+He paused a little way within the door, and stood as if suddenly
+fallen into deep thought. The landlord, beginning to think him mad,
+ventured to recall him by asking what his honour would take.
+
+"There is something amiss in this house," the stranger replied
+abruptly, turning his eyes on him.
+
+"Amiss?" the host answered, faltering under his gaze, and wishing
+himself well out of the room. "Not that I am aware of, your honour."
+
+"There is no one ill?"
+
+"No, your honour, certainly not."
+
+"Nor deformed?"
+
+"No."
+
+"You are mistaken," the stranger answered firmly. "Know that I am
+Solomon, son to Cæsar, son to Michel Nôtredame of Paris, commonly
+called by the learned Nostradamus and the Transcendental, who read the
+future and rode the Great White Horse of Death. All things hidden are
+open to me."
+
+The landlord only gaped, but his wife and a serving wench, who had
+come to the door out of curiosity, and were listening and staring with
+all their might, crossed themselves industriously. "I am here," the
+stranger continued, after a brief pause, "to construct the horoscope
+of His Eminence the Cardinal, of whom it has been predicted that he
+will die at Yvetot. But I find the conditions unpropitious. There is
+an adverse influence in this house."
+
+The landlord scratched his head, and looked helplessly at his wife.
+But she was quite taken up with awe of the stranger, whose head nearly
+touched the ceiling of the low room; while his long, pale face seemed
+in the obscurity--for the day was dark--to be of an unearthly pallor.
+
+"An adverse influence," the astrologer continued gravely. "What is
+more, I now see where it is. It is in the stable. You have a grey
+horse."
+
+The landlord, somewhat astonished, said he had.
+
+"You had. You have not now. The devil has it!" was the astounding
+answer.
+
+"My grey horse?"
+
+The stranger inclined his head.
+
+"Nay, there you are wrong!" the host retorted briskly. "I'm hanged if
+he has! For I rode the horse this morning, and it went as well and
+quietly as ever in its life."
+
+"Send and see," the tall man answered.
+
+The serving girl, obeying a nod, went off reluctantly to the stable,
+while her master, casting a look of misliking at his guest, walked
+uneasily to the window. In a moment the girl came back, her face
+white. "The grey is in a fit," she cried, keeping the whole width of
+the room between her and the stranger. "It is sweating and
+staggering."
+
+The landlord, with an oath, ran off to see, and in a minute the
+appearance of an excited group in the square under the window showed
+that the thing was known. The traveller took no notice of this,
+however, nor of the curious and reverential glances which the
+womenfolk, huddled about the door of the room, cast at him. He walked
+up and down the room with his eyes lowered.
+
+The landlord came back presently, his face black as thunder. "It has
+got the staggers," he said resentfully.
+
+"It has got the devil," the stranger answered coldly. "I knew it was
+in the house when I entered. If you doubt me, I will prove it."
+
+"Ay?" said the landlord stubbornly.
+
+The man in black went to his saddle-bag, which had been brought up and
+laid in a corner, and took out a shallow glass bowl, curiously
+embossed with a cross and some mystic symbols. "Go to the church
+there," he said, "and fill this with holy water."
+
+The host took it unwillingly, and went on his strange errand. While he
+was away the astrologer opened the window, and looked out idly. When
+he saw the other returning, he gave the order "Lead out the horse."
+
+There was a brief delay, but presently two stablemen, with a little
+posse of wondering attendants, partly urged and partly led out a
+handsome grey horse. The poor animal trembled and hung its head, but
+with some difficulty was brought under the window. Now and again a
+sharp spasm convulsed its limbs, and scattered the spectators right
+and left.
+
+Solomon Nôtredame leaned out of the window. In his left hand he held
+the bowl, in his right a small brush. "If this beast is sick with any
+earthly sickness," he cried in a deep solemn voice, audible across the
+square, "or with such as earthly skill can cure, then let this holy
+water do it no harm, but refresh it. But if it be possessed by the
+devil, and given up to the powers of darkness and to the enemy of man
+for ever and ever to do his will and pleasure, then let these drops
+burn and consume it as with fire. Amen! Amen!"
+
+With the last word he sprinkled the horse. The effect was magical. The
+animal reared up, as if it had been furiously spurred, and plunged so
+violently that the men who held it were dragged this way and that. The
+crowd fled every way; but not so quickly but that a hundred eyes had
+seen the horse smoke where the water fell on it. Moreover, when they
+cautiously approached it, the hair in two or three places was found to
+be burned off!
+
+The magician turned gravely from the window. "I wish to eat," he said.
+
+None of the servants, however, would come into the room or serve him,
+and the landlord, trembling, set the board with his own hands and
+waited on him. Mine host had begun by doubting and suspecting, but,
+simple man! his scepticism was not proof against the holy water trial
+and his wife's terror. By-and-by, with a sidelong glance at his guest,
+he faltered the question: What should he do with the horse?
+
+The man in black looked solemn. "Whoever mounts it will die within the
+year," he said.
+
+"I will shoot it," the landlord replied, shuddering.
+
+"The devil will pass into one of the other horses," was the answer.
+
+"Then," said the miserable innkeeper, "perhaps your honour would
+accept it?"
+
+"God forbid!" the astrologer answered. And that frightened the other
+more than all the rest. "But if you can find at any time," the wizard
+continued, "a beggar-boy with black hair and blue eyes, who does not
+know his father's name, he may take the horse and break the spell. So
+I read the signs."
+
+The landlord cried out that such a person was not to be met with in a
+lifetime. But before he had well finished his sentence a shrill voice
+called through the keyhole that there was such a boy in the yard at
+that moment, offering poultry for sale.
+
+"In God's name, then, give him the horse!" the stranger said. "Bid him
+take it to Rouen, and at every running water he comes to say a
+paternoster and sprinkle its tail. So he may escape, and you, too. I
+know no other way."
+
+The trembling innkeeper said he would do that, and did it. And so,
+when the man in black rode into Rouen the next evening, he did not
+ride alone. He was attended at a respectful distance by a good-looking
+page clad in sable velvet, and mounted on a handsome grey horse.
+
+
+
+
+                             CHAPTER III.
+
+                            MAN AND WIFE.
+
+
+It is a pleasant thing to be warmly clad and to lie softly, and at
+night to be in shelter and in the day to eat and drink. But all these
+things may be dearly bought, and so the boy Jehan de Bault soon found.
+He was no longer beaten, chained, or starved; he lay in a truckle bed
+instead of a stable; the work he had to do was of the lightest. But
+he paid for all in fears--in an ever-present, abiding, mastering fear
+of the man behind whom he rode: who never scolded, never rated, nor
+even struck him, but whose lightest word--and much more, his long
+silences--filled the lad with dread and awe unspeakable. Something
+sinister in the man's face, all found; but to Jehan, who never doubted
+his dark powers, and who shrank from his eye, and flinched at his
+voice, and cowered when he spoke, there was a cold malevolence in the
+face, an evil knowledge, that made the boy's flesh creep and chained
+his soul with dread.
+
+The astrologer saw this, and revelled in it, and went about to
+increase it after a fashion of his own. Hearing the boy, on an
+occasion when he had turned to him suddenly, ejaculate "_Oh, Dieu!_"
+he said, with a dreadful smile, "You should not say that! Do you know
+why?"
+
+The boy's face grew a shade paler, but he did not speak.
+
+"Ask me why! Say, 'Why not?'"
+
+"Why not?" Jehan muttered. He would have given the world to avert his
+eyes, but he could not.
+
+"Because you have sold yourself to the devil!" the other hissed.
+"Others may say it; you may not. What is the use? You have sold
+yourself--body, soul, and spirit. You came of your own accord, and
+climbed on the black horse. And now," he continued, in a tone which
+always compelled obedience, "answer my questions. What is your name?"
+
+"Jehan de Bault," the boy whispered, shivering and shuddering.
+
+"Louder!"
+
+"Jehan de Bault."
+
+"Repeat the story you told at the fair."
+
+"I am Jehan de Bault, Seigneur of--I know not where, and Lord of
+seventeen lordships in the County of Perigord, of a most noble and
+puissant family, possessing the High Justice, the Middle, and the Low.
+In my veins runs the blood of Roland, and of my forefathers were three
+marshals of France. I stand here, the last of my race; in token
+whereof may God preserve my mother, the King, France, and this
+Province."
+
+"Ha! In the County of Perigord!" the astrologer said, with a sudden
+lightening of his heavy brows. "You have remembered that?"
+
+"Yes. I heard the word at Fécamp."
+
+"And all that is true?"
+
+"Yes."
+
+"Who taught it you?"
+
+"I do not know." The boy's face, in its straining, was painful to see.
+
+"What is the first thing you can remember?"
+
+"A house in a wood."
+
+"Can you remember your father?"
+
+"No."
+
+"Your mother?"
+
+"No--yes--I am not sure."
+
+"Umph! Were you stolen by gypsies?"
+
+"I do not know."
+
+"Or sold by your father's steward?"
+
+"I do not know."
+
+"How long were you with the man from whom I took you?"
+
+"I do not know."
+
+"I do," the astrologer answered, in the same even tone in which he had
+put the questions. And the boy never doubted him. "Beware, therefore,"
+the man in black continued, with a dreadful sidelong glance, "how you
+seek to deceive me! You can fall back now. I have done with you for
+the present."
+
+I say "the boy never doubted him." This was not wonderful in an age of
+spells and _diablerie_, when the wisest allowed the reality of magic,
+and the learned and curious could cite a hundred instances of its
+power. That La Brosse warned Henry the Great he would die in his
+coach, and that Thomassin read in the stars the very day, hour, and
+minute of the catastrophe, no man of that time questioned. That Michel
+Nôtredame promised a crown to each of Catherine de Medici's three
+sons, and that Sully's preceptor foretold in detail that Minister's
+career, were held to be facts as certain as that La Rivière cast the
+horoscope of the thirteenth Louis while the future monarch lay in his
+cradle. The men of the day believed that the Concini swayed her
+mistress by magic; that Wallenstein, the greatest soldier of his time,
+did nothing without his familiar; that Richelieu, the greatest
+statesman, had Joseph always at his elbow. In such an age it was not
+wonderful that a child should accept without question the claims of
+this man: who was accustomed to inspire fear in the many, and in the
+few that vague and subtle repulsion which we are wont to associate
+with the presence of evil.
+
+Beyond Rouen, and between that city and Paris, the two companions
+found the road well frequented. Of the passers, many stood to gaze at
+the traveller in black, and some drew to the farther side of the road
+as he went by. But none laughed or found anything ridiculous in his
+appearance; or if they did, it needed but a glance from his long, pale
+face to restore them to sobriety. At the inn at Rouen he was well
+received; at the _Grand Cerf_ at Les Andelys, where he seemed to be
+known, he was welcomed with effusion. Though the house was full, a
+separate chamber was assigned to him, and supper prepared for him with
+the utmost speed.
+
+Here, however, he was not destined to enjoy his privacy long. At the
+last moment, as he was sitting down to his meal, with the boy in
+attendance, a bustle was heard outside. The voice of someone rating
+the landlord in no measured terms became audible, the noise growing
+louder as the speaker mounted the stairs. Presently a hand was laid on
+the latch, the door was thrown open, and a gentleman strode into the
+room whose swaggering air and angry gestures showed that he was
+determined to make good his footing. A lady, masked, and in a
+travelling habit, followed more quietly; and in the background could
+be seen three or four servants, together with the unfortunate
+landlord, who was very evidently divided between fear of his
+mysterious guest and the claims of the newcomers.
+
+The astrologer rose slowly from his seat. His peculiar aspect, his
+stature and leanness and black garb, which never failed to impress
+strangers, took the intruder somewhat aback. He hesitated, and
+removing his hat, began to utter a tardy apology. "I crave your
+pardon, sir," he said ungraciously, "but we ride on after supper. We
+stay here only to eat, and they tell us there is no other chamber with
+even a degree of emptiness in it."
+
+"You are welcome, M. de Vidoche," the man in black answered.
+
+The intruder started and frowned. "You know my name," he said, with a
+sneer. "But there, I suppose it is your business to know these
+things."
+
+"It is my business to know," the astrologer answered, unmoved. "Will
+not madame be seated?"
+
+
+[Illustration: "THE ASTROLOGER ROSE SLOWLY FROM HIS SEAT" (_p_. 52).]
+
+
+The lady bowed, and taking off her mask with fingers which trembled a
+little, disclosed a fair, childish face, that would, have been pretty,
+and even charming, but for an expression of nervousness which seemed
+habitual to it. She shrank from the astrologer's gaze, and, sitting
+down as far from him as the table permitted, pretended to busy herself
+in taking off her gloves. He was accustomed to be met in this way, and
+to see the timid quake before him; but it did not escape his notice
+that this lady shrank also at the sound of her husband's voice, and
+when he spoke, listened with the pitiful air of propitiation which may
+be seen in a whipped dog. She was pale, and by the side of her husband
+seemed to lack colour. He was a man of singularly handsome exterior,
+dark-haired and hard-eyed, with a high, fresh complexion, and a
+sneering lip. His dress was in the extreme of the fashion, his falling
+collar vandyked, and his breeches open below the knee, where they were
+met by wide-mouthed boots. A great plume of feathers set off his hat,
+and he carried a switch as well as a sword.
+
+The astrologer read the story at a glance. "Madame is perhaps fatigued
+by the journey," he said politely.
+
+"Madame is very easily fatigued," the husband replied, throwing down
+his hat with a savage sneer, "especially when she is doing anything
+she does not like."
+
+"You are for Paris," Nôtredame answered, with apparent surprise. "I
+thought all ladies liked Paris. Now, if madame were leaving Paris and
+going to the country----"

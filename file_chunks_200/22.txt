@@ -1,0 +1,1353 @@
+
+Creating the works from public domain print editions means that no
+one owns a United States copyright in these works, so the Foundation
+(and you!) can copy and distribute it in the United States without
+permission and without paying copyright royalties.  Special rules,
+set forth in the General Terms of Use part of this license, apply to
+copying and distributing Project Gutenberg-tm electronic works to
+protect the PROJECT GUTENBERG-tm concept and trademark.  Project
+Gutenberg is a registered trademark, and may not be used if you
+charge for the eBooks, unless you receive specific permission.  If you
+do not charge anything for copies of this eBook, complying with the
+rules is very easy.  You may use this eBook for nearly any purpose
+such as creation of derivative works, reports, performances and
+research.  They may be modified and printed and given away--you may do
+practically ANYTHING with public domain eBooks.  Redistribution is
+subject to the trademark license, especially commercial
+redistribution.
+
+
+
+*** START: FULL LICENSE ***
+
+THE FULL PROJECT GUTENBERG LICENSE
+PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+
+To protect the Project Gutenberg-tm mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase "Project
+Gutenberg"), you agree to comply with all the terms of the Full Project
+Gutenberg-tm License (available with this file or online at
+http://gutenberg.org/license).
+
+
+Section 1.  General Terms of Use and Redistributing Project Gutenberg-tm
+electronic works
+
+1.A.  By reading or using any part of this Project Gutenberg-tm
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement.  If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or destroy
+all copies of Project Gutenberg-tm electronic works in your possession.
+If you paid a fee for obtaining a copy of or access to a Project
+Gutenberg-tm electronic work and you do not agree to be bound by the
+terms of this agreement, you may obtain a refund from the person or
+entity to whom you paid the fee as set forth in paragraph 1.E.8.
+
+1.B.  "Project Gutenberg" is a registered trademark.  It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement.  There are a few
+things that you can do with most Project Gutenberg-tm electronic works
+even without complying with the full terms of this agreement.  See
+paragraph 1.C below.  There are a lot of things you can do with Project
+Gutenberg-tm electronic works if you follow the terms of this agreement
+and help preserve free future access to Project Gutenberg-tm electronic
+works.  See paragraph 1.E below.
+
+1.C.  The Project Gutenberg Literary Archive Foundation ("the Foundation"
+or PGLAF), owns a compilation copyright in the collection of Project
+Gutenberg-tm electronic works.  Nearly all the individual works in the
+collection are in the public domain in the United States.  If an
+individual work is in the public domain in the United States and you are
+located in the United States, we do not claim a right to prevent you from
+copying, distributing, performing, displaying or creating derivative
+works based on the work as long as all references to Project Gutenberg
+are removed.  Of course, we hope that you will support the Project
+Gutenberg-tm mission of promoting free access to electronic works by
+freely sharing Project Gutenberg-tm works in compliance with the terms of
+this agreement for keeping the Project Gutenberg-tm name associated with
+the work.  You can easily comply with the terms of this agreement by
+keeping this work in the same format with its attached full Project
+Gutenberg-tm License when you share it without charge with others.
+
+1.D.  The copyright laws of the place where you are located also govern
+what you can do with this work.  Copyright laws in most countries are in
+a constant state of change.  If you are outside the United States, check
+the laws of your country in addition to the terms of this agreement
+before downloading, copying, displaying, performing, distributing or
+creating derivative works based on this work or any other Project
+Gutenberg-tm work.  The Foundation makes no representations concerning
+the copyright status of any work in any country outside the United
+States.
+
+1.E.  Unless you have removed all references to Project Gutenberg:
+
+1.E.1.  The following sentence, with active links to, or other immediate
+access to, the full Project Gutenberg-tm License must appear prominently
+whenever any copy of a Project Gutenberg-tm work (any work on which the
+phrase "Project Gutenberg" appears, or with which the phrase "Project
+Gutenberg" is associated) is accessed, displayed, performed, viewed,
+copied or distributed:
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org/license
+
+1.E.2.  If an individual Project Gutenberg-tm electronic work is derived
+from the public domain (does not contain a notice indicating that it is
+posted with permission of the copyright holder), the work can be copied
+and distributed to anyone in the United States without paying any fees
+or charges.  If you are redistributing or providing access to a work
+with the phrase "Project Gutenberg" associated with or appearing on the
+work, you must comply either with the requirements of paragraphs 1.E.1
+through 1.E.7 or obtain permission for the use of the work and the
+Project Gutenberg-tm trademark as set forth in paragraphs 1.E.8 or
+1.E.9.
+
+1.E.3.  If an individual Project Gutenberg-tm electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any additional
+terms imposed by the copyright holder.  Additional terms will be linked
+to the Project Gutenberg-tm License for all works posted with the
+permission of the copyright holder found at the beginning of this work.
+
+1.E.4.  Do not unlink or detach or remove the full Project Gutenberg-tm
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg-tm.
+
+1.E.5.  Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg-tm License.
+
+1.E.6.  You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including any
+word processing or hypertext form.  However, if you provide access to or
+distribute copies of a Project Gutenberg-tm work in a format other than
+"Plain Vanilla ASCII" or other format used in the official version
+posted on the official Project Gutenberg-tm web site (www.gutenberg.org),
+you must, at no additional cost, fee or expense to the user, provide a
+copy, a means of exporting a copy, or a means of obtaining a copy upon
+request, of the work in its original "Plain Vanilla ASCII" or other
+form.  Any alternate format must include the full Project Gutenberg-tm
+License as specified in paragraph 1.E.1.
+
+1.E.7.  Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg-tm works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+
+1.E.8.  You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg-tm electronic works provided
+that
+
+- You pay a royalty fee of 20% of the gross profits you derive from
+     the use of Project Gutenberg-tm works calculated using the method
+     you already use to calculate your applicable taxes.  The fee is
+     owed to the owner of the Project Gutenberg-tm trademark, but he
+     has agreed to donate royalties under this paragraph to the
+     Project Gutenberg Literary Archive Foundation.  Royalty payments
+     must be paid within 60 days following each date on which you
+     prepare (or are legally required to prepare) your periodic tax
+     returns.  Royalty payments should be clearly marked as such and
+     sent to the Project Gutenberg Literary Archive Foundation at the
+     address specified in Section 4, "Information about donations to
+     the Project Gutenberg Literary Archive Foundation."
+
+- You provide a full refund of any money paid by a user who notifies
+     you in writing (or by e-mail) within 30 days of receipt that s/he
+     does not agree to the terms of the full Project Gutenberg-tm
+     License.  You must require such a user to return or
+     destroy all copies of the works possessed in a physical medium
+     and discontinue all use of and all access to other copies of
+     Project Gutenberg-tm works.
+
+- You provide, in accordance with paragraph 1.F.3, a full refund of any
+     money paid for a work or a replacement copy, if a defect in the
+     electronic work is discovered and reported to you within 90 days
+     of receipt of the work.
+
+- You comply with all other terms of this agreement for free
+     distribution of Project Gutenberg-tm works.
+
+1.E.9.  If you wish to charge a fee or distribute a Project Gutenberg-tm
+electronic work or group of works on different terms than are set
+forth in this agreement, you must obtain permission in writing from
+both the Project Gutenberg Literary Archive Foundation and Michael
+Hart, the owner of the Project Gutenberg-tm trademark.  Contact the
+Foundation as set forth in Section 3 below.
+
+1.F.
+
+1.F.1.  Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+public domain works in creating the Project Gutenberg-tm
+collection.  Despite these efforts, Project Gutenberg-tm electronic
+works, and the medium on which they may be stored, may contain
+"Defects," such as, but not limited to, incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other intellectual
+property infringement, a defective or damaged disk or other medium, a
+computer virus, or computer codes that damage or cannot be read by
+your equipment.
+
+1.F.2.  LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the "Right
+of Replacement or Refund" described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg-tm trademark, and any other party distributing a Project
+Gutenberg-tm electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees.  YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3.  YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+1.F.3.  LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from.  If you
+received the work on a physical medium, you must return the medium with
+your written explanation.  The person or entity that provided you with
+the defective work may elect to provide a replacement copy in lieu of a
+refund.  If you received the work electronically, the person or entity
+providing it to you may choose to give you a second opportunity to
+receive the work electronically in lieu of a refund.  If the second copy
+is also defective, you may demand a refund in writing without further
+opportunities to fix the problem.
+
+1.F.4.  Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you 'AS-IS' WITH NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+WARRANTIES OF MERCHANTIBILITY OR FITNESS FOR ANY PURPOSE.
+
+1.F.5.  Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of damages.
+If any disclaimer or limitation set forth in this agreement violates the
+law of the state applicable to this agreement, the agreement shall be
+interpreted to make the maximum disclaimer or limitation permitted by
+the applicable state law.  The invalidity or unenforceability of any
+provision of this agreement shall not void the remaining provisions.
+
+1.F.6.  INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg-tm electronic works in accordance
+with this agreement, and any volunteers associated with the production,
+promotion and distribution of Project Gutenberg-tm electronic works,
+harmless from all liability, costs and expenses, including legal fees,
+that arise directly or indirectly from any of the following which you do
+or cause to occur: (a) distribution of this or any Project Gutenberg-tm
+work, (b) alteration, modification, or additions or deletions to any
+Project Gutenberg-tm work, and (c) any Defect you cause.
+
+
+Section  2.  Information about the Mission of Project Gutenberg-tm
+
+Project Gutenberg-tm is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of computers
+including obsolete, old, middle-aged and new computers.  It exists
+because of the efforts of hundreds of volunteers and donations from
+people in all walks of life.
+
+Volunteers and financial support to provide volunteers with the
+assistance they need, are critical to reaching Project Gutenberg-tm's
+goals and ensuring that the Project Gutenberg-tm collection will
+remain freely available for generations to come.  In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg-tm and future generations.
+To learn more about the Project Gutenberg Literary Archive Foundation
+and how your efforts and donations can help, see Sections 3 and 4
+and the Foundation web page at http://www.pglaf.org.
+
+
+Section 3.  Information about the Project Gutenberg Literary Archive
+Foundation
+
+The Project Gutenberg Literary Archive Foundation is a non profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service.  The Foundation's EIN or federal tax identification
+number is 64-6221541.  Its 501(c)(3) letter is posted at
+http://pglaf.org/fundraising.  Contributions to the Project Gutenberg
+Literary Archive Foundation are tax deductible to the full extent
+permitted by U.S. federal laws and your state's laws.
+
+The Foundation's principal office is located at 4557 Melan Dr. S.
+Fairbanks, AK, 99712., but its volunteers and employees are scattered
+throughout numerous locations.  Its business office is located at
+809 North 1500 West, Salt Lake City, UT 84116, (801) 596-1887, email
+business@pglaf.org.  Email contact links and up to date contact
+information can be found at the Foundation's web site and official
+page at http://pglaf.org
+
+For additional contact information:
+     Dr. Gregory B. Newby
+     Chief Executive and Director
+     gbnewby@pglaf.org
+
+
+Section 4.  Information about Donations to the Project Gutenberg
+Literary Archive Foundation
+
+Project Gutenberg-tm depends upon and cannot survive without wide
+spread public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine readable form accessible by the widest
+array of equipment including outdated equipment.  Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States.  Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements.  We do not solicit donations in locations
+where we have not received written confirmation of compliance.  To
+SEND DONATIONS or determine the status of compliance for any
+particular state visit http://pglaf.org
+
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States.  U.S. laws alone swamp our small staff.
+
+Please check the Project Gutenberg Web pages for current donation
+methods and addresses.  Donations are accepted in a number of other
+ways including checks, online payments and credit card donations.
+To donate, please visit: http://pglaf.org/donate
+
+
+Section 5.  General Information About Project Gutenberg-tm electronic
+works.
+
+Professor Michael S. Hart is the originator of the Project Gutenberg-tm
+concept of a library of electronic works that could be freely shared
+with anyone.  For thirty years, he produced and distributed Project
+Gutenberg-tm eBooks with only a loose network of volunteer support.
+
+
+Project Gutenberg-tm eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the U.S.
+unless a copyright notice is included.  Thus, we do not necessarily
+keep eBooks in compliance with any particular paper edition.
+
+
+Most people start at our Web site which has the main PG search facility:
+
+     http://www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+﻿The Project Gutenberg EBook of The Great House, by Stanley J. Weyman
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+
+Title: The Great House
+
+Author: Stanley J. Weyman
+
+Release Date: March 28, 2012 [EBook #39294]
+
+Language: English
+
+
+*** START OF THIS PROJECT GUTENBERG EBOOK THE GREAT HOUSE ***
+
+
+
+
+Produced by Charles Bowen, from page scans provided by the
+Web Archive (University of Michigan)
+
+
+
+
+
+
+
+
+
+
+
+Transcriber's Notes:
+
+   1. Page scan source:
+      http://www.archive.org/details/greathouseastor00weymgoog
+      (University of Michigan)
+
+   2. The diphthong oe is represented by [oe].
+
+
+
+
+
+
+                           THE GREAT HOUSE
+
+
+
+
+
+
+                          BY THE SAME AUTHOR
+
+       THE HOUSE OF THE WOLF
+       THE NEW RECTOR
+       THE STORY OF FRANCIS CLUDDE
+       A GENTLEMAN OF FRANCE
+       THE MAN IN BLACK
+       UNDER THE RED ROBE
+       MY LADY ROTHA
+       MEMOIRS OF A MINISTER OF FRANCE
+       THE RED COCKADE
+       SHREWSBURY
+       THE CASTLE INN
+       SOPHIA
+       COUNT HANNIBAL
+       IN KINGS' BYWAYS
+       THE LONG NIGHT
+       THE ABBESS OF VLAYE
+       STARVECROW FARM
+       CHIPPINGE
+       LAID UP IN LAVENDER
+       THE WILD GEESE
+
+
+
+
+
+
+                           THE GREAT HOUSE
+
+
+
+
+                                  BY
+
+                          STANLEY J. WEYMAN
+
+               Author of "The Castle Inn," "Chippinge,"
+                 "A Gentleman of France," etc., etc.
+
+
+
+
+
+                               NEW YORK
+                       LONGMANS, GREEN AND CO.
+                    FOURTH AVENUE AND 30th STREET
+                                 1919
+
+
+
+
+
+
+                           Copyright, 1919
+                                  BY
+                          STANLEY J. WEYMAN
+
+
+
+
+
+
+                               CONTENTS
+
+
+   CHAPTER
+
+         I. The Hôtel Lambert--Upstairs.
+
+        II. The Hôtel Lambert--Downstairs.
+
+       III. The Lawyer Abroad.
+
+        IV. Homeward Bound.
+
+         V. The London Packet.
+
+        VI. Field and Forge.
+
+       VII. Mr. John Audley.
+
+      VIII. The Gatehouse.
+
+        IX. Old Things.
+
+         X. New Things.
+
+        XI. Tact and Temper.
+
+       XII. The Yew Walk.
+
+      XIII. Peter Pauper.
+
+       XIV. The Manchester Men.
+
+        XV. Strange Bedfellows.
+
+       XVI. The Great House at Beaudelays.
+
+      XVII. To the Rescue.
+
+     XVIII. Masks and Faces.
+
+       XIX. The Corn Law Crisis.
+
+        XX. Peter's Return.
+
+       XXI. Toft at the Butterflies.
+
+      XXII. My Lord Speaks.
+
+     XXIII. Blore Under Weaver.
+
+      XXIV. An Agent of the Old School.
+
+       XXV. Mary is Lonely.
+
+      XXVI. Missing.
+
+     XXVII. A Footstep in the Hall.
+
+    XXVIII. The News from Riddsley.
+
+      XXIX. The Audley Bible.
+
+       XXX. A Friend in Need.
+
+      XXXI. Ben Bosham.
+
+     XXXII. Mary Makes a Discovery.
+
+    XXXIII. The Meeting at the Maypole.
+
+     XXXIV. By the Canal.
+
+      XXXV. My Lord Speaks Out.
+
+     XXXVI. The Riddsley Election.
+
+    XXXVII. A Turn of the Wheel.
+
+   XXXVIII. Toft's Little Surprise.
+
+     XXXIX. The Deed of Renunciation.
+
+        XL. "Let Us Make Others Thankful."
+
+
+
+
+
+
+                           THE GREAT HOUSE
+
+
+
+
+                              CHAPTER I
+
+                     THE HÔTEL LAMBERT--UPSTAIRS
+
+
+On an evening in March in the 'forties of last century a girl looked
+down on the Seine from an attic window on the Ile St. Louis. The
+room behind her--or beside her, for she sat on the window-ledge, with
+her back against one side of the opening and her feet against the
+other--was long, whitewashed from floor to ceiling, lighted by five
+gaunt windows, and as cold to the eye as charity to the recipient.
+Along each side of the chamber ran ten pallet beds. A black door broke
+the wall at one end, and above the door hung a crucifix. A painting of
+a Station of the Cross adorned the wall at the other end. Beyond this
+picture the room had no ornament; it is almost true to say that beyond
+what has been named it had no furniture. One bed--the bed beside the
+window at which the girl sat--was screened by a thin curtain which did
+not reach the floor. This was her bed.
+
+But in early spring no window in Paris looked on a scene more cheerful
+than this window; which as from an eyrie commanded a shining reach of
+the Seine bordered by the lawns and foliage of the King's Garden, and
+closed by the graceful arches of the Bridge of Austerlitz. On the
+water boats shot to and fro. The quays were gay with the red trousers
+of soldiers and the coquettish caps of soubrettes, with students in
+strange cloaks, and the twin kling wheels of yellow cabriolets. The
+first swallows were hawking hither and thither above the water, and a
+pleasant hum rose from the Boulevard Bourdon.
+
+Yet the girl sighed. For it was her birthday, she was twenty this
+twenty-fifth of March, and there was not a soul in the world to know
+this and to wish her joy. A life of dependence, toned to the key of
+the whitewashed room and the thin pallets, lay before her; and though
+she had good reason to be thankful for the safety which dependence
+bought, still she was only twenty, and springtime, viewed from prison
+windows, beckons to its cousin, youth. She saw family groups walking
+the quays, and father, mother, children, all, seen from a distance,
+were happy. She saw lovers loitering in the garden or pacing to and
+fro, and romance walked with every one of them; none came late, or
+fell to words. She sighed more deeply; and on the sound the door
+opened.
+
+"_Hola!_" cried a shrill voice, speaking in French, fluent, but oddly
+accented. "Who is here? The Princess desires that the English
+Mademoiselle will descend this evening."
+
+"Very good," the girl in the window replied pleasantly. "At the same
+hour, Joséphine?"
+
+"Why not, Mademoiselle?" A trim maid, with a plain face and the
+faultless figure of a Pole, came a few steps into the room. "But you
+are alone?"
+
+"The children are walking. I stayed at home."
+
+"To be alone? As if I did not understand that! To be alone--it is the
+luxury of the rich."
+
+The girl nodded. "None but a Pole would have thought of that," she
+said.
+
+"Ah, the crafty English Miss!" the maid retorted. "How she flatters!
+Perhaps she needs a touch of the tongs to-night? Or the loan of a pair
+of red-heeled shoes, worn no more than thrice by the Princess--and
+with the black which is convenable for Mademoiselle, oh, so neat! Of
+the _ancien régime_, absolutely!"
+
+The other laughed. "The _ancien régime_, Joséphine--and this!" she
+replied, with a gesture that embraced the room, the pallets, her own
+bed. "A curled head--and this! You are truly a cabbage----"
+
+"But Mademoiselle descends!"
+
+"A cabbage of--foolishness!"
+
+"Ah, well, if I descended, you would see," the maid retorted. "I am
+but the Princess's second maid, and I know nothing! But if I descended
+it would not be to this dormitory I should return! Nor to the
+tartines! Nor to the daughters of Poland! Trust me for that--and I
+know but my prayers. While Mademoiselle, she is an artist's daughter."
+
+"There spoke the Pole again," the girl struck in with a smile.
+
+"The English Miss knows how to flatter," Joséphine laughed. "That is
+one for the touch of the tongs," she continued, ticking them off on
+her fingers. "And one for the red-heeled shoes. And--but no more! Let
+me begone before I am bankrupt!" She turned about with a flirt of her
+short petticoats, but paused and looked back, with her hand on the
+door. "None the less, mark you well, Mademoiselle, from the whitewash
+to the ceiling of Lebrun, from the dortoir of the Jeunes Filles to the
+Gallery of Hercules, there are but twenty stairs, and easy, oh, so
+easy to descend! If Mademoiselle instead of flattering Joséphine, the
+Cracovienne, flattered some pretty gentleman--who knows? Not I! I know
+but my prayers!" And with a light laugh the maid clapped to the door
+and was gone.
+
+The girl in the window had not throughout the parley changed her pose
+or moved more than her head, and this was characteristic of her. For
+even in her playfulness there was gravity, and a measure of stillness.
+Now, left alone, she dropped her feet to the floor, turned, and knelt
+on the sill with her brow pressed against the glass. The sun had set,
+mists were rising from the river, the quays were gray and cold. Here
+and there a lamp began to shine through the twilight. But the girl's
+thoughts were no longer on the scene beneath her eyes.
+
+"There goes the third who has been good to me," she pondered. "First
+the Polish lodger who lived on the floor below, and saved me from that
+woman. Then the Princess's daughter. Now Joséphine. There are still
+kind people in the world--God grant that I may not forget it! But how
+much better to give than to take, to be strong than to be weak, to be
+the mistress and not the puppet of fortune! How much better--and, were
+I a man, how easy!"
+
+But on that there came into her remembrance one to whom it had not
+been easy, one who had signally failed to master fortune, or to
+grapple with circumstances. "Poor father!" she whispered.
+
+
+
+
+                              CHAPTER II
+
+                    THE HÔTEL LAMBERT--DOWNSTAIRS
+
+
+When ladies were at home to their intimates in the Paris of the
+'forties, they seated their guests about large round tables with a
+view to that common exchange of wit and fancy which is the French
+ideal. The mode crossed to England, and in many houses these round
+tables, fallen to the uses of the dining-room or the nursery, may
+still be seen. But when the Princess Czartoriski entertained in the
+Hôtel Lambert, under the ceiling painted by Lebrun, which had looked
+down on the arm-chair of Madame de Châtelet and the tabouret of
+Voltaire, she was, as became a Pole, a law to herself. In that
+beautiful room, softly lit by wax candles, her guests were free to
+follow their bent, to fall into groups, or to admire at their ease the
+Watteaus and Bouchers which the Princess's father-in-law, old Prince
+Adam, had restored to their native panels.
+
+Thanks to his taste and under her rule the gallery of Hercules
+presented on this evening a scene not unworthy of its past. The
+silks and satins of the old régime were indeed replaced by the
+high-shouldered coats, the stocks, the pins and velvet vests of the
+dandies; and Thiers beaming through his glasses, or Lamartine, though
+beauty, melted by the woes of Poland, hung upon his lips, might have
+been thought by some unequal to the dead. But they were now what those
+had been; and the women peacocked it as of old. At any rate the effect
+was good, and a guest who came late, and paused a moment on the
+threshold to observe the scene, thought that he had never before done
+the room full justice. Presently the Princess saw him and he went
+forward. The man who was talking to her made his bow, and she pointed
+with her fan to the vacant place. "Felicitations, my lord," she said.
+She held out her gloved hand.
+
+"A thousands thanks," he said, as he bent over it. "But on what,
+Princess?"
+
+"On the success of a friend. On what we have all seen in the
+_Journal_. Is it not true that you have won your suit?"
+
+"I won, yes." He shrugged his shoulders. "But what, Madame? A bare
+title, an empty rent-roll."
+
+"For shame!" she answered. "But I suppose that this is your English
+phlegm. Is it not a thing to be proud of--an old title? That which
+money cannot buy and the wisest would fain wear? M. Guizot, what would
+he not give to be Chien de Race? Your Peel, also?"
+
+"And your Thiers?" he returned, with a sly glance at the little man in
+the shining glasses.
+
+"He, too! But he has the passion of humanity, which is a title in
+itself. Whereas you English, turning in your unending circle, one out,
+one in, one in, one out, are but playing a game--marking time! You
+have not a desire to go forward!"
+
+"Surely, Princess, you forget our Reform Bill, scarce ten years old."
+
+"Which bought off your cotton lords and your fat bourgeois, and left
+the people without leaders and more helpless than before. No, my lord,
+if your Russell--Lord John, do you call him?--had one jot of M.
+Thiers' enthusiasm! Or your Peel--but I look for nothing there!"
+
+He shrugged his shoulders. "I admit," he said, "that M. Thiers has an
+enthusiasm beyond the ordinary."
+
+"You do? Wonderful!"
+
+"But," with a smile, "it is, I fancy, an enthusiasm of which the
+object is--M. Thiers!"
+
+"Ah!" she cried, fanning herself more quickly. "Now there spoke not
+Mr. Audley, the attaché--he had not been so imprudent! But--how do you
+call yourself now?"
+
+"On days of ceremony," he replied, "Lord Audley of Beaudelays."
+
+"There spoke my lord, unattached! Oh, you English, you have no
+enthusiasm. You have only traditions. Poor were Poland if her fate
+hung on you!"
+
+"There are still bright spots," he said slyly. And his glance returned
+to the little statesman in spectacles on whom the Princess rested the
+hopes of Poland.
+
+"No!" she cried vividly. "Don't say it again or I shall be displeased.
+Turn your eyes elsewhere. There is one here about whom I wish to
+consult you. Do you see the tall girl in black who is engaged with the
+miniatures?"
+
+"I saw her some time ago."
+
+"I suppose so. You are a man. I dare say you would call her handsome?"
+
+"I think it possible, were she not in this company. What of her,
+Princess?"
+
+"Do you notice anything beyond her looks?"
+
+"The picture is plain--for the frame in which I see her. Is she one of
+the staff of your school?"
+
+"Yes, but with an air----"
+
+"Certainly--an air!" He nodded.
+
+"Well, she is a countrywoman of yours and has a history. Her father, a
+journalist, artist, no matter what, came to live in Paris years ago.
+He went down, down, always down; six months ago he died. There was
+enough to bury him, no more. She says, I don't know"--the Princess
+indicated doubt with a movement of her fan--"that she wrote to friends
+in England. Perhaps she did not write; how do I know? She was at the
+last sou, the street before her, a hag of a concierge behind, and
+withal--as you see her."
+
+"Not wearing that dress, I presume?" he said with a faint smile.
+
+"No. She had passed everything to the Mont de Piété; she had what she
+stood up in--yet herself! Then a Polish family on the floor below, to
+whom my daughter carried alms, told Cécile of her. They pitied her,
+spoke well of her, she had done--no matter what for them--perhaps
+nothing. Probably nothing. But Cécile ascended, saw her, became
+enamoured, _enragée!_ You know Cécile--for her all that wears feathers
+is of the angels! Nothing would do but she must bring her here and set
+her to teach English to the daughters during her own absence."
+
+"The Princess is away?"
+
+"For four weeks. But in three days she returns, and you see where I
+am. How do I know who this is? She may be this, or that. If she were
+French, if she were Polish, I should know! But she is English and of a
+calm, a reticence--ah!"
+
+"And of a pride too," he replied thoughtfully, "if I mistake not. Yet
+it is a good face, Princess."
+
+She fluttered her fan. "It is a handsome one. For a man that is the
+same."
+
+"With all this you permit her to appear?"
+
+"To be of use. And a little that she may be seen by some English
+friend, who may tell me."
+
+"Shall I talk to her?"
+
+"If you will be so good. Learn, if you please, what she is."
+
+"Your wishes are law," he rejoined. "Will you present me?"
+
+"It is not necessary," the Princess answered. She beckoned to a stout
+gentleman who wore whiskers trimmed à la mode du Roi, and had laurel
+leaves on his coat collar. "A thousand thanks."
+
+He lingered a moment to take part in the Princess's reception of the
+Academician. Then he joined a group about old Prince Adam Czartoriski,
+who was describing a recent visit to Cracow, that last morsel of free
+Poland, soon to pass into the maw of Austria. A little apart, the girl
+in black bent over the case of miniatures, comparing some with a list,
+and polishing others with a square of silk. Presently he found himself
+beside her. Their eyes met.
+
+"I am told," he said, bowing, "that you are my countrywoman. The
+Princess thought that I might be of use to you."
+
+The girl had read his errand before he spoke and a shade flitted
+across her face. She knew, only too well, that her hold on this rock
+of safety to which chance had lifted her--out of a gulf of peril and
+misery of which she trembled to think--was of the slightest. Early,
+almost from the first, she had discovered that the Princess's
+benevolence found vent rather in schemes for the good of many than in
+tenderness for one. But hitherto she had relied on the daughter's
+affection, and a little on her own usefulness. Then, too, she was
+young and hopeful, and the depths from which she had escaped were such
+that she could not believe that Providence would return her to them.
+
+But she was quick-witted, and his opening frightened her. She guessed
+at once that she was not to be allowed to await Cécile's return, that
+her fate hung on what this Englishman, so big and bland and forceful,
+reported of her.
+
+She braced herself to meet the danger. "I am obliged to the Princess,"
+she said. "But my ties with England are slight. I came to France with
+my father when I was ten years old."
+
+"I think you lost him recently?" He found his task less easy than it
+should have been.
+
+"He died six months ago," she replied, regarding him gravely. "His
+illness left me without means. I was penniless, when the young
+Princess befriended me and gave me a respite here. I am no part of
+this," with a glance at the salon and the groups about them. "I teach
+upstairs. I am thankful for the privilege of doing so."
+
+"The Princess told me as much," he said frankly. "She thought that,
+being English, I might advise you better than she could; that possibly
+I might put you in touch with your relations?"
+
+She shook her head.
+
+"Or your friends? You must have friends?"
+
+"Doubtless my father had--once," she said in a low voice. "But as his
+means diminished, he saw less and less of those who had known him. For
+the last two years I do not think that he saw an Englishman at home.
+Before that time I was in a convent school, and I do not know."
+
+"You are a Roman Catholic, then?"
+
+"No. And for that reason--and for another, that my account was not
+paid"--her color rose painfully to her face--"I could not apply to the
+Sisters. I am very frank," she added, her lip trembling.
+
+"And I encroach," he answered, bowing. "Forgive me! Your father was an
+artist, I believe?"
+
+"He drew for an Atelier de Porcelaine--for the journals when he could.
+But he was not very successful," she continued reluctantly. "The china
+factory which had employed him since he came to Paris, failed. When I
+returned from school he was alone and poor, living in the little
+street in the Quartier, where he died."
+
+"But forgive me, you must have some relations in England?"
+
+"Only one of whom I know," she replied. "My father's brother. My
+father had quarrelled with him--bitterly, I fear; but when he was
+dying he bade me write to my uncle and tell him how we were placed. I
+did so. No answer came. Then after my father's death I wrote again. I
+told my uncle that I was alone, that I was without money, that in a
+short time I should be homeless, that if I could return to England I
+could live by teaching French. He did not reply. I could do no more."
+
+"That was outrageous," he answered, flushing darkly. Though well under
+thirty he was a tall man and portly, with one of those large faces
+that easily become injected. "Do you know--is your uncle also in
+narrow circumstances?"
+
+"I know no more than his name," she said. "My father never spoke of
+him. They had quarrelled. Indeed, my father spoke little of his past."
+
+"But when you did not hear from your uncle, did you not tell your
+father?"
+
+"It could do no good," she said. "And he was dying."
+
+He was not sentimental, this big man, whose entrance into a room
+carried with it a sense of power. Nor was he one to be lightly moved,
+but her simplicity and the picture her words drew for him of the
+daughter and the dying man touched him. Already his mind was made up
+that the Czartoriski should not turn her adrift for lack of a word.
+Aloud, "The Princess did not tell me your name," he said. "May I know
+it?"
+
+"Audley," she said. "Mary Audley."
+
+He stared at her. She supposed that he had not caught the name. She
+repeated it.
+
+"Audley? Do you really mean that?"
+
+"Why not?" she asked, surprised in her turn. "Is it so uncommon a
+name?"
+
+"No," he replied slowly. "No, but it is a coincidence. The Princess
+did not tell me that your name was Audley."
+
+The girl shook her head. "I doubt if she knows," she said. "To her I
+am only 'the English girl.'"
+
+"And your father was an artist, resident in Paris? And his name?"
+
+"Peter Audley."
+
+He nodded. "Peter Audley," he repeated. His eyes looked through her at
+something far away. His lips were more firmly set. His face was grave.
+"Peter Audley," he repeated softly. "An artist resident in Paris!"
+
+"But did you know him?" she cried.
+
+He brought his thoughts and his eyes back to her. "No, I did not know
+him," he said. "But I have heard of him." And again it was plain that
+his thoughts took wing. "John Audley's brother, the artist!" he
+muttered.
+
+In her impatience she could have taken him by the sleeve and shaken
+him. "Then you do know John Audley?" she said. "My uncle?"
+
+Again he brought himself back with an effort. "A thousand pardons!" he
+said. "You see the Princess did not tell me that you were an Audley.
+Yes, I know John Audley--of the Gatehouse. I suppose it was to him you
+wrote?"
+
+"Yes."
+
+"And he did not reply?"
+
+She nodded.
+
+He laughed, as at something whimsical. It was not a kindly laugh, it
+jarred a little on his listener. But the next moment his face
+softened, he smiled at her, and the smile of such a man had its
+importance, for in repose his eyes were hard. It was clear to her that
+he was a man of position, that he belonged of right to this keen
+polished world at which she was stealing a glance. His air was
+distinguished, and his dress, though quiet, struck the last note of
+fashion.
+
+"But I am keeping you in suspense," he said. "I must tell you, Miss
+Audley, why it surprised me to learn your name. Because I, too, am an
+Audley."
+
+"You!" she cried.
+
+"Yes, I," he replied. "What is more, I am akin to you. The kinship is
+remote, but it happens that your father's name, in its place in a
+pedigree, has been familiar to me of late, and I could set down the
+precise degree of cousinship in which you stand to me. I think your
+father was my fourth cousin."
+
+She colored charmingly. "Is it possible?" she exclaimed.
+
+"It is a fact, proved indeed, recently, in a court of law," he
+answered lightly. "Perhaps it is as well that we have that warrant for
+a conversation which I can see that the Princess thinks long. After
+this she will expect to hear the whole of your history."
+
+"I fear that she may be displeased," the girl said, wincing a little.
+"You have been very kind----"
+
+"Who should be kind," he replied, "if not the head of your family? But
+have no fear, I will deal with the Princess. I shall be able to
+satisfy her, I have no doubt."
+
+"And you"--she looked at him with appeal in her eyes--"will you be
+good enough to tell me who you are?"
+
+"I am Lord Audley. To distinguish me from another of the same name, I
+am called Audley of Beaudelays."
+
+"Of Beaudelays?" she repeated. He thought her face, her whole bearing,
+singularly composed in view of his announcement. "Beaudelays?" she
+repeated thoughtfully. "I have heard the name more than once. Perhaps
+from my father."
+
+"It were odd if you had not," he said. "It is the name of my house,
+and your uncle, John Audley, lives within a mile of it."
+
+"Oh," she said. The name of the uncle who had ignored her appeals fell
+on her like a cold douche.
+
+"I will not say more now," Lord Audley continued. "But you shall hear
+from me. To--morrow I quit Paris for three or four days, but when I
+return have no fear. You may leave the matter in my hands in full
+confidence that I shall not fail--my cousin."
+
+He held out his hand and she laid hers in it. She looked him frankly
+in the face. "Thank you," she said. "I little thought when I descended
+this evening that I should meet a kinsman."
+
+"And a friend," he answered, holding her hand a little longer than was
+needful.
+
+"And a friend," she repeated. "But there--I must go now. I should have
+disappeared ten minutes ago. This is my way." She inclined her head,
+and turning from him she pushed open a small door masked by a picture.
+She passed at once into a dark corridor, and threading its windings
+gained the great staircase.
+
+As she flitted upwards from floor to floor, skirting a long procession
+of shadowy forms, and now ogled by a Leda whose only veil was the
+dusk, now threatened by the tusks of the great boar at bay, she
+was not conscious of thought or surprise. It was not until she had
+lighted her taper outside the dormitory door, and, passing between the
+rows of sleeping children, had gained her screened corner, that she
+found it possible to think. Then she set the light in her tiny
+washing-basin--such was the rule--and seated herself on her bed. For
+some minutes she stared before her, motionless and unwinking, her
+hands clasped about her knees, her mind at work.
+
+Was it true, or a dream? Had this really happened to her since she had
+viewed herself in the blurred mirror, had set a curl right and,
+satisfied, had turned to go down? The danger and the delivery from it,
+the fear and the friend in need? Or was it a Cinderella's treat, which
+no fairy godmother would recall to her, with which no lost slipper
+would connect her? She could almost believe this. For no Cinderella,
+in the ashes of the hearth, could have seemed more remote from the gay
+ball-room than she crouching on her thin mattress, with the breathing
+of the children in her ears, from the luxury of the famous salon.
+
+Or, if it was true, if it had happened, would anything come of it?
+Would Lord Audley remember her? Or would he think no more of her,
+ignoring to-morrow the poor relation whom it had been the whim of the
+moment to own? That would be cruel! That would be base! But if Mary
+had fallen in with some good people since her father's death, she had
+also met many callous, and a few cruel people. He might be one. And
+then, how strange it was that her father had never named this great
+kinsman, never referred to him, never even, when dying, disclosed his
+name!
+
+The light wavered in the draught that stole through the bald, undraped
+window. A child whimpered in its sleep, awoke, began to sob. It was
+the youngest of the daughters of Poland. The girl rose, and going on
+tip-toe to the child, bent over it, kissed it, warmed it in her bosom,
+soothed it. Presently the little waif slept again, and Mary Audley
+began to make ready for bed.
+
+But so much turned for her on what had happened, so much hung in the
+balance, that it was not unnatural that as she let down her hair and
+plaited it in two long tails for the night, she should see her new
+kinsman's face in the mirror. Nor strange that as she lay sleepless
+and thought-ridden in her bed the same face should present itself anew
+relieved against the background of darkness.
+
+
+
+
+                             CHAPTER III
+
+                          THE LAWYER ABROAD
+
+
+Half an hour later Lord Audley paused in the hall at Meurice's, and
+having given his cloak and hat to a servant went thoughtfully up the
+wide staircase. He opened the door of a room on the first floor. A
+stout man with a bald head, who had been for some time yawning over
+the dying fire, rose to his feet and remained standing.
+
+Audley nodded. "Hallo, Stubbs!" he said carelessly, "not in bed yet?"
+
+"No, my lord," the other answered. "I waited to learn if your lordship
+had any orders for England."
+
+"Well, sit down now. I've something to tell you." My lord stooped as
+he spoke and warmed his hands at the embers; then rising, he stood
+with his back to the hearth. The stout man sat forward on his
+chair with an air of deference. His double chin rested on the ample
+folds of a soft white stock secured by a gold pin in the shape of a
+wheat-sheaf. He wore black knee-breeches and stockings, and his dress,
+though plain, bore the stamp of neatness and prosperity.
+
+For a minute or two Audley continued to look thoughtfully before him.
+At length, "May I take it that this claim is really at an end now?" he
+said. "Is the decision final, I mean?"
+
+"Unless new evidence crops up," Stubbs answered--he was a lawyer--"the
+decision is certainly final. With your lordship's signature to the
+papers I brought over----"
+
+"But the claimant might try again?"
+
+"Mr. John Audley might do anything," Stubbs returned. "I believe him
+to be mad upon the point, and therefore capable of much. But he could
+only move on new evidence of the most cogent nature. I do not believe
+that such evidence exists."
+
+His employer weighed this for some time. At length, "Then if you were
+in my place," he said, "you would not be tempted to hedge?"
+
+"To hedge?" the lawyer exclaimed, as if he had never heard the word
+before. "I am afraid I don't understand."
+
+"I will explain. But first, tell me this. If anything happens to me
+before I have a child, John Audley succeeds to the peerage? That is
+clear?"
+
+"Certainly! Mr. John Audley, the claimant, is also your heir-at-law."
+
+"To title and estates--such as they are?"
+
+"To both, my lord."
+
+"Then follow me another step, Stubbs. Failing John Audley, who is the
+next heir?"
+
+"Mr. Peter Audley," Stubbs replied, "his only brother, would succeed,
+if he were alive. But it is common ground that he is dead. I knew Mr.
+Peter, and, if I may say it of an Audley, my lord, a more shiftless,
+weak, improvident gentleman never lived. And obstinate as the devil!
+He married into trade, and Mr. John never forgave it--never forgave
+it, my lord. Never spoke of his brother or to his brother from that
+time. It was before the Reform Bill," the lawyer continued with a
+sigh. "There were no railways then and things were different. Dear,
+dear, how the world changes! Mr. Peter must have gone abroad ten years
+ago, but until he was mentioned in the suit I don't think that I had
+heard his name ten times in as many years. And he an Audley!"
+
+"He had a child?"
+
+"Only one, a daughter."
+
+"Would she come in after Mr. John?"
+
+"Yes, my lord, she would--if living."
+
+"I've been talking to her this evening."
+
+"Ah!" The lawyer was not so simple as he seemed, and for a minute or
+two he had foreseen the _dénouement_. "Ah!" he repeated, thoughtfully
+rubbing his plump calf. "I see, my lord. Mr. Peter Audley's daughter?
+Really! And if I may venture to ask, what is she like?"
+
+Audley paused before he answered. Then, "If you have painted the
+father aright, Stubbs, I should say that she was his opposite in all
+but his obstinacy. A calm and self-reliant young woman, if I am any
+judge."
+
+"And handsome?"
+
+"Yes, with a look of breeding. At the same time she is penniless and
+dependent, teaching English in a kind of charity school, cheek by jowl
+with a princess!"
+
+"God bless my soul!" cried the lawyer, astonished at last. "A
+princess!"
+
+"Who is a good creature as women go, but as likely as not to send her
+adrift to-morrow."
+
+"Tut-tut-tut!" muttered the other.
+
+"However, I'll tell you the story," Audley concluded. And he did so.
+
+When he had done, "Well," Stubbs exclaimed, "for a coincidence----"
+
+"Ah, there," the young man broke in, "I fancy, all's not said. I take
+it the Princess noted the name, but was too polite to question me.
+Anyway, the girl is there. She is dependent, friendless; attractive,
+and well-bred. For a moment it did occur to me--she is John Audley's
+heiress--that I might make all safe by----" His voice dropped. His
+last words were inaudible.
+
+"The chance is so very remote," said the lawyer, aware that he was on
+delicate ground, and that the other was rather following out his own
+thoughts than consulting him.
+
+"It is. The idea crossed my mind only for a moment--of course it's
+absurd for a man as poor as I am. There is hardly a poorer peer out of
+Ireland--you know that. Fourteenth baron without a roof to my house
+or a pane of glass in my windows! And a rent-roll when all is told
+of----"
+
+"A little short of three thousand," the lawyer muttered.
+
+"Two thousand five hundred, by God, and not a penny more! If any man
+ought to marry money, I am that man, Stubbs!"
+
+Mr. Stubbs, staring at the fire with a hand on each knee, assented
+respectfully. "I've always hoped that you would, my lord," he said,
+"though I've not ventured to say it."
+
+"Yes! Well--putting that aside," the other resumed, "what is to be
+done about her? I've been thinking it over, and I fancy that I've hit
+on the right line. John Audley's given me trouble enough. I'll give
+him some. I'll make him provide for her, d--n him, or I don't know my
+man!"
+
+"I'd like to know, my lord," Stubbs ventured thoughtfully, "why he
+didn't answer her letters. He hated her father, but it is not like Mr.
+John to let the young lady drift. He's crazy about the family, and she
+is his next heir. He's a lonely man, too, and there is room at the
+Gatehouse."
+
+Audley paused, half-way across the room. "I wish we had never leased
+the Gatehouse to him!"
+
+"It's not everybody's house, my lord. It's lonely and----"
+
+"It's too near Beaudelays!"
+
+"If your lordship were living at the Great House, quite so," the
+lawyer agreed. "But, as it is, the rent is useful, and the lease was
+made before our time, so that we have no choice."
+
+"I shall always believe that he had a reason for going there!"
+
+"He had an idea that it strengthened his claim," the lawyer said
+indulgently. "Nothing beyond that, my lord."
+
+"Well, I've made up my mind to increase his family by a niece!" the
+other replied. "He shall have the girl whether he likes it or not.
+Take a pen, man, and sit down. He's spoiled my breakfast many a time
+with his confounded Writs of Error, or whatever you call them, and for
+once I'll be even with him. Say--yes, Stubbs, say this:
+
+"'I am directed by Lord Audley to inform you that a young lady,
+believed to be a daughter of the late Mr. Peter Audley, and recently
+living in poverty in an obscure'--yes, Stubbs, say obscure--'part of
+Paris, has been rescued by the benevolence of a Polish lady. For the
+present she is in the lady's house in a menial capacity, and is
+dependent on her charity. Lord Audley is informed that the young lady
+made application to you without result, but this report his lordship
+discredits. Still, he feels himself concerned; and if those to whom
+she naturally looks decline to aid her, it is his lordship's intention
+to make such provision as may enable her to live respectably. I am to
+inform you that Miss Audley's address is the Hôtel Lambert, He St.
+Louis, Paris. Letters should be addressed "Care of the Housekeeper."'"
+
+"He won't like the last touch!" the young man continued, with a quiet
+chuckle. "If that does not touch him on the raw, I'll yield up the
+title to-morrow. And now, Stubbs, good-night."
+
+But Stubbs did not take the hint. "I want to say one word, my lord,
+about the borough--about Riddsley," he said. "We put in Mr. Mottisfont
+at the last election, your lordship's interest just tipping the scale.
+We think, therefore, that a word from you may set right what is going
+wrong."
+
+"What is it?"
+
+"There's a strong feeling," the lawyer answered, his face serious,
+"that the party is not being led aright. And that Mr. Mottisfont, who
+is old----"
+
+"Is willing to go with the party, eh, Stubbs?"
+
+"No, my lord, with the party leaders. Which is a different thing.
+Sir Robert Peel--the land put him in, but, d--n me, my lord"--the
+lawyer's manner lost much of its deference and he spoke bluntly and
+strongly--"it looks as if he were going to put the land out! An
+income-tax in peace time, we've taken that. And less protection for
+the farmer, very good--if it must be. But all this taking off of
+duties, this letting in of Canadian corn--I tell you, my lord, there's
+an ugly feeling abroad! There are a good many in Riddsley say that he
+is going to repeal the Corn Laws altogether; that he's sold us to the
+League, and won't be long before he delivers us!"
+
+The big man sitting back in his chair smiled. "It seems to me," he
+said, "that you are travelling rather fast and rather far, Stubbs!"
+
+"That's just what we fear Sir Robert is doing!" the lawyer retorted
+smartly, the other's rank forgotten. "And you may take it from me the
+borough won't stand it, my lord, and the sooner Mr. Mottisfont has a
+hint the better. If he follows Peel too far, the bottom will fall out
+of his seat. There's no Corn Law leaguer will ever sit for Riddsley!"
+
+"With your help, anyway, Stubbs," my lord said with a smile. The
+lawyer's excitement amused him.
+
+"No, my lord! Never with my help! I believe that on the landed
+interest rests the stability of the country! It was the landed
+interest that supported Pitt and beat Bony, and brought us through
+the long war. It was the landed interest that kept us from revolution
+in the dark days after the war. And now because the men that turn
+cotton and iron and clay into money by the help of the devil's
+breath--because they want to pay lower wages----"
+
+"The ark of the covenant is to be overthrown, eh?" the young man
+laughed. "Why, to listen to you, Stubbs, one would think that you were
+the largest landowner in the county!"
+
+"No, my lord," the lawyer answered. "But it's the landowners have made
+me what I am. And it's the landowners and the farmers that Riddsley
+lives by and is going to stand by! And the sooner Mr. Mottisfont knows
+that the better. He was elected as a Tory, and a Tory he must stop,
+whether Sir Robert turns his coat or not!"
+
+"You want me to speak to Mottisfont?"
+
+"We do, my lord. Just a word. I was at the Ordinary last fair day, and
+there was nothing else talked of. Free Canadian corn was too like free
+French corn and free Belgian corn for Stafford wits to see much
+difference. And Peel is too like repeal, my lord. We are beginning to
+see that."
+
+Audley shrugged his shoulders. "The party is satisfied," he said. "And
+Mottisfont? I can't drive the man."
+
+"No, but a word from you----"
+
+"Well, I'll think about it. But I fancy you're overrunning the scent."
+
