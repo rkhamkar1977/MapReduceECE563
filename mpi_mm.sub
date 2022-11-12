@@ -1,10 +1,12 @@
 #!/bin/bash
 # FILENAME:  mpi_mapreduce.sub
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=4
-#SBATCH --time=00:02:00
-#SBATCH --cpus-per-task=5
+#SBATCH --nodes=8
+#SBATCH --ntasks-per-node=2
+#SBATCH --time=00:05:00
+#SBATCH --cpus-per-task=10
 #SBATCH -A scholar
 
-export OMP_NUM_THREADS=5
-srun --mpi=pmi2 -n 4 ./mpi_mapreduce
+export OMP_NUM_THREADS=10
+srun --mpi=pmi2 -n 16 ./mpi_mapreduce
+cat output_* > output
+rm output_*

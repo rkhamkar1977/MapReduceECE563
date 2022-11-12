@@ -4,16 +4,29 @@
 #include <string.h>
 #include <unistd.h>
 
-#define LINE_LENGTH 256
-#define WORD_LENGTH 70 //Making it 32 because some word strings are > 20
-#define NUM_PROCESS 2
-#define NUM_FILE_CHUNKS 100
-#define READER_Q_SIZE 100000
-#define KEYS_PER_REDUCER 150
-#define OUTPUT_WRITE 10001
-#define READ_THREADS 3
-#define WRITE_THREADS 3
 
+//Run times:
+//Did following tests:
+//with 16 nodes, times are:
+//Read 8, Write 8, Map 2, Reduce 10 - 0.7s - Fastest
+//Read 6, Write 6, Map 2, Reduce 8 - 1.4s
+//Read 4, Write 4, Map 4, Reduce 8 - 2s
+//Read 9, Write 9, Map 1, Reduce 10 - 2+ s 
+///User config
+#define NUM_PROCESS 16
+#define NUM_FILE_CHUNKS 130
+#define KEYS_PER_REDUCER 5000
+#define READ_THREADS 8
+#define WRITE_THREADS 8
+#define MAP_THREADS 2
+#define REDUCE_THREADS 10
+#define READER_Q_SIZE 200000
+
+
+///Do not change
+#define LINE_LENGTH 256
+#define WORD_LENGTH 70 
+#define OUTPUT_WRITE 10001
 
 typedef struct Q {
     int size;
@@ -25,6 +38,7 @@ typedef struct Q {
 typedef struct scratchlist {
     int file;
     int map;
+    int thread;
     struct scratchlist* nextptr;
 } scratchlist;
 
@@ -48,17 +62,12 @@ struct Q* InitQ (int n) {
 } 
 
 int getWorkWQ (struct Q* W, char* buf) {
-    //char* str = (char*) malloc(sizeof(char)*LINE_LENGTH);
-    //printf("In getWorkQ\n");
     if (W->pos>-1) {
-        //printf("DEBUG: %s length is %d\n",W->QHead[W->pos],strlen(W->QHead[W->pos])); 
         memcpy(buf,W->QHead[W->pos],(strlen(W->QHead[W->pos]))*sizeof(char));
-        //printf("Done Memcpy\n");
-        //str=W->QHead[W->pos];
+        buf[strlen(W->QHead[W->pos])]=0;
         W->pos--;
         return 1;
     } else {
-        //printf("ERROR:Trying to get work from empty Work Q\n");
         return 0;
     }
 }
@@ -66,18 +75,14 @@ int getWorkWQ (struct Q* W, char* buf) {
 int putWorkWQ (struct Q* W, char* buf) {
     if (W->pos < W->size-1) {
         W->pos++;
-        //printf("Inside putWorkWQ, workpos is %d\n",W->pos);
         memcpy(W->QHead[W->pos],buf,(strlen(buf)+1)*sizeof(char));
         return 1;
     } else {
-        //printf("Trying to push into full Q\n");
         return 0;
     }
 }
 
 void reader(struct Q* W, char* fileName, int pid, omp_lock_t* lck) {
-    //printf("PID %d In reader, File %s\n",pid,fileName);
-    //char* fileName="2.txt";
     int lines = 0;
     int returnVal=1;
     FILE* file = fopen(fileName,"r");
@@ -85,21 +90,17 @@ void reader(struct Q* W, char* fileName, int pid, omp_lock_t* lck) {
     while (fgets(buf,LINE_LENGTH,file) != NULL) {
         if (buf[0]!='\n') {
             lines++;
-            //printf("Putting %s into Work queue\n",buf);
             do {
             omp_set_lock(lck);
             returnVal=putWorkWQ(W,buf);
             omp_unset_lock(lck);
             if (returnVal==0) {
                 usleep(5);
-                printf("PID %d Q currently full, reader waiting\n",pid);
+                //printf("PID %d Q currently full, reader waiting\n",pid);
             }
         } while(returnVal==0);
-        //printf("Put %s into Work queue\n",buf);
         }
     }
-    //printf("PID %d, Processed file %s, num lines: %d\n",pid,fileName,lines);
-    //printf("PID %d, Processed file %s, work q position %d\n",pid,fileName,W->pos);    
     fclose(file);
     return;
 }
@@ -166,12 +167,9 @@ void printTable(struct LLitem** h, int n) {
         printf("H[%d]",i);
         if ( *(h+i) != NULL) {
             p = *(h+i);
-            //printf("Printing word at %p\n",&((*(h+i))->word));
-            // adding comment to test commit
             do {
                 printf(" {%s,%d} ",p->word,p->cnt);
                 p = p->nextptr;
-                //printf("%d next pointer\n",(p==NULL));
             } while(p!=NULL);
         }
         else {printf(" NULL ");}
@@ -186,11 +184,9 @@ void printScratchTable(struct scratchlist** h, int n) {
         printf("R[%d]",i);
         if ( *(h+i) != NULL) {
             p = *(h+i);
-            //printf("Printing word at %p\n",&((*(h+i))->word));
             do {
-                printf(" -> {%d,%d} ",p->map,p->file);
+                printf(" -> {%d,%d,%d} ",p->map,p->file,p->thread);
                 p = p->nextptr;
-                //printf("%d next pointer\n",(p==NULL));
             } while(p!=NULL);
         }
         else {printf(" NULL ");}
@@ -198,20 +194,19 @@ void printScratchTable(struct scratchlist** h, int n) {
     }
 } 
 
-void insertScratchFile (struct scratchlist** h, int file, int map) {
+void insertScratchFile (struct scratchlist** h, int file, int map, int tid) {
     struct scratchlist* p = *h;
     struct scratchlist* elem = (struct scratchlist*) malloc(sizeof(struct scratchlist));
     *h = elem;
     elem->file=file;
     elem->map=map;
-    //printf("Writing word %s to %p\n",elem->word,&(elem->word));
+    elem->thread=tid;
     elem->nextptr=p;
     return;
 }
 
 void insert (struct LLitem** h, char* w, int c) {
     if (strlen(w)>WORD_LENGTH) {
-        //printf("Word %s is bigger than word length, might lead to Malloc issues",w);
         return;
     }
     if (*h==NULL) {
@@ -220,7 +215,6 @@ void insert (struct LLitem** h, char* w, int c) {
         elem->cnt=c;
         elem->word=(char*) malloc(WORD_LENGTH*sizeof(char));
         memcpy(elem->word,w,sizeof(char)*(strlen(w)+1));
-        //printf("Writing word %s to %p\n",elem->word,&(elem->word));
         elem->nextptr=NULL;
         return;
     }
@@ -242,7 +236,6 @@ void insert (struct LLitem** h, char* w, int c) {
         elem->cnt=c;
         elem->word=(char*) malloc(WORD_LENGTH*sizeof(char));
         memcpy(elem->word,w,sizeof(char)*(strlen(w)+1));
-        //printf("Writing word %s to %p\n",elem->word,&(elem->word));
         elem->nextptr=p;
         return;
     }
@@ -262,13 +255,13 @@ int readingDone(int* flag, int num_readers, int num_read_threads) {
     return f;
 }
 
-int writer(struct LLitem** h, int index, int pid) {
+int writer(struct LLitem** h, int index, int pid, int tid) {
     struct LLitem* p;
     int file_count = 0;
     char filename[30];
     if (index != OUTPUT_WRITE) {
         while (*h!=NULL) {
-            sprintf(filename,"%d_reducerFile_%d_%d",pid,index,file_count);
+            sprintf(filename,"%d_%d_reducerFile_%d_%d",pid,tid,index,file_count);
             FILE* f = fopen(filename,"w");
             int count = 0;
             while ((*h!=NULL) && (count<KEYS_PER_REDUCER)) {
@@ -280,10 +273,9 @@ int writer(struct LLitem** h, int index, int pid) {
             fclose(f);
             file_count++;
         }
-        //printf("PID %d Index %d word count %d\n",pid,index,file_count);
         return file_count;
     } else {
-        sprintf(filename,"output_%d",pid);
+        sprintf(filename,"output_%d_%d",pid,tid);
         FILE* f = fopen(filename,"w");
         while (*h!=NULL) {
             p = *h;
@@ -304,8 +296,7 @@ void printFlag(int* flag, int n, char* name) {
     printf("\n");
 }
 
-void mapper(struct Q* W, int* done, int num_read_threads, int num_write_threads, int pid, int* num_scratch_files, omp_lock_t* lck) {
-    //printf("PID %d in Mapper\n",pid);
+void mapper(struct Q* W, int* done, int num_read_threads, int num_write_threads, int pid, int* num_scratch_files, omp_lock_t* lck, int tid) {
     struct LLitem* hTable[NUM_PROCESS];
     int i;
     for (i=0;i<NUM_PROCESS;i++) {
@@ -320,51 +311,33 @@ void mapper(struct Q* W, int* done, int num_read_threads, int num_write_threads,
     char* word = (char*) malloc(WORD_LENGTH*sizeof(char));
     while(1) {
         omp_set_lock(lck);
-        //printf("PID %d going into getWorkQ\n",pid);
         buf = startptr;
         workReturnVal=getWorkWQ(W, buf);
-        //printf("DEBUG 1: %s length is %d\n",buf,strlen(buf)); 
         omp_unset_lock(lck);
         if (workReturnVal) {
             lines++;
-            //printf("PID %d Pulled string %s from buffer\n",pid,buf);
             do {
                 returnVal=getWord(&buf,word);
-                //printf("DEBUG 2: %s length is %d\n",buf,strlen(buf)); 
                 normalizeWord(word);
                 if (!strlen(word)) {continue;}
-                //printf("in mapper loop %s\n",word);
-                //printf("%s\n",word);
                 hIndex=hashFunc(word)%NUM_PROCESS;
-                //printf("Pushing %s into table (Hash value %d)\n",word, hIndex);
                 insert(&hTable[hIndex],word,1);
             } while(returnVal);
-            //printf("out of mapper loop\n");
         } else {
             if (*done==num_read_threads) {
-                //printf("PID %d done mapping\n",pid);
                 break;
             }
             else {
-                usleep(1500);
+                usleep(50);
                 //printf("PID %d Empty Q but reading not done\n",pid);
                 continue;
             }
         }
     } 
-    //printf("Reached scratch mapping\n");
-    //printTable(hTable,NUM_PROCESS);
-    //int num_scratch_files[NUM_PROCESS];
-    //#pragma omp parallel for num_threads(num_write_threads)
+    #pragma omp parallel for num_threads(num_write_threads)
         for (i=0;i<NUM_PROCESS;i++) {
-            num_scratch_files[i]=writer(&hTable[i],i,pid); // Need to parallelize this
+            num_scratch_files[i]=writer(&hTable[i],i,pid,tid); // Need to parallelize this
         }
-    //printf("PID %d, Total lines processed %d\n",pid,lines);
-    if (pid == 1) {
-        //printTable(hTable,NUM_PROCESS);
-        //char name[18]="Num Scratch Files";
-        //printFlag(num_scratch_files,NUM_PROCESS,name);
-    }
     return;
 }
 
@@ -386,15 +359,16 @@ void printScratchInfo (int n, int* p) {
 }
 
 void get_scratch_file(scratchlist** h, int* retVal) {
-    //int* retVal = (int*) malloc(sizeof(int)*2);
     *retVal=999;
     *(retVal+1)=999;
+    *(retVal+2)=999;
     while(1) {
         if (*h == NULL) {break;}
         if ((*h)->file>0) {
             (*h)->file--;
             *retVal = (*h)->map;
             *(retVal+1) = (*h)->file;
+            *(retVal+2) = (*h)->thread;
             break;
         } else {
             *h = (*h)->nextptr;
@@ -414,40 +388,149 @@ int min(int a, int b) {
     return a ? a<b : b;
 }
 
-int main (int argc, char *argv[]) {
-    const int read_done = 1234;
-    const int reducer_done = 9999;
-    const int reducer_q_empty = 999;
-    int num_read_threads;
-    int num_write_threads;
-    int pid;
-    int map_done = 0;
-    int numP,provided;
-    MPI_Init_thread(&argc,&argv,MPI_THREAD_MULTIPLE,&provided);
-    if (provided != MPI_THREAD_MULTIPLE)
-    {
-        printf("Sorry, this MPI implementation does not support multiple threads\n");
-        MPI_Abort(MPI_COMM_WORLD, 1);
-    }
-    MPI_Comm_size(MPI_COMM_WORLD,&numP);
-    MPI_Comm_rank(MPI_COMM_WORLD,&pid);
-    if (numP != NUM_PROCESS) {
-        printf("NUM_PROCESS is not equal to number of processes. Please correctly define it in the header\n");
-        MPI_Abort(MPI_COMM_WORLD,1);
-    }
-    num_read_threads = READ_THREADS;
-    num_write_threads = WRITE_THREADS;
-    int num_read_threads_master = omp_get_max_threads()-4;
-    int num_write_threads_master = omp_get_max_threads()-4;
-    if ((num_read_threads<1) || (num_write_threads<1)) {
-        printf("Insufficient threads per task\n");
-        MPI_Abort(MPI_COMM_WORLD, 1);
-    }
-    MPI_Barrier(MPI_COMM_WORLD);
-    double elapsedTime = -MPI_Wtime();
-    int i,j;
 
-    if (numP>1) {
+void send_to_reducer(struct LLitem** h, int index, struct LLitem** reducerQ_head) {
+    printf("thread %d inside send to reducer\n",omp_get_thread_num());
+    struct LLitem* p;
+    int file_count = 0;
+    while (*h!=NULL) {
+        struct LLitem* reducerQ_item = (struct LLitem*) malloc(sizeof(LLitem));
+        p = *h;
+        reducerQ_item->cnt = p->cnt;
+        reducerQ_item->word = p->word;
+        reducerQ_item->nextptr = *(reducerQ_head+index);
+        *(reducerQ_head+index) = reducerQ_item;
+        *h = p->nextptr;
+    }
+    return;
+}
+
+void openmp_mapper(struct Q* W, int* done, int num_read_threads, struct LLitem** reducerQ, omp_lock_t* lck, omp_lock_t* reducer_q_lck) {
+    struct LLitem* hTable[REDUCE_THREADS];
+    int i;
+    for (i=0;i<REDUCE_THREADS;i++) {
+        hTable[i]=NULL;
+    }
+    int hIndex;
+    int returnVal;
+    int workReturnVal=0;
+    int lines=0;
+    char* buf = (char*) malloc(LINE_LENGTH*sizeof(char));
+    char* startptr = buf;
+    char* word = (char*) malloc(WORD_LENGTH*sizeof(char));
+    while(1) {
+        buf = startptr;
+        omp_set_lock(lck);
+        workReturnVal=getWorkWQ(W, buf);
+        omp_unset_lock(lck);
+        if (workReturnVal) {
+            lines++;
+            do {
+                returnVal=getWord(&buf,word);
+                normalizeWord(word);
+                if (!strlen(word)) {continue;}
+                hIndex=hashFunc(word)%REDUCE_THREADS;
+                insert(&hTable[hIndex],word,1);
+            } while(returnVal);
+        } else {
+            if (*done==num_read_threads) {
+                break;
+            }
+            else {
+                usleep(1500);
+                continue;
+            }
+        }
+    } 
+    //printf("thread %d Mapping Done, sending files to reducer\n",omp_get_thread_num());
+    #pragma omp parallel for num_threads(WRITE_THREADS)
+    for (i=0;i<REDUCE_THREADS;i++) {
+        omp_set_lock(&reducer_q_lck[i]);
+        send_to_reducer(&hTable[i],i,reducerQ); // Need to parallelize this
+        omp_unset_lock(&reducer_q_lck[i]);
+    }
+    //printf("thread %d Done sending files to reducer\n",omp_get_thread_num());
+    return;
+}
+
+int openmp_writer(struct LLitem** h, int pid) {
+    struct LLitem* p;
+    int file_count = 0;
+    char filename[30];
+    sprintf(filename,"output_%d",pid);
+    FILE* f = fopen(filename,"w");
+    while (*h!=NULL) {
+        p = *h;
+        fprintf(f,"%s %d\n",p->word,p->cnt);
+        *h = p->nextptr;
+    }
+    fclose(f);
+    return 1;
+}
+
+
+int reducer(int rid, struct LLitem** rQ, omp_lock_t* lck, int* map_done) {
+    printf("thread %d inside reducer %d\n",omp_get_thread_num(),rid);
+    struct LLitem* internal_reducerQ = (struct LLitem*) malloc(sizeof(LLitem));
+    struct LLitem* p;
+    internal_reducerQ=NULL;
+    while (1) {
+        omp_set_lock(lck);
+        p = *rQ;
+        if ((*rQ)!=NULL) {(*rQ) = (*rQ)->nextptr;}
+        omp_unset_lock(lck);
+        if ((p==NULL) && (*map_done!=MAP_THREADS)) {
+            usleep(1000);
+            continue;
+        } else if ((p==NULL) && (*map_done==MAP_THREADS)) {
+            break;
+        } else {
+            //printf("thread %d Putting %s,%d into the internal q\n",omp_get_thread_num(),p->word,p->cnt);
+            insert(&internal_reducerQ,p->word,p->cnt);
+        }
+    }
+    printf("thread %d done reducing\n",omp_get_thread_num());
+    openmp_writer(&internal_reducerQ,rid);
+}
+
+
+int main (int argc, char *argv[]) {
+    if (NUM_PROCESS>1) {
+        const int read_done = 1234;
+        const int reducer_done = 9999;
+        const int reducer_q_empty = 999;
+        int num_read_threads;
+        int num_write_threads;
+        int pid;
+        int map_done = 0;
+        int numP,provided;
+        MPI_Init_thread(&argc,&argv,MPI_THREAD_MULTIPLE,&provided);
+        if (provided != MPI_THREAD_MULTIPLE)
+        {
+            printf("Sorry, this MPI implementation does not support multiple threads\n");
+            MPI_Abort(MPI_COMM_WORLD, 1);
+        }
+        MPI_Comm_size(MPI_COMM_WORLD,&numP);
+        MPI_Comm_rank(MPI_COMM_WORLD,&pid);
+        if (numP != NUM_PROCESS) {
+            printf("NUM_PROCESS is not equal to number of processes. Please correctly define it in the header\n");
+            MPI_Abort(MPI_COMM_WORLD,1);
+        }
+        num_read_threads = READ_THREADS;
+        num_write_threads = WRITE_THREADS;
+        int num_read_threads_master = omp_get_max_threads()-4;
+        int num_write_threads_master = omp_get_max_threads()-4;
+        if ((num_read_threads<1) || (num_write_threads<1)) {
+            printf("Insufficient threads per task\n");
+            MPI_Abort(MPI_COMM_WORLD, 1);
+        }
+        if (NUM_FILE_CHUNKS<READ_THREADS*NUM_PROCESS) {
+            printf("Uneven work distribution - reduce NUM_PROCESS or increase file chunks\n");
+            MPI_Abort(MPI_COMM_WORLD,1);
+        }
+        MPI_Barrier(MPI_COMM_WORLD);
+        double elapsedTime = -MPI_Wtime();
+        int i,j;
         if (!pid) {
             struct scratchlist* scratch_table[NUM_PROCESS];
             omp_lock_t scratch_locks[NUM_PROCESS];
@@ -458,7 +541,7 @@ int main (int argc, char *argv[]) {
             int reader_file_ptr = 0;
             int reader_msg = 0;
             int reducer_recv_msg = 0;
-            int reducer_send_msg[2] = {0,0};
+            int reducer_send_msg[3] = {0,0,0};
             int reader_pid;
             MPI_Request reader_req_for_work;
             MPI_Status reader_req_status;
@@ -469,16 +552,13 @@ int main (int argc, char *argv[]) {
             char reducerFileName[25];
             FILE *reducerFile;
             int done_read;
-            ///New declarations here:
             struct Q* reader_Q = InitQ(READER_Q_SIZE);
             MPI_Request scratch_info;
-            int num_scratch[NUM_PROCESS+1];
+            
             omp_lock_t lck, done_lck; //For mapper and readers to synchronize work q
             omp_init_lock(&lck);
             omp_init_lock(&done_lck);
-            int done=0; //When making multi-threaded reader need to make this an array
-
-            //No reducer should finish if mapping isn't finished
+            int done=0; 
             for (i=0;i<NUM_PROCESS;i++) {
                 flag[i] = 0;
             }
@@ -489,34 +569,16 @@ int main (int argc, char *argv[]) {
             for (i=0;i<NUM_PROCESS;i++) {
                 reduce_finish_ptr[i]=0;
             }
-            //MPI Master process messaging bit : 0 - reader asking for work, 2 -reducer asking for file, 1 - Mapper giving scratch info
-            //MPI Master messaging ettiquette - send 2 integers - 1st is your pid and second is messaging bit - 0/1/2
-            //MPI Process tag for getting and asking for work - 0
-            //MPI_Request node_init_done;
             MPI_Request scratch_msg_done, reduce_msg_done, node_init_done;
             //Assuming numP is < num file chunks
-            //Need to create different tasks for each loop
             for (i=1;i<numP;i++) {
                 for (j=0;j<num_read_threads;j++) {
                     MPI_Isend(&reader_file_ptr,1,MPI_INT,i,0,MPI_COMM_WORLD,&node_init_done);
-                    //printf("PID %d sending file %d.txt to destination %d\n",pid,reader_file_ptr,i);
+                    printf("PID %d sending file %d.txt to destination %d\n",pid,reader_file_ptr,i);
                     MPI_Wait(&node_init_done,MPI_STATUS_IGNORE);
                     reader_file_ptr++;
                 }
             }
-            //Need to add if condition for case when initial distribution exhausts files
-            //MPI_Waitall(numP-1,node_init_done,MPI_STATUSES_IGNORE); Don't need a waitall - what if one node finishes file given to it initially> shouldnt have to wait
-            // while (reader_file_ptr<NUM_FILE_CHUNKS) {
-            //     MPI_Irecv(&reader_msg,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&reader_req_for_work);
-            //     MPI_Wait(&reader_req_for_work,&reader_req_status);
-            //     //if (reader_msg[1] == 0) {
-            //         MPI_Send(&reader_file_ptr,1,MPI_INT,reader_msg,0,MPI_COMM_WORLD);
-            //         //printf("PID %d sending file %d.txt to destination %d\n",pid,reader_file_ptr,reader_msg[0]);
-            //         omp_set_lock(&reader_file_ptr_lck);
-            //         reader_file_ptr++;
-            //         omp_unset_lock(&reader_file_ptr_lck);
-            //     //}
-            // }
             #pragma omp parallel
             {
                 #pragma omp single
@@ -526,46 +588,33 @@ int main (int argc, char *argv[]) {
                         while (reader_file_ptr<NUM_FILE_CHUNKS) {
                             MPI_Irecv(&reader_msg,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&reader_req_for_work);
                             MPI_Wait(&reader_req_for_work,&reader_req_status);
-                            //if (reader_msg[1] == 0) {
                                 MPI_Send(&reader_file_ptr,1,MPI_INT,reader_msg,0,MPI_COMM_WORLD);
-                                //printf("PID %d sending file %d.txt to destination %d\n",pid,reader_file_ptr,reader_msg[0]);
                                 reader_file_ptr++;
-                            //}
                         }
                         while (!readingDone(flag,NUM_PROCESS,num_read_threads)) {
                             MPI_Irecv(&reader_msg,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&reader_req_for_work);
                             MPI_Wait(&reader_req_for_work,&reader_req_status);
-                            //if (reader_msg[1]==0) {
                                 MPI_Send(&read_done,1,MPI_INT,reader_msg,0,MPI_COMM_WORLD);
-                                //printf("PID %d sending %d to destination %d\n",pid,read_done,reader_msg);
                                 flag[reader_msg]++;
-                                char name[20] = "MPI_READ_FLAG";
-                                //printFlag(flag,NUM_PROCESS,name);
-                            //} else if (reader_msg[1]==1) {
-                                //Reading not done for all tasks but some tasks have already started reducer work - need to add here
-                            //}
                         }
                     }
 
                     #pragma omp task shared(scratch_table,map_done)
                     {
-                        while (!readingDone(got_scratch_info,NUM_PROCESS,1)) {
-                            MPI_Irecv(&scratch_buf,NUM_PROCESS+1,MPI_INT,MPI_ANY_SOURCE,1,MPI_COMM_WORLD,&scratch_msg_done);
+                        got_scratch_info[0]=MAP_THREADS-1;
+                        while (!readingDone(got_scratch_info,NUM_PROCESS,MAP_THREADS)) {
+                            MPI_Irecv(&scratch_buf,NUM_PROCESS+2,MPI_INT,MPI_ANY_SOURCE,1,MPI_COMM_WORLD,&scratch_msg_done);
                             MPI_Wait(&scratch_msg_done,MPI_STATUS_IGNORE);
-                            //printf("Got scratch info from pid %d\n",scratch_buf[NUM_PROCESS]);
-                            // char name[20]="Got_scratch: ";
-                            // printFlag(got_scratch_info,NUM_PROCESS,name);
                             for (i=0;i<NUM_PROCESS;i++) {
-                                //scratch_ptr[i][scratch_buf[NUM_PROCESS]-1]=scratch_buf[i];
                                 if(scratch_buf[i]>0) {
                                     omp_set_lock(&scratch_locks[i]);
-                                    insertScratchFile(&scratch_table[i],scratch_buf[i],scratch_buf[NUM_PROCESS]);
+                                    insertScratchFile(&scratch_table[i],scratch_buf[i],scratch_buf[NUM_PROCESS],scratch_buf[NUM_PROCESS+1]);
+                                    // printScratchTable(scratch_table,NUM_PROCESS);
                                     omp_unset_lock(&scratch_locks[i]);
                                 }
                             }
-                            got_scratch_info[scratch_buf[NUM_PROCESS]]=1;
+                            got_scratch_info[scratch_buf[NUM_PROCESS]]++;
                         }
-                        //printScratchTable(scratch_table,NUM_PROCESS);
                         map_done=1;
                     }
                 
@@ -575,52 +624,46 @@ int main (int argc, char *argv[]) {
                         while (!readingDone(reduce_finish_ptr,NUM_PROCESS,1)) {
                             MPI_Irecv(&reducer_recv_msg,1,MPI_INT,MPI_ANY_SOURCE,2,MPI_COMM_WORLD,&reduce_msg_done);
                             MPI_Wait(&reduce_msg_done,MPI_STATUS_IGNORE);
-                            //printFlag(reduce_finish_ptr,NUM_PROCESS,name);
-                            //printf("PID %d asking for reducerfile\n",reducer_recv_msg);
                             while (1) { 
                                 omp_set_lock(&scratch_locks[reducer_recv_msg]);//**
                                 get_scratch_file(&scratch_table[reducer_recv_msg],reducer_send_msg);//**
                                 omp_unset_lock(&scratch_locks[reducer_recv_msg]);//**
                                 if ((reducer_send_msg[0]==reducer_q_empty) && map_done) {
-                                    MPI_Send(&reducer_send_msg,2,MPI_INT,reducer_recv_msg,2,MPI_COMM_WORLD);
+                                    MPI_Send(&reducer_send_msg,3,MPI_INT,reducer_recv_msg,2,MPI_COMM_WORLD);
                                     reduce_finish_ptr[reducer_recv_msg]=1; //**
                                     break;
                                 } else if ((reducer_send_msg[0]==reducer_q_empty) && !map_done) {
-                                    //printf("Map not done, reducer sleeping\n");
                                     usleep(100);
                                     continue;
                                 } else {
-                                    MPI_Send(&reducer_send_msg,2,MPI_INT,reducer_recv_msg,2,MPI_COMM_WORLD);
+                                    MPI_Send(&reducer_send_msg,3,MPI_INT,reducer_recv_msg,2,MPI_COMM_WORLD);
                                     break;
                                 }
                             }
                         }
                     }
-
+                    
                     for (i=0;i<num_read_threads_master;i++) { 
-                        #pragma omp task shared(done) //Need a lock for reader_file_ptr
+                        #pragma omp task shared(done) 
                         {
+                            usleep(0.5);
                             int file_to_read;
                             char* filename;
                             int send_msg = pid;
-                            // MPI_Recv(&file_to_read,1,MPI_INT,0,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
-                            // filename=getReaderFileName(file_to_read);
-                            //printf("PID: %d, Thread %d Got file %s to read from Master process\n",pid,omp_get_thread_num(),filename);
+                            MPI_Status status;
                             while (1) {
                                 //sleep(2);
                                 MPI_Send(&send_msg,1,MPI_INT,0,0,MPI_COMM_WORLD);
                                 MPI_Recv(&file_to_read,1,MPI_INT,0,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
+                                if (file_to_read==0) {continue;}
                                 if (file_to_read==read_done) {
-                                    //printf("PID: %d, Thread %d got read done signal\n",pid,omp_get_thread_num());      
                                     omp_set_lock(&done_lck);
                                     done++;
                                     omp_unset_lock(&done_lck);
-                                    //printf("PID: %d, Thread %d Done reading\n",pid,omp_get_thread_num());  
                                     break;              
                                 } else {
                                     filename = getReaderFileName(file_to_read);
-                                    //printf("PID: %d, Thread %d Got file %s to read from Master process\n",pid,omp_get_thread_num(),filename);
-                                    reader(reader_Q,filename,pid,&lck); //What happens if Q is full but files are not finished yet? Should wait - need to update 
+                                    reader(reader_Q,filename,pid,&lck); 
                                 }
                             }
                         }
@@ -628,11 +671,9 @@ int main (int argc, char *argv[]) {
 
                     #pragma omp task shared(done,scratch_table)
                     {
-                        mapper(reader_Q,&done,num_read_threads_master,num_write_threads_master,pid,&num_scratch[0],&lck);
-                        num_scratch[NUM_PROCESS]=pid;
-                        //printf("PID %d All tasks finished, sending scratch info\n",pid);
-                        MPI_Isend(&num_scratch[0],NUM_PROCESS+1,MPI_INT,0,1,MPI_COMM_WORLD,&scratch_info);
-                        omp_destroy_lock(&lck); 
+                        int num_scratch[NUM_PROCESS+2];
+                        mapper(reader_Q,&done,num_read_threads_master,num_write_threads_master,pid,&num_scratch[0],&lck,0);
+                        MPI_Isend(&num_scratch[0],NUM_PROCESS+2,MPI_INT,0,1,MPI_COMM_WORLD,&scratch_info);
                         struct LLitem* rQ=NULL;
                         int send_msg = pid;
                         int recv_msg[2] = {0,0};
@@ -643,38 +684,32 @@ int main (int argc, char *argv[]) {
                         MPI_Request reducer_work_req;
                         while(1) {
                             MPI_Send(&send_msg,1,MPI_INT,0,2,MPI_COMM_WORLD); // Explore using diff comm for mapper and reducer
-                            MPI_Recv(&recv_msg,2,MPI_INT,0,2,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
-                            // omp_set_lock(&scratch_locks[0]);//**
-                            // get_scratch_file(&scratch_table[0],recv_msg);//**
-                            // omp_unset_lock(&scratch_locks[0]);//**
+                            MPI_Recv(&recv_msg,3,MPI_INT,0,2,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
                             if (recv_msg[0] == reducer_q_empty) {break;}
-                            sprintf(reducerFileName,"%d_reducerFile_%d_%d",recv_msg[0],pid,recv_msg[1]);
-                            //printf("PID %d Reducer %d got file %s from Master\n",pid,pid,reducerFileName);
+                            sprintf(reducerFileName,"%d_%d_reducerFile_%d_%d",recv_msg[0],recv_msg[2],pid,recv_msg[1]);
                             reducerFile = fopen(reducerFileName,"r");
-                            //sleep(2);
                             while (fscanf(reducerFile,"%s%d",buf,&count)!=EOF) {
                                 insert(&rQ,buf,count);
                             }
                             fclose(reducerFile);
                             remove(reducerFileName);
                         }
-                        writer(&rQ,OUTPUT_WRITE,pid);
+                        writer(&rQ,OUTPUT_WRITE,pid,0);
                     }
                 }
             }
+            omp_destroy_lock(&lck); 
             for (i=0;i<NUM_PROCESS;i++) {
                 omp_destroy_lock(&scratch_locks[i]);
             }
             printf("Master process: All tasks have finished reading and reducing\n");
-            //All tasks have finished reading and now all are running reducer work - need to add here - update - added
         } else {
             struct Q* reader_Q = InitQ(READER_Q_SIZE);
             MPI_Request scratch_info;
-            int num_scratch[NUM_PROCESS+1];
             omp_lock_t lck, done_lck; //For mapper and readers to synchronize work q
             omp_init_lock(&lck);
             omp_init_lock(&done_lck);
-            int done=0; //When making multi-threaded reader need to make this an array
+            int done=0; 
             #pragma omp parallel shared(done)
             {
                 #pragma omp single 
@@ -687,63 +722,137 @@ int main (int argc, char *argv[]) {
                             int send_msg = pid;
                             MPI_Recv(&file_to_read,1,MPI_INT,0,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
                             filename=getReaderFileName(file_to_read);
-                            //printf("PID: %d, Thread %d Got file %s to read from Master process\n",pid,omp_get_thread_num(),filename);
                             while (1) {
-                                reader(reader_Q,filename,pid,&lck); //What happens if Q is full but files are not finished yet? Should wait - need to update
-                                //sleep(2);
+                                reader(reader_Q,filename,pid,&lck); 
                                 MPI_Send(&send_msg,1,MPI_INT,0,0,MPI_COMM_WORLD);
                                 MPI_Recv(&file_to_read,1,MPI_INT,0,0,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
                                 if (file_to_read==read_done) {
-                                    //printf("PID: %d, Thread %d got read done signal\n",pid,omp_get_thread_num());      
                                     omp_set_lock(&done_lck);
                                     done++;
                                     omp_unset_lock(&done_lck);
-                                    //printf("PID: %d, Thread %d Done reading\n",pid,omp_get_thread_num());  
                                     break;              
                                 } else {
                                     filename = getReaderFileName(file_to_read);
-                                    //printf("PID: %d, Thread %d Got file %s to read from Master process\n",pid,omp_get_thread_num(),filename);
                                 }
                             } 
                         }
                     }
-                    #pragma omp task
-                        mapper(reader_Q,&done,num_read_threads,num_write_threads,pid,&num_scratch[0],&lck);
+                    for (i=0;i<MAP_THREADS;i++) {
+                        #pragma omp task firstprivate(i)
+                        {
+                            int num_scratch[NUM_PROCESS+2];
+                            mapper(reader_Q,&done,num_read_threads,num_write_threads,pid,&num_scratch[0],&lck,i);
+                            num_scratch[NUM_PROCESS]=pid;
+                            num_scratch[NUM_PROCESS+1]=i;
+                            MPI_Isend(&num_scratch[0],NUM_PROCESS+2,MPI_INT,0,1,MPI_COMM_WORLD,&scratch_info);
+                        }
+                    }
                 }
             }
-            num_scratch[NUM_PROCESS]=pid;
-            //printf("PID %d All tasks finished, sending scratch info\n",pid);
-            MPI_Isend(&num_scratch[0],NUM_PROCESS+1,MPI_INT,0,1,MPI_COMM_WORLD,&scratch_info);
             omp_destroy_lock(&lck);
-            //char name[18] = "Num Scratch";
-            //printFlag(num_scratch,NUM_PROCESS,name);
-            //Reducer code
-            struct LLitem* rQ=NULL;
+            struct LLitem* rQ[REDUCE_THREADS];
+            for (i=0;i<REDUCE_THREADS;i++) {
+                rQ[i]=NULL;
+            }
             int send_msg = pid;
-            int recv_msg[2] = {0,0};
+            int recv_msg[3] = {0,0,0};
             FILE *reducerFile;
             char buf[WORD_LENGTH];
-            int count;
+            int count, rid;
             char reducerFileName[25];
             MPI_Request reducer_work_req;
             while(1) {
                 MPI_Send(&send_msg,1,MPI_INT,0,2,MPI_COMM_WORLD); // Explore using diff comm for mapper and reducer
-                MPI_Recv(&recv_msg,2,MPI_INT,0,2,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
+                MPI_Recv(&recv_msg,3,MPI_INT,0,2,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
                 if (recv_msg[0] == reducer_q_empty) {break;}
-                sprintf(reducerFileName,"%d_reducerFile_%d_%d",recv_msg[0],pid,recv_msg[1]);
-                //printf("PID %d Reducer %d got file %s from Master\n",pid,pid,reducerFileName);
+                sprintf(reducerFileName,"%d_%d_reducerFile_%d_%d",recv_msg[0],recv_msg[2],pid,recv_msg[1]);
                 reducerFile = fopen(reducerFileName,"r");
-                //sleep(2);
                 while (fscanf(reducerFile,"%s%d",buf,&count)!=EOF) {
-                    insert(&rQ,buf,count);
+                    rid = ((int) (hashFunc(buf)/NUM_PROCESS)) % REDUCE_THREADS;
+                    insert(&rQ[rid],buf,count);
                 }
                 fclose(reducerFile);
                 remove(reducerFileName);
             }
-            writer(&rQ,OUTPUT_WRITE,pid);
+            #pragma omp parallel for num_threads(REDUCE_THREADS)
+            for (i=0;i<REDUCE_THREADS;i++)
+            {
+                writer(&rQ[i],OUTPUT_WRITE,pid,i);
+            }
         }
+        elapsedTime+=MPI_Wtime();
+        if (!pid) {printf("Time taken to process all files is %.2lfs\n",elapsedTime);}
+        MPI_Finalize();
+    } else {
+        int read_file_ptr=0;
+        int reducer_id_track=0;
+        int num_read_threads = READ_THREADS;
+        int num_write_threads = WRITE_THREADS;
+        int i,j;
+        int done=0;
+        int map_done=0;
+        struct Q* reader_Q = InitQ(READER_Q_SIZE);
+        omp_lock_t read_file_lck,reader_q_lck,reducer_id_lck;
+        omp_lock_t reducer_q_lck[REDUCE_THREADS];
+        omp_init_lock(&read_file_lck);
+        omp_init_lock(&reader_q_lck);
+        omp_init_lock(&reducer_id_lck);
+        struct LLitem* hTable[REDUCE_THREADS];
+        struct LLitem* rQ[REDUCE_THREADS];
+        for (i=0;i<REDUCE_THREADS;i++) {
+            omp_init_lock(&reducer_q_lck[i]);
+            hTable[i]=NULL;
+            rQ[i]=NULL;
+        }
+        printf("Doing Mapreduce in openmp using %d readers, %d mappers and %d reducers\n",READ_THREADS,MAP_THREADS,REDUCE_THREADS);
+        double elapsed_time = -omp_get_wtime();
+        #pragma omp parallel
+        {
+            #pragma omp single
+            {
+                for(i=0;i<READ_THREADS;i++) {
+                    #pragma omp task shared(read_file_ptr,done) // reader thread
+                    {
+                        printf("thread %d in reader\n",omp_get_thread_num());
+                        int file_to_read;
+                        char* filename;
+                        while (1) {
+                            omp_set_lock(&read_file_lck);
+                            file_to_read=read_file_ptr++;
+                            omp_unset_lock(&read_file_lck);
+                            if (file_to_read>=NUM_FILE_CHUNKS) {break;}
+                            filename = getReaderFileName(file_to_read);
+                            printf("reader thread %d got %s file to read\n",omp_get_thread_num(),filename);
+                            reader(reader_Q, filename, 0, &reader_q_lck);
+                        }
+                        printf("thread %d done reading\n",omp_get_thread_num());
+                        done++;
+                    }
+                }
+
+
+                for (i=0;i<MAP_THREADS;i++) {
+                    #pragma omp task shared(map_done,hTable,rQ,done)
+                    {
+                        printf("thread %d in mapper\n",omp_get_thread_num());
+                        openmp_mapper(reader_Q,&done,num_read_threads,rQ,&reader_q_lck,reducer_q_lck);
+                        map_done++;
+                        printf("thread %d is done mapping, map_done=%d\n",omp_get_thread_num(),map_done);
+                    }
+                }
+
+                for(i=0;i<REDUCE_THREADS;i++) {
+                    #pragma omp task shared(map_done,rQ)
+                    {
+                        omp_set_lock(&reducer_id_lck);
+                        int rid = reducer_id_track++;
+                        omp_unset_lock(&reducer_id_lck);
+                        reducer(rid,&rQ[rid],&reducer_q_lck[rid],&map_done);
+                    }
+                }
+            }
+        }
+        elapsed_time+=omp_get_wtime();
+        printf("Time taken to process all files is %.2lfs\n",elapsed_time);
     }
-    elapsedTime+=MPI_Wtime();
-    if (!pid) {printf("Time taken to process all files is %.2lfs\n",elapsedTime);}
-    MPI_Finalize();
 }

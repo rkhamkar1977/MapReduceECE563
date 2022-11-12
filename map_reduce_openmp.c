@@ -6,13 +6,13 @@
 
 #define LINE_LENGTH 256
 #define WORD_LENGTH 70 
-#define NUM_FILE_CHUNKS 20
-#define READER_Q_SIZE 100000
+#define NUM_FILE_CHUNKS 100
+#define READER_Q_SIZE 300000
 #define OUTPUT_WRITE 10001
-#define READ_THREADS 2
-#define WRITE_THREADS 2
-#define MAP_THREADS 2
-#define NUM_REDUCERS 2
+#define READ_THREADS 9
+#define WRITE_THREADS 9
+#define MAP_THREADS 1
+#define NUM_REDUCERS 1
 
 
 
@@ -287,7 +287,7 @@ void mapper(struct Q* W, int* done, int num_read_threads, struct LLitem** reduce
 
 
 int reducer(int rid, struct LLitem** rQ, omp_lock_t* lck, int* map_done) {
-    printf("thread %d inside reducer %d\n",omp_get_num_threads(),rid);
+    printf("thread %d inside reducer %d\n",omp_get_thread_num(),rid);
     struct LLitem* internal_reducerQ = (struct LLitem*) malloc(sizeof(LLitem));
     struct LLitem* p;
     internal_reducerQ=NULL;
@@ -306,7 +306,7 @@ int reducer(int rid, struct LLitem** rQ, omp_lock_t* lck, int* map_done) {
             insert(&internal_reducerQ,p->word,p->cnt);
         }
     }
-    printf("thread %d done reducing\n",omp_get_num_threads());
+    printf("thread %d done reducing\n",omp_get_thread_num());
     writer(&internal_reducerQ,rid);
 }
 
@@ -351,6 +351,7 @@ int main() {
             for(i=0;i<READ_THREADS;i++) {
                 #pragma omp task shared(read_file_ptr,done) // reader thread
                 {
+                    printf("thread %d in reader\n",omp_get_thread_num());
                     int file_to_read;
                     char* filename;
                     while (1) {
@@ -371,6 +372,7 @@ int main() {
             for (i=0;i<MAP_THREADS;i++) {
                 #pragma omp task shared(map_done,hTable,rQ,done)
                 {
+                    printf("thread %d in mapper\n",omp_get_thread_num());
                     mapper(reader_Q,&done,num_read_threads,rQ,&reader_q_lck,reducer_q_lck);
                     map_done++;
                     printf("thread %d is done mapping, map_done=%d\n",omp_get_thread_num(),map_done);
