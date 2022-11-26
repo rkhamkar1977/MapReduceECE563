@@ -258,7 +258,7 @@ int readingDone(int* flag, int num_readers, int num_read_threads) {
 int writer(struct LLitem** h, int index, int pid, int tid) {
     struct LLitem* p;
     int file_count = 0;
-    char filename[30];
+    char filename[200];
     if (index != OUTPUT_WRITE) {
         while (*h!=NULL) {
             //sprintf(filename,"%d_%d_reducerFile_%d_%d",pid,tid,index,file_count);
@@ -458,7 +458,7 @@ void openmp_mapper(struct Q* W, int* done, int num_read_threads, struct LLitem**
 int openmp_writer(struct LLitem** h, int pid) {
     struct LLitem* p;
     int file_count = 0;
-    char filename[30];
+    char filename[200];
     sprintf(filename,"output_numP%d_numChunk%d_numThread%d_rT%d_wT%d_mT%d_redT%d_%d",NUM_PROCESS, NUM_FILE_CHUNKS, omp_get_max_threads(), READ_THREADS, WRITE_THREADS, MAP_THREADS, REDUCE_THREADS, pid);
 
     FILE* f = fopen(filename,"w");
@@ -682,7 +682,7 @@ int main (int argc, char *argv[]) {
                         int recv_msg[2] = {0,0};
                         FILE* reducerFile;
                         char buf[WORD_LENGTH];
-                        char reducerFileName[25];
+                        char reducerFileName[200];
                         int count;
                         MPI_Request reducer_work_req;
                         while(1) {
@@ -763,7 +763,7 @@ int main (int argc, char *argv[]) {
             FILE *reducerFile;
             char buf[WORD_LENGTH];
             int count, rid;
-            char reducerFileName[25];
+            char reducerFileName[200];
             MPI_Request reducer_work_req;
             while(1) {
                 MPI_Send(&send_msg,1,MPI_INT,0,2,MPI_COMM_WORLD); // Explore using diff comm for mapper and reducer
