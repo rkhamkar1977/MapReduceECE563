@@ -19,7 +19,7 @@
 #define READ_THREADS 8
 #define WRITE_THREADS 8
 #define MAP_THREADS 2
-#define REDUCE_THREADS 10
+#define REDUCE_THREADS 5
 #define READER_Q_SIZE 200000
 
 
@@ -261,7 +261,8 @@ int writer(struct LLitem** h, int index, int pid, int tid) {
     char filename[30];
     if (index != OUTPUT_WRITE) {
         while (*h!=NULL) {
-            sprintf(filename,"%d_%d_reducerFile_%d_%d",pid,tid,index,file_count);
+            //sprintf(filename,"%d_%d_reducerFile_%d_%d",pid,tid,index,file_count);
+            sprintf(filename,"%d_%d_reducerFile_%d_%d_numP%d_numChunk%d_numThread%d_rT%d_wT%d_mT%d_redT%d", pid,tid,index,file_count, NUM_PROCESS, NUM_FILE_CHUNKS, omp_get_max_threads(), READ_THREADS, WRITE_THREADS, MAP_THREADS, REDUCE_THREADS);
             FILE* f = fopen(filename,"w");
             int count = 0;
             while ((*h!=NULL) && (count<KEYS_PER_REDUCER)) {
@@ -275,7 +276,8 @@ int writer(struct LLitem** h, int index, int pid, int tid) {
         }
         return file_count;
     } else {
-        sprintf(filename,"output_%d_%d",pid,tid);
+        //sprintf(filename,"output_%d_%d",pid,tid);
+        sprintf(filename,"output_%d_%d_numP%d_numChunk%d_numThread%d_rT%d_wT%d_mT%d_redT%d", pid,tid, NUM_PROCESS, NUM_FILE_CHUNKS, omp_get_max_threads(), READ_THREADS, WRITE_THREADS, MAP_THREADS, REDUCE_THREADS);
         FILE* f = fopen(filename,"w");
         while (*h!=NULL) {
             p = *h;
@@ -457,7 +459,8 @@ int openmp_writer(struct LLitem** h, int pid) {
     struct LLitem* p;
     int file_count = 0;
     char filename[30];
-    sprintf(filename,"output_%d",pid);
+    sprintf(filename,"output_numP%d_numChunk%d_numThread%d_rT%d_wT%d_mT%d_redT%d_%d",NUM_PROCESS, NUM_FILE_CHUNKS, omp_get_max_threads(), READ_THREADS, WRITE_THREADS, MAP_THREADS, REDUCE_THREADS, pid);
+
     FILE* f = fopen(filename,"w");
     while (*h!=NULL) {
         p = *h;
@@ -574,7 +577,7 @@ int main (int argc, char *argv[]) {
             for (i=1;i<numP;i++) {
                 for (j=0;j<num_read_threads;j++) {
                     MPI_Isend(&reader_file_ptr,1,MPI_INT,i,0,MPI_COMM_WORLD,&node_init_done);
-                    printf("PID %d sending file %d.txt to destination %d\n",pid,reader_file_ptr,i);
+                    //printf("PID %d sending file %d.txt to destination %d\n",pid,reader_file_ptr,i);
                     MPI_Wait(&node_init_done,MPI_STATUS_IGNORE);
                     reader_file_ptr++;
                 }
@@ -686,7 +689,8 @@ int main (int argc, char *argv[]) {
                             MPI_Send(&send_msg,1,MPI_INT,0,2,MPI_COMM_WORLD); // Explore using diff comm for mapper and reducer
                             MPI_Recv(&recv_msg,3,MPI_INT,0,2,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
                             if (recv_msg[0] == reducer_q_empty) {break;}
-                            sprintf(reducerFileName,"%d_%d_reducerFile_%d_%d",recv_msg[0],recv_msg[2],pid,recv_msg[1]);
+                            //sprintf(reducerFileName,"%d_%d_reducerFile_%d_%d",recv_msg[0],recv_msg[2],pid,recv_msg[1]);
+                            sprintf(reducerFileName,"%d_%d_reducerFile_%d_%d_numP%d_numChunk%d_numThread%d_rT%d_wT%d_mT%d_redT%d", recv_msg[0],recv_msg[2],pid,recv_msg[1], NUM_PROCESS, NUM_FILE_CHUNKS, omp_get_max_threads(), READ_THREADS, WRITE_THREADS, MAP_THREADS, REDUCE_THREADS);
                             reducerFile = fopen(reducerFileName,"r");
                             while (fscanf(reducerFile,"%s%d",buf,&count)!=EOF) {
                                 insert(&rQ,buf,count);
@@ -702,7 +706,7 @@ int main (int argc, char *argv[]) {
             for (i=0;i<NUM_PROCESS;i++) {
                 omp_destroy_lock(&scratch_locks[i]);
             }
-            printf("Master process: All tasks have finished reading and reducing\n");
+            //printf("Master process: All tasks have finished reading and reducing\n");
         } else {
             struct Q* reader_Q = InitQ(READER_Q_SIZE);
             MPI_Request scratch_info;
@@ -765,7 +769,8 @@ int main (int argc, char *argv[]) {
                 MPI_Send(&send_msg,1,MPI_INT,0,2,MPI_COMM_WORLD); // Explore using diff comm for mapper and reducer
                 MPI_Recv(&recv_msg,3,MPI_INT,0,2,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
                 if (recv_msg[0] == reducer_q_empty) {break;}
-                sprintf(reducerFileName,"%d_%d_reducerFile_%d_%d",recv_msg[0],recv_msg[2],pid,recv_msg[1]);
+                //sprintf(reducerFileName,"%d_%d_reducerFile_%d_%d",recv_msg[0],recv_msg[2],pid,recv_msg[1]);
+                sprintf(reducerFileName,"%d_%d_reducerFile_%d_%d_numP%d_numChunk%d_numThread%d_rT%d_wT%d_mT%d_redT%d", recv_msg[0],recv_msg[2],pid,recv_msg[1], NUM_PROCESS, NUM_FILE_CHUNKS, omp_get_max_threads(), READ_THREADS, WRITE_THREADS, MAP_THREADS, REDUCE_THREADS);
                 reducerFile = fopen(reducerFileName,"r");
                 while (fscanf(reducerFile,"%s%d",buf,&count)!=EOF) {
                     rid = ((int) (hashFunc(buf)/NUM_PROCESS)) % REDUCE_THREADS;
@@ -781,7 +786,10 @@ int main (int argc, char *argv[]) {
             }
         }
         elapsedTime+=MPI_Wtime();
-        if (!pid) {printf("Time taken to process all files is %.2lfs\n",elapsedTime);}
+        if (!pid) {
+//        printf("Time taken to process all files is %.2lfs\n",elapsedTime);
+        printf("#FINAL: NUM_PROCESS: %d, NUM_FILE_CHUNKS: %d, OMP_NUM_THREADS: %d, READ_THREADS: %d, WRITE_THREADS: %d, MAP_THREADS: %d, REDUCE_THREADS: %d,  TIME: %.2lfs\n", NUM_PROCESS, NUM_FILE_CHUNKS, omp_get_max_threads(), READ_THREADS, WRITE_THREADS, MAP_THREADS, REDUCE_THREADS, elapsedTime);
+        }
         MPI_Finalize();
     } else {
         int read_file_ptr=0;
@@ -853,6 +861,6 @@ int main (int argc, char *argv[]) {
             }
         }
         elapsed_time+=omp_get_wtime();
-        printf("Time taken to process all files is %.2lfs\n",elapsed_time);
+        printf("#FINAL: NUM_PROCESS: %d, NUM_FILE_CHUNKS: %d, OMP_NUM_THREADS: %d, READ_THREADS: %d, WRITE_THREADS: %d, MAP_THREADS: %d, REDUCE_THREADS: %d,  TIME: %.2lfs\n", NUM_PROCESS, NUM_FILE_CHUNKS, omp_get_max_threads(), READ_THREADS, WRITE_THREADS, MAP_THREADS, REDUCE_THREADS, elapsed_time);
     }
 }
